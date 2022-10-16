@@ -1,0 +1,21 @@
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.nav-bar__invader {
+  width: 50px;
+}
+
+.nav-bar__buttons {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 10px;
+}
+
+.nav-bar__buttons a {
+  text-decoration: none;
+  color: initial;
+}
