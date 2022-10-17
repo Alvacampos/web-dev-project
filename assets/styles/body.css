@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  color: #ffffff;
+}

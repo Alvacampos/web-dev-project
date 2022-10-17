@@ -1,48 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Gonzalo Alvarez Campos web curriculum, landing page and first greetings"/>
-  <link rel="stylesheet" href="./assets/styles/nav.css">
-  <link rel="stylesheet" href="./assets/styles/footer.css">
-  <link rel="stylesheet" href="./assets/styles/index.css">
-  <title>Gonzalo Alvarez Campos CV</title>
-</head>
-<body>
-<header>
-  <nav class="nav-bar">
-    <object data="./assets/img/invader.svg" class="nav-bar__invader"></object>
-    <ul class="nav-bar__buttons">
-      <li><a href="./index.html">Home</a></li>
-      <li><a href="./views/skills.html">Contact</a></li>
-      <li><a href="./views/skills.html">Skills</a></li>
-    </ul>
-  </nav>
-</header>
-<section class="main-section">
-  <article class="main-section__article">
-    <h1>Welcome to my Cv page, my name is Gonzalo Alvarez Campos.</h1>
-    <p>I´am a Software Developer and I made this page so you can get to know me a little better.</p>
-  </article>
-</section>
-<footer class="footer">
-  <h3 class="footer__title">Contact Information</h3>
-  <div class="footer__wrapper">
-    <img src="./assets/img/linkedin.png" alt="cv-qr" class="footer__qr">
-    <div class="footer__items">
-      <div>
-        <p>Email: gonzaloralvarezcampos@gmail</p>
-        <p>Cel: +54 9 381 3480565</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Gonzalo Alvarez Campos web curriculum, landing page and first greeting"
+    />
+    <link rel="stylesheet" href="./assets/styles/body.css" />
+    <link rel="stylesheet" href="./assets/styles/nav.css" />
+    <link rel="stylesheet" href="./assets/styles/footer.css" />
+    <link rel="stylesheet" href="./assets/styles/index.css" />
+    <title>Gonzalo Alvarez Campos CV</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <object
+          data="./assets/img/invader.svg"
+          class="nav-bar__invader"
+        ></object>
+        <ul class="nav-bar__buttons">
+          <li>
+            <object
+              data="./assets/icons/home.svg"
+              class="nav-bar__icon"
+            ></object
+            ><a href="./index.html">Home</a>
+          </li>
+          <li>
+            <object
+              data="./assets/icons/compass.svg"
+              class="nav-bar__icon"
+            ></object
+            ><a href="./views/skills.html">Contact</a>
+          </li>
+          <li>
+            <object
+              data="./assets/icons/linkedin2.svg"
+              class="nav-bar__icon"
+            ></object
+            ><a href="./views/skills.html">Skills</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="main-section">
+      <article class="main-section__article">
+        <h1>Welcome to my Cv page, my name is Gonzalo Alvarez Campos.</h1>
+        <p>
+          I´am a Software Developer and I made this page so you can get to know
+          me a little better.
+        </p>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <img
+          src="./assets/img/linkedin_dark.png"
+          alt="cv-qr"
+          class="footer__qr"
+        />
+        <div class="footer__items">
+          <div class="footer__items__wrapper">
+            <div class="footer__item">
+              <object
+                data="./assets/icons/phone.svg"
+                class="footer__icon"
+              ></object>
+              <p>+54 9 381 3480565</p>
+            </div>
+            <div class="footer__item">
+              <object
+                data="./assets/icons/mail.svg"
+                class="footer__icon"
+              ></object>
+              <p>gonzaloralvarezcampos@gmail.com</p>
+            </div>
+          </div>
+          <div class="footer__items__wrapper">
+            <div class="footer__item">
+              <a href="https://github.com/Alvacampos">
+                <object
+                  data="./assets/icons/github.svg"
+                  class="footer__icon"
+                ></object
+                ><span>https://github.com/Alvacampos</span></a
+              >
+            </div>
+            <div class="footer__item">
+              <a href="https://github.com/Alvacampos">
+                <object
+                  data="./assets/icons/linkedin2.svg"
+                  class="footer__icon"
+                ></object>
+                <span
+                  >https://www.linkedin.com/in/gonzaloalvarezcampos/</span
+                ></a
+              >
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/img/cv_dark.png"
+          alt="cv-qr"
+          class="footer__qr"
+          id="footer__cv"
+        />
       </div>
-        <div>
-       <p>Linkedin: https://www.linkedin.com/in/gonzaloalvarezcampos/</p>
-        <p>GitHub: https://github.com/Alvacampos</p>
-      </div>
-    </div>
-    <img src="./assets/img/cv.png" alt="cv-qr" class="footer__qr">
-  </div>
-</footer>
-</body>
+    </footer>
+  </body>
 </html>

@@ -1,15 +1,18 @@
-html {
-  height: 100%;
-  overflow: hidden;
-}
-body {
-  min-height: 100%;
-  margin: 0;
-}
-
 .main-section {
-  height: 75vh;
+  height: calc(100% - 220px);
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  padding: 10px;
+  /* background-image: url('https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background-color: #161b22;
+}
+
+@media only screen and (max-width: 496px) {
+  .main-section {
+    height: calc(100% - 225px);
+  }
 }

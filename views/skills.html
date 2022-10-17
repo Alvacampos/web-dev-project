@@ -1,23 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../assets/styles/nav.css">
-  <title>Document</title>
-</head>
-<body>
-  <header>
-    <nav class="nav-bar">
-      <object data="./assets/img/invader.svg" class="nav-bar__invader"></object>
-      <ul class="nav-bar__buttons">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="./views/skills.html">Contact</a></li>
-        <li><a href="#">Skills</a></li>
-      </ul>
-    </nav>
-  </header>
-  hola
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/styles/body.css" />
+    <link rel="stylesheet" href="../assets/styles/nav.css" />
+    <link rel="stylesheet" href="../assets/styles/footer.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <object
+          data="../assets/img/invader.svg"
+          class="nav-bar__invader"
+        ></object>
+        <ul class="nav-bar__buttons">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./views/skills.html">Contact</a></li>
+          <li><a href="#">Skills</a></li>
+        </ul>
+      </nav>
+    </header>
+    hola
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <img src="../assets/img/linkedin.png" alt="cv-qr" class="footer__qr" />
+        <div class="footer__items">
+          <div class="footer__items__wrapper">
+            <div class="footer__item">
+              <object
+                data="../assets/icons/phone.svg"
+                class="footer__icon"
+              ></object>
+              <p>+54 9 381 3480565</p>
+            </div>
+            <div class="footer__item">
+              <object
+                data="../assets/icons/mail.svg"
+                class="footer__icon"
+              ></object>
+              <p>gonzaloralvarezcampos@gmail.com</p>
+            </div>
+          </div>
+          <div class="footer__items__wrapper">
+            <div class="footer__item">
+              <a href="https://github.com/Alvacampos">
+                <object
+                  data="../assets/icons/github.svg"
+                  class="footer__icon"
+                ></object
+                ><span>https://github.com/Alvacampos</span></a
+              >
+            </div>
+            <div class="footer__item">
+              <a href="https://github.com/Alvacampos">
+                <object
+                  data="../assets/icons/linkedin2.svg"
+                  class="footer__icon"
+                ></object>
+                <span
+                  >https://www.linkedin.com/in/gonzaloalvarezcampos/</span
+                ></a
+              >
+            </div>
+          </div>
+        </div>
+        <img
+          src="../assets/img/cv.png"
+          alt="cv-qr"
+          class="footer__qr"
+          id="footer__cv"
+        />
+      </div>
+    </footer>
+  </body>
 </html>
