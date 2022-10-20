@@ -4,77 +4,213 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico" />
     <link rel="stylesheet" href="../assets/styles/body.css" />
     <link rel="stylesheet" href="../assets/styles/nav.css" />
-    <link rel="stylesheet" href="../assets/styles/footer.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="../assets/styles/skills.css" />
+    <title>Jobs</title>
   </head>
   <body>
     <header>
       <nav class="nav-bar">
-        <object
-          data="../assets/img/invader.svg"
-          class="nav-bar__invader"
-        ></object>
-        <ul class="nav-bar__buttons">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="./views/skills.html">Contact</a></li>
-          <li><a href="#">Skills</a></li>
-        </ul>
-      </nav>
-    </header>
-    hola
-
-    <footer class="footer">
-      <div class="footer__wrapper">
-        <img src="../assets/img/linkedin.png" alt="cv-qr" class="footer__qr" />
-        <div class="footer__items">
-          <div class="footer__items__wrapper">
-            <div class="footer__item">
-              <object
-                data="../assets/icons/phone.svg"
-                class="footer__icon"
-              ></object>
-              <p>+54 9 381 3480565</p>
-            </div>
-            <div class="footer__item">
-              <object
-                data="../assets/icons/mail.svg"
-                class="footer__icon"
-              ></object>
-              <p>gonzaloralvarezcampos@gmail.com</p>
-            </div>
-          </div>
-          <div class="footer__items__wrapper">
-            <div class="footer__item">
-              <a href="https://github.com/Alvacampos">
+        <div>
+          <a href="https://github.com/Alvacampos" class="nav-bar__git-wrapper">
+            <object
+              tabindex="-1"
+              tabindex="-1"
+              data="../assets/icons/github-icon.svg"
+              class="nav-bar__git"
+            ></object>
+          </a>
+          <ul class="nav-bar__buttons" tabindex="-1">
+            <li tabindex="-1">
+              <a href="../index.html">
                 <object
-                  data="../assets/icons/github.svg"
-                  class="footer__icon"
-                ></object
-                ><span>https://github.com/Alvacampos</span></a
-              >
-            </div>
-            <div class="footer__item">
-              <a href="https://github.com/Alvacampos">
-                <object
-                  data="../assets/icons/linkedin2.svg"
-                  class="footer__icon"
+                  tabindex="-1"
+                  data="../assets/icons/home.svg"
+                  class="nav-bar__icon"
+                  type="image/svg+xml"
                 ></object>
-                <span
-                  >https://www.linkedin.com/in/gonzaloalvarezcampos/</span
-                ></a
+                <span>Home</span></a
               >
-            </div>
-          </div>
+            </li>
+            <li id="nav-bar--active" tabindex="-1">
+              <a href="./skills.html"
+                ><object
+                  tabindex="-1"
+                  data="../assets/icons/paper.svg"
+                  class="nav-bar__icon"
+                ></object
+                >CV</a
+              >
+            </li>
+            <li tabindex="-1">
+              <a href="./projects.html"
+                ><object
+                  tabindex="-1"
+                  data="../assets/icons/folder.svg"
+                  class="nav-bar__icon"
+                ></object
+                >Projects</a
+              >
+            </li>
+            <li tabindex="-1">
+              <a href="./contact.html">
+                <object
+                  tabindex="-1"
+                  data="../assets/icons/profile.svg"
+                  class="nav-bar__icon"
+                ></object
+                >Contact</a
+              >
+            </li>
+          </ul>
         </div>
         <img
-          src="../assets/img/cv.png"
+          src="../assets/img/linkedin_dark.png"
           alt="cv-qr"
-          class="footer__qr"
-          id="footer__cv"
+          id="footer__qr"
         />
-      </div>
-    </footer>
+      </nav>
+    </header>
+    <main class="skills__main">
+      <section class="skills__work">
+        <article class="skills__article">
+          <h2>Work Experience</h2>
+          <div class="skills__card">
+            <object
+              tabindex="-1"
+              data="../assets/icons/globant.svg"
+              class="skills-card__work--icon"
+            ></object>
+            <div>
+              <ul>
+                <li>
+                  <h3>Project Smile Direct Club (SDC)</h3>
+                  <p>
+                    Web development with frontend technologies such VueJs and
+                    NuxtJs focus on page performance using nuxt server-side
+                    rendering. Use of vue-axios, bootstrap-vue, ECMA 6+.
+                  </p>
+                </li>
+                <li>
+                  <h3>Project eVestment Analytics</h3>
+                  <p>
+                    Web development focused in VueJs (use of state, store(vuex),
+                    router), worked with Highcharts and VueJs to make reusable
+                    components for the clients page. And minor exp with backend
+                    using .net core and nodejs.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="skills__card">
+            <img
+              src="../assets/img/cliengo.png"
+              class="skills-card__work--icon"
+              alt=""
+            />
+            <div>
+              <ul>
+                <li>
+                  <h3>Project Live/Lit</h3>
+                  <p>
+                    CRM App, conversation handler, using React Js, Css, Router,
+                    Redux, Axios. Unit Testing with JestJs, Deployment with
+                    AWS/Heroku.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="skills__card">
+            <img
+              src="../assets/img/cliengo.png"
+              class="skills-card__work--icon"
+              alt=""
+            />
+            <div>
+              <ul>
+                <li>
+                  <h3>Project Live/Lit</h3>
+                  <p>
+                    CRM App, conversation handler, using React Js, Css, Router,
+                    Redux, Axios. Unit Testing with JestJs, Deployment with
+                    AWS/Heroku.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="skills__card">
+            <img
+              src="../assets/img/cliengo.png"
+              class="skills-card__work--icon"
+              alt=""
+            />
+            <div>
+              <ul>
+                <li>
+                  <h3>Project Live/Lit</h3>
+                  <p>
+                    CRM App, conversation handler, using React Js, Css, Router,
+                    Redux, Axios. Unit Testing with JestJs, Deployment with
+                    AWS/Heroku.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="skills__card">
+            <img
+              src="../assets/img/cliengo.png"
+              class="skills-card__work--icon"
+              alt=""
+            />
+            <div>
+              <ul>
+                <li>
+                  <h3>Project Live/Lit</h3>
+                  <p>
+                    CRM App, conversation handler, using React Js, Css, Router,
+                    Redux, Axios. Unit Testing with JestJs, Deployment with
+                    AWS/Heroku.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <aside class="skills__icons">
+          <h3>Skills</h3>
+          <object
+            tabindex="-1"
+            data="../assets/icons/html.svg"
+            class="skills-card__work--icon"
+          ></object>
+          <object
+            tabindex="-1"
+            data="../assets/icons/css.svg"
+            class="skills-card__work--icon"
+          ></object>
+          <object
+            tabindex="-1"
+            data="../assets/icons/js.svg"
+            class="skills-card__work--icon"
+          ></object>
+          <object
+            tabindex="-1"
+            data="../assets/icons/react.svg"
+            class="skills-card__work--icon"
+          ></object>
+          <object
+            tabindex="-1"
+            data="../assets/icons/redux.svg"
+            class="skills-card__work--icon"
+          ></object>
+        </aside>
+      </section>
+    </main>
   </body>
 </html>

@@ -1,18 +1,61 @@
 .main-section {
-  height: calc(100% - 220px);
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 10px;
-  /* background-image: url('https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg');
-  background-repeat: no-repeat;
-  background-size: cover; */
-  background-color: #161b22;
+  background-color: #010408;
 }
 
+.main-section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#main-section__programmer {
+  width: 350px;
+}
+
+.main-section__article {
+  width: 50%;
+}
+
+.main-section__article h1 {
+  line-height: 150%;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/* Device Breakpoints */
+/*Desktop Medium*/
+@media only screen and (max-width: 1296px) {
+  #main-section__programmer {
+    width: 250px;
+  }
+
+  .main-section__article {
+    width: 30%;
+  }
+}
+
+/*Desktop Small*/
+@media only screen and (max-width: 1076px) {
+  #main-section__programmer {
+    display: none;
+  }
+
+  .main-section__article {
+    width: 50%;
+  }
+}
+
+/*Mobile Large*/
+@media only screen and (max-width: 690px) {
+}
+
+/*Mobile Medium*/
 @media only screen and (max-width: 496px) {
-  .main-section {
-    height: calc(100% - 225px);
+  .main-section__article {
+    width: 70%;
   }
 }

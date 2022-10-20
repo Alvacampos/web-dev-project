@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 
 html {
   height: 100%;
@@ -10,5 +9,31 @@ body {
   min-height: 100%;
   margin: 0;
   font-family: 'Lato', sans-serif;
-  color: #ffffff;
+  color: #f0f6fc;
+  background-color: #010408;
+  display: flex;
+  -webkit-font-smoothing: antialiased;
+}
+
+header {
+  width: 200px;
+  height: 100%;
+}
+
+main {
+  width: 100%;
+  height: -webkit-fill-available;
+}
+
+/* Device Breakpoints */
+/*Mobile Large*/
+@media only screen and (max-width: 690px) {
+  body {
+    flex-direction: column-reverse;
+  }
+
+  header {
+    width: 100%;
+    height: auto;
+  }
 }
