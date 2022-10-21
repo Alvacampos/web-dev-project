@@ -2,18 +2,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  display: flex;
   gap: 30px;
   padding: 30px;
 }
 
-.skills__article {
+.skills__article-work {
   gap: 20px;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  justify-content: space-evenly;
 }
 
-.skills__article h2 {
+.skills__article-work h2 {
   text-align: center;
 }
 
@@ -51,9 +52,48 @@
   border-radius: 6px;
   background-color: #0d1117;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 15px;
+  gap: 30px;
   padding: 20px 5px;
+  overflow: scroll;
+  max-height: 70vh;
+}
+
+.skills__leadership {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-end;
+  gap: 30px;
+}
+
+.skills__card-leadership {
+  background-color: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  width: 25vw;
+}
+
+.skills__card-leadership div {
+  width: 100%;
+}
+
+.skills__article-tools {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+body {
+  height: auto;
+}
+header {
+  height: auto;
 }
