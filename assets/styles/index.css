@@ -12,10 +12,6 @@
   justify-content: space-evenly;
 }
 
-#main-section__programmer {
-  width: 350px;
-}
-
 .main-section__article {
   width: 50%;
 }
@@ -29,10 +25,6 @@
 /* Device Breakpoints */
 /*Desktop Medium*/
 @media only screen and (max-width: 1296px) {
-  #main-section__programmer {
-    width: 250px;
-  }
-
   .main-section__article {
     width: 30%;
   }
@@ -40,10 +32,6 @@
 
 /*Desktop Small*/
 @media only screen and (max-width: 1076px) {
-  #main-section__programmer {
-    display: none;
-  }
-
   .main-section__article {
     width: 50%;
   }

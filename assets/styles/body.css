@@ -13,6 +13,12 @@ body {
   background-color: #010408;
   display: flex;
   -webkit-font-smoothing: antialiased;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 header {
@@ -26,6 +32,13 @@ main {
 }
 
 /* Device Breakpoints */
+/*Desktop Medium*/
+@media only screen and (max-width: 1296px) {
+  header {
+    width: 170px;
+  }
+}
+
 /*Mobile Large*/
 @media only screen and (max-width: 690px) {
   body {
