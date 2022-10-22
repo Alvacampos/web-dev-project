@@ -4,8 +4,20 @@
   "description": "first delivery for coderhouse web dev course",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "concurrently \"npx stylelint \"**/*.css\"\" \"npx eslint views/**\""
   },
   "author": "Gonzalo Alvarez Campos",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.26.0",
+    "stylelint": "^14.14.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^29.0.0"
+  },
+  "dependencies": {
+    "concurrently": "^7.5.0",
+    "eslint-plugin-html": "^7.1.0",
+    "stylelint-selector-bem-pattern": "^2.1.1"
+  }
 }

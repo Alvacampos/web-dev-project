@@ -8,7 +8,7 @@ body {
   height: 100%;
   min-height: 100%;
   margin: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: Lato, sans-serif;
   color: #f0f6fc;
   background-color: #010408;
   display: flex;
@@ -32,7 +32,7 @@ main {
 }
 
 /* Device Breakpoints */
-/*Desktop Medium*/
+/* Desktop Medium */
 @media only screen and (max-width: 1296px) {
   header {
     width: 170px;

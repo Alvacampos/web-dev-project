@@ -45,12 +45,8 @@
   width: 100px;
 }
 
-.skills__icons h3 {
-  margin: 0;
-}
-
-.skills__icons {
-  width: 20%;
+.skills__wrapper-icons {
+  width: 15%;
   border: 1px solid #30363d;
   border-radius: 6px;
   background-color: #0d1117;
@@ -61,6 +57,21 @@
   padding: 20px 5px;
   overflow: scroll;
   max-height: 70vh;
+}
+
+.skills__icons h3 {
+  margin: 0;
+}
+
+.skills__icons {
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.skills__wrapper-icons::-webkit-scrollbar {
+  display: none;
 }
 
 .skills__icons::-webkit-scrollbar {
@@ -112,11 +123,18 @@ header {
 }
 
 /* Device Breakpoints */
-/*Desktop Medium*/
+/* Desktop Medium */
 @media only screen and (max-width: 1296px) {
   .skills__work {
     flex-direction: column;
     max-width: -webkit-fill-available;
+  }
+
+  .skills__wrapper-icons {
+    flex-direction: column;
+    width: -webkit-fill-available;
+    padding: 10px;
+    gap: 10px;
   }
 
   .skills__icons {
@@ -134,7 +152,7 @@ header {
   }
 }
 
-/*Desktop Small*/
+/* Desktop Small */
 @media only screen and (max-width: 1076px) {
   .skills__article-tools {
     flex-direction: column;
@@ -151,7 +169,7 @@ header {
   }
 }
 
-/*Mobile Large*/
+/* Mobile Large */
 @media only screen and (max-width: 690px) {
   .skills__main {
     padding: 20px 0;
@@ -162,7 +180,7 @@ header {
   }
 }
 
-/*Mobile Medium*/
+/* Mobile Medium */
 @media only screen and (max-width: 496px) {
   .main-section__article {
     width: 70%;
