@@ -7,6 +7,7 @@
     <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico" />
     <link rel="stylesheet" href="../assets/styles/body.css" />
     <link rel="stylesheet" href="../assets/styles/nav.css" />
+    <link rel="stylesheet" href="../assets/styles/contact.css" />
     <title>Contact</title>
   </head>
   <body>
@@ -80,8 +81,22 @@
         />
       </nav>
     </header>
-    <main>
-      <section>Contact</section>
+    <main class="contact">
+      <section class="contact__card">
+        https://www.ventureharbour.com/15-contact-form-examples-help-design-ultimate-contact-page/
+        <p>Leave you contact information and I will get in touch with you.</p>
+        <form action="#" method="GET" class="contact__form">
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname" required />
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname" required />
+          <label for="phone">Phone Number</label>
+          <input type="number" id="phone" name="phone" />
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" name="mail" required />
+          <button type="submit">Submit</button>
+        </form>
+      </section>
     </main>
   </body>
 </html>

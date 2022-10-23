@@ -1,4 +1,4 @@
-.skills__main {
+.skills {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -103,9 +103,15 @@
   width: inherit;
 }
 
+.skills__card-wrapper {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .skills__card-leadership div {
   width: 100%;
-  height: 50%;
 }
 
 .skills__article-tools {
@@ -144,7 +150,7 @@ header {
   }
 
   .skills__leadership {
-    min-height: 350px;
+    min-height: 550px;
   }
 
   .skills__card-leadership {
@@ -165,7 +171,6 @@ header {
 
   .skills__card-leadership {
     width: -webkit-fill-available;
-    height: 240px;
   }
 }
 
