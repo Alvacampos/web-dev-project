@@ -176,7 +176,7 @@ header {
 
 /* Mobile Large */
 @media only screen and (max-width: 690px) {
-  .skills__main {
+  .skills {
     padding: 20px 0;
   }
 
