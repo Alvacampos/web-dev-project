@@ -34,6 +34,9 @@
   align-self: center;
   gap: 30px;
   margin-top: 30px;
+  font-weight: 500;
+  line-height: 20px;
+  white-space: nowrap;
 }
 
 .contact__form button {
@@ -43,7 +46,7 @@
   background-color: #238636;
   border-color: rgba(240, 246, 252, 0.1);
   box-shadow: 0 0 transparent, 0 0 transparent;
-  padding: 10px;
+  padding: 5px 16px;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -56,12 +59,19 @@
 .contact__form a {
   font-family: Lato, sans-serif;
   font-size: 15px;
-  color: #ffffff;
-  border-color: rgba(240, 246, 252, 0.1);
-  box-shadow: 0 0 transparent, 0 0 transparent;
-  padding: 12px;
   text-decoration: none;
   cursor: pointer;
+  color: #c9d1d9;
+  background-color: #21262d;
+  border-color: rgba(240, 246, 252, 0.1);
+  box-shadow: 0 0 transparent, 0 0 transparent;
+  padding: 5px 16px;
+  border-radius: 4px;
+}
+
+.contact__form a:hover {
+  background-color: rgba(96, 104, 108, 0.6);
+  border-radius: 4px;
 }
 
 /* Device Breakpoints */
@@ -72,17 +82,9 @@
   }
 }
 
-/* Desktop Small */
-@media only screen and (max-width: 1076px) {
-}
-
 /* Mobile Large */
 @media only screen and (max-width: 690px) {
   .contact__card {
     width: 100%;
   }
-}
-
-/* Mobile Medium */
-@media only screen and (max-width: 496px) {
 }

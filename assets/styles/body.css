@@ -39,7 +39,7 @@ main {
   }
 }
 
-/*Mobile Large*/
+/* Mobile Large */
 @media only screen and (max-width: 690px) {
   body {
     flex-direction: column-reverse;

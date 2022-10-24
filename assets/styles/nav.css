@@ -29,6 +29,10 @@
   align-items: center;
 }
 
+#active-btn {
+  background-color: rgba(96, 104, 108, 0.6);
+}
+
 .nav-bar__buttons li {
   width: -webkit-fill-available;
   display: flex;
@@ -44,14 +48,15 @@
   background-color: rgba(96, 104, 108, 0.6);
 }
 
+.nav-bar__buttons a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .nav-bar__buttons li a {
   display: flex;
   align-items: center;
   gap: 30px;
-}
-
-#nav-bar--active {
-  background-color: rgba(96, 104, 108, 0.6);
 }
 
 .nav-bar__icon {
@@ -60,26 +65,21 @@
   pointer-events: none;
 }
 
-.nav-bar__buttons a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-#footer__qr {
+#qr-svg {
   width: 200px;
   height: 200px;
 }
 
 /* Device Breakpoints */
-/*Desktop Medium*/
+/* Desktop Medium */
 @media only screen and (max-width: 1296px) {
-  #footer__qr {
+  #qr-svg {
     width: 170px;
     height: 170px;
   }
 }
 
-/*Mobile Large*/
+/* Mobile Large */
 @media only screen and (max-width: 690px) {
   .nav-bar__buttons {
     flex-direction: row;
@@ -103,18 +103,18 @@
     color: #ffffff;
   }
 
-  #footer__qr {
+  #qr-svg {
     display: none;
   }
 }
 
-/*Mobile Medium*/
+/* Mobile Medium */
 @media only screen and (max-width: 496px) {
   .nav-bar__icon {
     display: none;
   }
 
-  #footer__qr {
+  #qr-svg {
     display: none;
   }
 }

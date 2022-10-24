@@ -7,11 +7,6 @@
   background-color: #010408;
 }
 
-.main-section {
-  display: flex;
-  justify-content: space-evenly;
-}
-
 .main-section__article {
   width: 50%;
 }
@@ -23,25 +18,21 @@
 }
 
 /* Device Breakpoints */
-/*Desktop Medium*/
+/* Desktop Medium */
 @media only screen and (max-width: 1296px) {
   .main-section__article {
     width: 30%;
   }
 }
 
-/*Desktop Small*/
+/* Desktop Small */
 @media only screen and (max-width: 1076px) {
   .main-section__article {
     width: 50%;
   }
 }
 
-/*Mobile Large*/
-@media only screen and (max-width: 690px) {
-}
-
-/*Mobile Medium*/
+/* Mobile Medium */
 @media only screen and (max-width: 496px) {
   .main-section__article {
     width: 70%;

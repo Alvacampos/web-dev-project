@@ -1,13 +1,14 @@
 {
-  "plugins": ["stylelint-selector-bem-pattern"],
+  "extends": ["stylelint-config-standard", "stylelint-config-prettier"],
   "rules": {
-    "plugin/selector-bem-pattern": {
-      "componentName": "[A-Z]+",
-      "componentSelectors": {
-        "initial": "^\\.{componentName}(?:-[a-z]+)?$",
-        "combined": "^\\.combined-{componentName}-[a-z]+$"
-      },
-      "utilitySelectors": "^\\.util-[a-z]+$"
-    }
+    "alpha-value-notation": "number",
+    "at-rule-no-unknown": null,
+    "color-function-notation": null,
+    "color-hex-length": "long",
+    "comment-empty-line-before": null,
+    "length-zero-no-unit": null,
+    "selector-class-pattern": null,
+    "value-no-vendor-prefix": null,
+    "property-no-vendor-prefix": null
   }
 }

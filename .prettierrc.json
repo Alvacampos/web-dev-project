@@ -1,0 +1,19 @@
+{
+  "plugins": ["@trivago/prettier-plugin-sort-imports"],
+  "importOrder": ["<THIRD_PARTY_MODULES>", "^[./]"],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true,
+  "singleQuote": true,
+  "overrides": [
+    {
+      "files": [
+        "styles/global/colors.js",
+        "styles/global/variables.js",
+        "styles/global/media-queries.js"
+      ],
+      "options": {
+        "quoteProps": "consistent"
+      }
+    }
+  ]
+}
