@@ -14,6 +14,7 @@
   align-items: center;
   padding: 30px;
   flex-direction: column;
+  width: 45%;
 }
 
 .contact__form {
@@ -24,5 +25,64 @@
 }
 
 .contact__form input {
-  min-height: 25px;
+  border-radius: 5px;
+  min-height: 30px;
+}
+
+.contact__submit-wrapper {
+  display: flex;
+  align-self: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.contact__form button {
+  font-family: Lato, sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+  background-color: #238636;
+  border-color: rgba(240, 246, 252, 0.1);
+  box-shadow: 0 0 transparent, 0 0 transparent;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact__form button:hover {
+  background-color: #2ea043;
+  border-color: rgba(240, 246, 252, 0.1);
+}
+
+.contact__form a {
+  font-family: Lato, sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+  border-color: rgba(240, 246, 252, 0.1);
+  box-shadow: 0 0 transparent, 0 0 transparent;
+  padding: 12px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Device Breakpoints */
+/* Desktop Medium */
+@media only screen and (max-width: 1296px) {
+  .contact__card {
+    width: 65%;
+  }
+}
+
+/* Desktop Small */
+@media only screen and (max-width: 1076px) {
+}
+
+/* Mobile Large */
+@media only screen and (max-width: 690px) {
+  .contact__card {
+    width: 100%;
+  }
+}
+
+/* Mobile Medium */
+@media only screen and (max-width: 496px) {
 }

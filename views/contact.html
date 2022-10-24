@@ -83,7 +83,6 @@
     </header>
     <main class="contact">
       <section class="contact__card">
-        https://www.ventureharbour.com/15-contact-form-examples-help-design-ultimate-contact-page/
         <p>Leave you contact information and I will get in touch with you.</p>
         <form action="#" method="GET" class="contact__form">
           <label for="fname">First name:</label>
@@ -94,7 +93,10 @@
           <input type="number" id="phone" name="phone" />
           <label for="mail">Email:</label>
           <input type="email" id="mail" name="mail" required />
-          <button type="submit">Submit</button>
+          <div class="contact__submit-wrapper">
+            <button type="submit">Submit</button>
+            <a href="/views/contact.html"><span>Cancel</span></a>
+          </div>
         </form>
       </section>
     </main>
