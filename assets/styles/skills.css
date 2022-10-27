@@ -1,73 +1,115 @@
 .skills {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 30px;
-  padding: 30px;
-  min-height: 100%;
   overflow: auto;
+  padding: 10px;
 }
 
-.skills__article-work {
-  gap: 20px;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  justify-content: space-evenly;
+.skills::-webkit-scrollbar {
+  display: none;
 }
 
-.skills__article-work h2 {
+.skills__work h2 {
   text-align: center;
 }
 
-.skills__work {
+.work__wrapper {
   display: flex;
-  gap: 30px;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.work__column {
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  align-items: center;
+  min-width: 50%;
+}
+
+.work__item {
+  display: flex;
+  align-items: center;
+  position: relative;
   width: 100%;
 }
 
-.skills__card {
-  background-color: #0d1117;
-  border: 1px solid #30363d;
-  border-radius: 6px;
-  display: flex;
-  gap: 20px;
-  justify-content: space-around;
-  align-items: center;
-  padding: 15px;
+.work__item--left {
+  flex-direction: row-reverse;
 }
 
-.skills__card div {
+.work__card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #0d1117;
+  border: 1px solid #30363d;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 80%;
+  width: 100%;
+}
+
+.work__divider {
+  height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 15px 0;
+}
+
+.date__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.work__project {
+  width: 50px;
+  position: absolute;
+}
+
+.work__project--left {
+  right: -25px;
+}
+
+.work__project--right {
+  left: -25px;
+}
+
+.exp_line-horizontal {
+  border-bottom: 1px solid #216e39;
   flex-grow: 1;
 }
 
-.skills-card__work--icon {
-  width: 100px;
+.exp_line-vertical {
+  border-left: 1px solid #216e39;
 }
 
-.skills__wrapper-icons {
-  width: 15%;
-  border: 1px solid #30363d;
-  border-radius: 6px;
+.skills__icons-card {
   background-color: #0d1117;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 30px;
-  padding: 20px 5px;
-  overflow: scroll;
-  max-height: 70vh;
-}
-
-.skills__icons {
-  overflow: scroll;
+  border: 1px solid #30363d;
   display: flex;
   flex-direction: column;
-  gap: 30px;
   padding: 30px;
+  border-radius: 5px;
 }
 
-.skills__wrapper-icons::-webkit-scrollbar {
+.skills__icons-card h3 {
+  text-align: center;
+}
+
+.icons-card__wrapper {
+  overflow: scroll;
+  width: 100%;
+  display: flex;
+  gap: 30px;
+}
+
+.icons-card__wrapper::-webkit-scrollbar {
   display: none;
 }
 
@@ -75,16 +117,16 @@
   display: none;
 }
 
-.skills__icons img {
+.icons-card__wrapper img {
   width: 100px;
 }
 
 .skills__leadership {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
-  justify-content: flex-end;
   gap: 30px;
+  align-items: center;
 }
 
 .skills__card-leadership {
@@ -111,54 +153,29 @@
   width: 100%;
 }
 
-.skills__article-tools {
+.skills__article-leadership {
   display: flex;
   width: 100%;
   justify-content: space-between;
   gap: 20px;
 }
 
-body {
-  height: auto;
+.skills__work--icon {
+  width: 100px;
 }
 
-header {
-  height: auto;
+#unsta-icon {
+  width: 70px;
 }
 
 /* Device Breakpoints */
-/* Desktop Medium */
-@media only screen and (max-width: 1296px) {
-  .skills__work {
-    flex-direction: column;
-    max-width: -webkit-fill-available;
-  }
-
-  .skills__wrapper-icons {
-    flex-direction: column;
-    width: -webkit-fill-available;
-    padding: 10px;
-    gap: 10px;
-  }
-
-  .skills__icons {
-    flex-direction: row;
-    width: -webkit-fill-available;
-    padding: 15px;
-  }
-
-  .skills__leadership {
-    min-height: 550px;
-  }
-
-  .skills__card-leadership {
-    width: calc(100% - 57vw);
-  }
-}
-
 /* Desktop Small */
 @media only screen and (max-width: 1076px) {
-  .skills__article-tools {
+  .work__card {
+    max-width: 70%;
+  }
+
+  .skills__article-leadership {
     flex-direction: column;
     width: 100%;
   }
@@ -174,18 +191,55 @@ header {
 
 /* Mobile Large */
 @media only screen and (max-width: 690px) {
-  .skills {
-    padding: 20px 0;
+  body {
+    height: auto;
+    gap: 25px;
   }
 
-  .skills__icons img {
-    width: 80px;
+  .skills {
+    padding: 0;
+  }
+
+  #first-divider {
+    height: 15px;
   }
 }
 
 /* Mobile Medium */
 @media only screen and (max-width: 496px) {
-  .main-section__article {
-    width: 70%;
+  #first-divider {
+    height: 20px;
+  }
+
+  .work__wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .work__column {
+    padding: 0;
+    gap: 30px;
+  }
+
+  .work__card {
+    padding: 10px;
+    border-radius: 0;
+    max-width: 100%;
+  }
+
+  .work__card h1 {
+    margin: 5px 0;
+  }
+
+  .work__divider {
+    display: none;
+  }
+
+  .work__project {
+    display: none;
+  }
+
+  .exp_line-horizontal {
+    display: none;
   }
 }
