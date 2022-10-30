@@ -96,8 +96,7 @@
 /* Desktop Small */
 @media only screen and (max-width: 1076px) {
   .education__degree {
-    /* max-width: 700px; */
-    /* padding: 15px; */
+    max-width: 65vw;
   }
 }
 

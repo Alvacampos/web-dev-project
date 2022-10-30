@@ -9,3 +9,19 @@
 .project img {
   width: 80vw;
 }
+
+/* Device Breakpoints */
+/* Desktop Medium */
+@media only screen and (max-width: 1076px) {
+  .project p {
+    display: none;
+  }
+
+  .project img {
+    width: 60vh;
+    display: flex;
+    align-self: center;
+    margin-top: 15vh;
+    transform: rotate(90deg);
+  }
+}
