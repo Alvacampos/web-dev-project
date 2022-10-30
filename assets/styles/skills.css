@@ -198,12 +198,9 @@
     width: 100%;
   }
 
-  .skills__leadership {
-    width: -webkit-fill-available;
-  }
-
   .skills__card-leadership {
-    width: -webkit-fill-available;
+    width: -moz-available; /* WebKit-based browsers will ignore this. */
+    width: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
   }
 }
 

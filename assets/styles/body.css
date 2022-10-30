@@ -28,7 +28,8 @@ header {
 
 main {
   width: 100%;
-  height: -webkit-fill-available;
+  height: -moz-available; /* WebKit-based browsers will ignore this. */
+  height: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
 }
 
 /* Device Breakpoints */
