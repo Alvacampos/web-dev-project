@@ -135,12 +135,8 @@
   align-items: center;
 }
 
-.skills__card-leadership {
-  background-color: #0d1117;
-  border: 1px solid #30363d;
+.leadership__card {
   border-radius: 6px;
-  display: flex;
-  flex-direction: column;
   gap: 20px;
   justify-content: space-around;
   align-items: center;
@@ -155,11 +151,11 @@
   align-items: center;
 }
 
-.skills__card-leadership div {
+.leadership__card div {
   width: 100%;
 }
 
-.skills__article-leadership {
+.leadership {
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -189,12 +185,12 @@
     padding: 5px;
   }
 
-  .skills__article-leadership {
+  .leadership {
     flex-direction: column;
     width: 100%;
   }
 
-  .skills__card-leadership {
+  .leadership__card {
     width: -moz-available; /* WebKit-based browsers will ignore this. */
     width: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
   }
