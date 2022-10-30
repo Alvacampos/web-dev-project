@@ -20,12 +20,7 @@
 }
 
 .degree__card {
-  display: flex;
-  flex-direction: column;
-  background-color: #0d1117;
-  border: 1px solid #30363d;
   border-radius: 10px;
-  /* max-width: 25vw; */
   min-width: 25vw;
   min-height: 60vh;
   align-items: center;
@@ -113,5 +108,9 @@
 
   .degree__card {
     min-width: 400px;
+  }
+
+  .degree__icons {
+    display: none;
   }
 }

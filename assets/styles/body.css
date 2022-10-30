@@ -32,6 +32,14 @@ main {
   height: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
 }
 
+.card {
+  background-color: #0d1117;
+  border: 1px solid #30363d;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
 /* Device Breakpoints */
 /* Desktop Medium */
 @media only screen and (max-width: 1296px) {
