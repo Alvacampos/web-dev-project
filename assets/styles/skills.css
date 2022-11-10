@@ -1,9 +1,7 @@
 .skills {
   display: flex;
   flex-direction: column;
-  gap: 30px;
   overflow: auto;
-  padding: 10px;
 }
 
 .skills::-webkit-scrollbar {
@@ -160,6 +158,7 @@
   width: 100%;
   justify-content: space-between;
   gap: 20px;
+  flex-direction: column;
 }
 
 .skills__work--icon {
@@ -171,70 +170,9 @@
 }
 
 /* Device Breakpoints */
-/* Desktop Small */
-@media only screen and (max-width: 1076px) {
-  #first-divider {
-    height: 50px;
-  }
-
-  .work__card {
-    max-width: 70%;
-  }
-
-  .work__content {
-    padding: 5px;
-  }
-
-  .leadership {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .leadership__card {
-    width: -moz-available; /* WebKit-based browsers will ignore this. */
-    width: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
-  }
-}
-
 /* Mobile Large */
-@media only screen and (max-width: 690px) {
-  body {
-    height: auto;
-    gap: 25px;
-  }
-
-  .skills {
-    padding: 0;
-  }
-
-  #first-divider {
-    height: 15px;
-  }
-}
-
-/* Mobile Medium */
-@media only screen and (max-width: 496px) {
-  #first-divider {
-    height: 50px;
-  }
-
-  .work__column {
-    padding: 0;
-    gap: 30px;
-  }
-
-  .work__card h3 {
-    margin: 5px 0;
-    font-size: 16px;
-  }
-
-  .work__card ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .work__card p {
-    font-size: 14px;
+@media only screen and (min-width: 1076px) {
+  .leadership {
+    flex-direction: row;
   }
 }

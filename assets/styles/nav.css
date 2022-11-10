@@ -1,10 +1,11 @@
 .nav-bar {
-  height: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  gap: 20px;
   background-color: #0d1117;
+}
+
+.nav-bar div {
+  width: 100%;
 }
 
 .nav-bar__git-wrapper {
@@ -23,10 +24,10 @@
 
 .nav-bar__buttons {
   display: flex;
-  flex-direction: column;
   list-style: none;
   padding: 0;
   align-items: center;
+  margin: 0;
 }
 
 #active-btn {
@@ -38,10 +39,8 @@
   width: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
   display: flex;
   align-items: center;
-  gap: 25px;
-  font-size: 20px;
-  box-shadow: inset 0 -1px 0 #21262d;
-  padding: 40px 0 40px 20px;
+  justify-content: center;
+  padding: 40px 5px;
 }
 
 .nav-bar__buttons li:hover {
@@ -52,67 +51,72 @@
 .nav-bar__buttons a {
   text-decoration: none;
   color: #ffffff;
+  font-size: 15px;
 }
 
 .nav-bar__buttons li a {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 15px;
 }
 
 .nav-bar__icon {
-  width: 30px;
-  height: 30px;
-  pointer-events: none;
+  display: none;
 }
 
 #qr-svg {
+  display: none;
   width: 200px;
   height: 200px;
 }
 
 /* Device Breakpoints */
 /* Desktop Medium */
-@media only screen and (max-width: 1296px) {
-  .nav-bar__buttons li {
-    padding: 40px 0 40px 10px;
+/* @media only screen and (max-width: 1296px) {
+} */
+
+/* Mobile Medium */
+@media only screen and (min-width: 496px) {
+  .nav-bar__buttons li a {
+    gap: 15px;
   }
 
-  #qr-svg {
-    width: 170px;
-    height: 170px;
+  .nav-bar__icon {
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+    display: inherit;
   }
 }
 
 /* Mobile Large */
-@media only screen and (max-width: 690px) {
-  .nav-bar__git-wrapper {
-    padding: 15px;
-  }
-
-  .nav-bar__buttons {
-    flex-direction: row;
+@media only screen and (min-width: 1076px) {
+  .nav-bar {
+    height: 100%;
+    flex-direction: column;
   }
 
   .nav-bar__buttons li {
-    font-size: 15px;
-    justify-content: center;
-    box-shadow: none;
-    padding: 15px 0;
+    box-shadow: inset 0 -1px 0 #21262d;
+    padding: 40px 30px;
+    justify-content: initial;
   }
 
-  .nav-bar__icon {
-    width: 15px;
-    height: 15px;
-    display: none;
+  .nav-bar__buttons {
+    flex-direction: column;
   }
 
   .nav-bar__buttons a {
-    text-decoration: none;
-    color: #ffffff;
+    font-size: 18px;
+  }
+
+  .nav-bar__icon {
+    display: inherit;
+    width: 30px;
+    height: 30px;
   }
 
   #qr-svg {
-    display: none;
+    display: block;
   }
 }
