@@ -1,18 +1,13 @@
 .education {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 10px;
+  overflow: auto;
 }
 
 .education__degree {
-  overflow: scroll;
+  overflow: auto;
+  flex-direction: column;
   display: flex;
   gap: 50px;
-  height: 100%;
-  align-items: center;
-  min-width: 70vw;
-  max-width: 70vw;
+  min-width: -webkit-fill-available;
 }
 
 .education__degree::-webkit-scrollbar {
@@ -21,10 +16,7 @@
 
 .degree__card {
   border-radius: 10px;
-  min-width: 25vw;
-  min-height: 60vh;
-  align-items: center;
-  gap: 50px;
+  min-height: 25vh;
 }
 
 .degree__title {
@@ -69,54 +61,39 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-  padding: 0 10px 10px;
+  padding: 10px;
 }
 
 .degree__icons img {
+  display: none;
   width: 80px;
 }
 
 /* Device Breakpoints */
-/* Desktop Medium */
-@media only screen and (max-width: 1296px) {
-  .education__degree {
-    max-width: 65vw;
-  }
-
-  .degree__card {
-    min-width: 45vw;
-  }
-}
-
-/* Desktop Small */
-@media only screen and (max-width: 1076px) {
-  .education__degree {
-    max-width: 65vw;
-  }
-}
-
 /* Mobile Large */
-@media only screen and (max-width: 690px) {
-  .education {
-    padding: 0;
-  }
-
+@media only screen and (min-width: 1076px) {
   .education__degree {
-    min-width: 100%;
-    padding: 1px;
+    overflow: scroll;
+    display: grid;
+    gap: 50px;
+    height: 100%;
+    align-items: center;
+    /* max-width: 59vw; */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    min-width: initial;
+    max-width: initial;
   }
 
   .degree__card {
-    min-width: 400px;
-    max-height: 70%;
-    gap: 20px;
+    /* border-radius: 10px; */
+    min-width: 25vw;
+    min-height: 60vh;
+    align-items: center;
+    gap: 50px;
   }
 
-  .degree__subtitle {
-    font-size: 15px;
-  }
-
-  .degree__icons {
-    display: none;
+  .degree__icons img {
+    display: block;
   }
 }

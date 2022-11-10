@@ -11,7 +11,8 @@ body {
   font-family: Lato, sans-serif;
   color: #f0f6fc;
   background-color: #010408;
-  display: flex;
+  display: grid;
+  grid-template-rows: 1fr auto;
   -webkit-font-smoothing: antialiased;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -22,11 +23,13 @@ body::-webkit-scrollbar {
 }
 
 header {
-  width: 200px;
+  order: 2;
+  /* width: 200px; */
   height: 100%;
 }
 
 main {
+  order: 1;
   width: 100%;
   height: -moz-available; /* WebKit-based browsers will ignore this. */
   height: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
@@ -41,21 +44,15 @@ main {
 }
 
 /* Device Breakpoints */
-/* Desktop Medium */
-@media only screen and (max-width: 1296px) {
-  header {
-    width: 170px;
-  }
-}
-
 /* Mobile Large */
-@media only screen and (max-width: 690px) {
+@media only screen and (min-width: 1076px) {
   body {
-    flex-direction: column-reverse;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: none;
+    gap: 20px;
   }
 
   header {
-    width: 100%;
-    height: auto;
+    order: 1;
   }
 }
