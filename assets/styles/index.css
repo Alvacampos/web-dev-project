@@ -11,33 +11,11 @@ main {
   text-align: center;
   flex-direction: column;
   background-color: #010408;
-  width: 50%;
+  width: 70%;
 }
 
 .welcome h1 {
   line-height: 150%;
   font-size: 30px;
   font-weight: 700;
-}
-
-/* Device Breakpoints */
-/* Desktop Medium */
-@media only screen and (max-width: 1296px) {
-  .welcome {
-    width: 30%;
-  }
-}
-
-/* Desktop Small */
-@media only screen and (max-width: 1076px) {
-  .welcome {
-    width: 50%;
-  }
-}
-
-/* Mobile Medium */
-@media only screen and (max-width: 496px) {
-  .welcome {
-    width: 70%;
-  }
 }

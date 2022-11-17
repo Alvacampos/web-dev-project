@@ -15,7 +15,7 @@
 }
 
 /* Device Breakpoints */
-/* Desktop Medium */
+/* Desktop Small */
 @media only screen and (min-width: 1076px) {
   .project img {
     width: 70%;

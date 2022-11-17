@@ -6,11 +6,11 @@
 
 .contact__card {
   border-radius: 6px;
-  gap: 20px;
+  gap: 40px;
   justify-content: space-around;
   align-items: center;
-  padding: 30px;
-  width: 45%;
+  padding: 50px 30px;
+  width: 100%;
 }
 
 .contact__form {
@@ -71,16 +71,16 @@
 }
 
 /* Device Breakpoints */
-/* Desktop Medium */
-@media only screen and (max-width: 1296px) {
+/* Desktop Small */
+@media only screen and (min-width: 1076px) {
   .contact__card {
     width: 65%;
   }
 }
 
-/* Mobile Large */
-@media only screen and (max-width: 690px) {
+/* Desktop Medium */
+@media only screen and (min-width: 1296px) {
   .contact__card {
-    width: 100%;
+    width: 65%;
   }
 }

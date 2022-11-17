@@ -70,7 +70,6 @@
 }
 
 /* Device Breakpoints */
-/* Mobile Large */
 @media only screen and (min-width: 1076px) {
   .education__degree {
     overflow: scroll;
@@ -78,15 +77,13 @@
     gap: 50px;
     height: 100%;
     align-items: center;
-    /* max-width: 59vw; */
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     min-width: initial;
     max-width: initial;
   }
 
   .degree__card {
-    /* border-radius: 10px; */
     min-width: 25vw;
     min-height: 60vh;
     align-items: center;
@@ -95,5 +92,12 @@
 
   .degree__icons img {
     display: block;
+  }
+}
+
+/* Desktop Small */
+@media only screen and (min-width: 1296px) {
+  .education__degree {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }

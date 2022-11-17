@@ -71,9 +71,6 @@
 }
 
 /* Device Breakpoints */
-/* Desktop Medium */
-/* @media only screen and (max-width: 1296px) {
-} */
 
 /* Mobile Medium */
 @media only screen and (min-width: 496px) {
@@ -89,7 +86,7 @@
   }
 }
 
-/* Mobile Large */
+/* Desktop Small */
 @media only screen and (min-width: 1076px) {
   .nav-bar {
     height: 100%;
