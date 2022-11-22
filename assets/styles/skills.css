@@ -58,6 +58,11 @@
   padding: 20px;
 }
 
+.work__content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
 .work__divider {
   height: 0;
   display: flex;
@@ -174,5 +179,10 @@
 @media only screen and (min-width: 1076px) {
   .leadership {
     flex-direction: row;
+  }
+
+  .work__content ul {
+    list-style-type: disc;
+    padding: 20px;
   }
 }
