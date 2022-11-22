@@ -1,5 +1,6 @@
 .education {
   overflow: auto;
+  height: 100%;
 }
 
 .education__degree {
