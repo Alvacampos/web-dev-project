@@ -9,7 +9,7 @@
 
 .contact__card {
   border-radius: 6px;
-  gap: 40px;
+  gap: 20px;
   justify-content: space-around;
   align-items: center;
   padding: 20px 30px;
@@ -83,6 +83,7 @@
   .contact__card {
     width: 65%;
     height: 50%;
+    gap: 40px;
   }
 }
 
