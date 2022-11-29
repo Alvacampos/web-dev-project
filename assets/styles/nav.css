@@ -41,6 +41,8 @@
   align-items: center;
   justify-content: center;
   padding: 40px 5px;
+  box-shadow: inset 1px 0 0 #21262d;
+  transition: background-color 2s ease-out;
 }
 
 .nav-bar__buttons li:hover {
