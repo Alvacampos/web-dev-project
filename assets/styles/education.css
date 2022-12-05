@@ -87,8 +87,10 @@
   .degree__card {
     min-width: 25vw;
     min-height: 60vh;
+    height: 60vh;
     align-items: center;
     gap: 50px;
+    overflow: auto;
   }
 
   .degree__icons img {
