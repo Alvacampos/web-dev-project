@@ -1,86 +1,109 @@
+// Utilities
+@import 'utils/constants';
+
 .education {
   overflow: auto;
-  height: 100%; }
+  height: 100%;
+}
 
 .education__degree {
   overflow: auto;
   flex-direction: column;
   display: flex;
-  gap: 50px;
-  min-width: -webkit-fill-available; }
+  gap: $space-50;
+  min-width: -webkit-fill-available;
+}
 
 .education__degree::-webkit-scrollbar {
-  display: none; }
+  display: none;
+}
 
 .degree__card {
-  border-radius: 10px;
-  min-height: 25vh; }
+  border-radius: $border-10;
+  min-height: 25vh;
+}
 
 .degree__title {
-  box-shadow: inset 0 -1px 0 #21262d;
+  box-shadow: $shadow-1;
   margin: 0;
-  background-color: #161b22;
+  background-color: $background-variation;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+}
 
 .degree__subtitle {
   text-align: center;
-  font-weight: 700;
-  padding: 0 10px; }
+  font-weight: $weight-700;
+  padding: 0 $space-10;
+}
 
 .degree__description {
   text-align: center;
-  font-size: 16px;
-  padding: 0 10px;
+  font-size: $font-16;
+  padding: 0 $space-10;
   display: flex;
   flex-direction: column;
-  gap: 10px; }
+  gap: $space-10;
+}
 
 .degree__description a {
   text-decoration: none;
-  color: #238636; }
+  color: $success-green;
+}
 
 .degree__description a:hover {
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .degree__description ul {
   list-style: none;
-  padding: 0; }
+  padding: 0;
+}
 
 .degree__icons {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  padding: 10px; }
+  gap: $space-20;
+  padding: $space-10;
+}
 
 .degree__icons img {
   display: none;
-  width: 80px; }
+  width: $space-80;
+}
 
 /* Device Breakpoints */
-@media only screen and ((min-width: 1076px)) {
+@media only screen and ($desktop-small) {
   .education__degree {
     overflow: scroll;
     display: grid;
-    gap: 50px;
+    gap: $space-50;
     height: 100%;
     align-items: center;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     min-width: initial;
-    max-width: initial; }
+    max-width: initial;
+  }
+
   .degree__card {
     min-width: 25vw;
     min-height: 60vh;
     height: 60vh;
     align-items: center;
-    gap: 50px;
-    overflow: auto; }
+    gap: $space-50;
+    overflow: auto;
+  }
+
   .degree__icons img {
-    display: block; } }
+    display: block;
+  }
+}
 
 /* Desktop Small */
-@media only screen and ((min-width: 1296px)) {
+@media only screen and ($desktop-medium) {
   .education__degree {
-    grid-template-columns: 1fr 1fr 1fr; } }
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

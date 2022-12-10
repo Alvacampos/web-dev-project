@@ -1,8 +1,12 @@
+// Utilities
+@import 'utils/constants';
+
 main {
   display: flex;
   justify-content: center;
   height: 100%;
-  overflow: auto; }
+  overflow: auto;
+}
 
 .welcome {
   height: 100%;
@@ -11,10 +15,12 @@ main {
   align-items: center;
   text-align: center;
   flex-direction: column;
-  background-color: #010408;
-  width: 70%; }
+  background-color: $background-default;
+  width: 70%;
+}
 
 .welcome h1 {
   line-height: 150%;
-  font-size: 30px;
-  font-weight: 700; }
+  font-size: $space-30;
+  font-weight: $weight-700;
+}

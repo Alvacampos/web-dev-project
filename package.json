@@ -6,12 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "concurrently \"npx stylelint \"**/*.css\"\" \"npx eslint views/**\" \"npx prettier --check .\"",
-    "lint-fix": "npx prettier --write ."
+    "lint-fix": "npx prettier --write .",
+    "scss": "node-sass ./styles -o assets/styles",
+    "scss-watch": "node-sass --watch ./styles -o assets/styles"
   },
   "author": "Gonzalo Alvarez Campos",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^8.26.0",
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20",
     "prettier": "2.7.1",
     "stylelint": "^14.14.0",
     "stylelint-config-prettier": "^9.0.3",
