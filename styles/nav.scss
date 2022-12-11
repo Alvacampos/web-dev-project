@@ -102,7 +102,7 @@
 
 /* Device Breakpoints */
 /* Mobile Medium */
-@media only screen and (min-width: 496px) {
+@media only screen and ($mobile-small) {
   .nav-bar {
     &__buttons li a {
       gap: $space-15;
@@ -118,7 +118,7 @@
 }
 
 /* Desktop Small */
-@media only screen and (min-width: 1076px) {
+@media only screen and ($desktop-small) {
   .nav-bar {
     height: 100%;
     flex-direction: column;

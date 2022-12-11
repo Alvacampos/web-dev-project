@@ -75,7 +75,7 @@
 
 /* Device Breakpoints */
 /* Mobile Medium */
-@media only screen and (min-width: 496px) {
+@media only screen and ((min-width: 496px)) {
   .nav-bar__buttons li a {
     gap: 15px; }
   .nav-bar__icon {
@@ -85,7 +85,7 @@
     display: inherit; } }
 
 /* Desktop Small */
-@media only screen and (min-width: 1076px) {
+@media only screen and ((min-width: 1076px)) {
   .nav-bar {
     height: 100%;
     flex-direction: column; }
