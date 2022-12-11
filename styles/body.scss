@@ -1,5 +1,6 @@
 // Utilities
 @import 'utils/constants';
+@import 'utils/mixin';
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 html {
@@ -34,8 +35,7 @@ header {
 main {
   order: 1;
   width: 100%;
-  height: -moz-available; /* WebKit-based browsers will ignore this. */
-  height: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+  @include height-available(height);
 }
 
 .card {

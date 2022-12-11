@@ -1,5 +1,6 @@
 // Utilities
 @import 'utils/constants';
+@import 'utils/mixin';
 
 .education {
   overflow: auto;
@@ -11,7 +12,7 @@
   flex-direction: column;
   display: flex;
   gap: $space-50;
-  min-width: -webkit-fill-available;
+  @include width-available(min-width);
 }
 
 .education__degree::-webkit-scrollbar {
@@ -61,9 +62,7 @@
 }
 
 .degree__icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include display-center;
   gap: $space-20;
   padding: $space-10;
 }

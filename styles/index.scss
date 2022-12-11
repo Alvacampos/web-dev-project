@@ -1,5 +1,6 @@
 // Utilities
 @import 'utils/constants';
+@import 'utils/mixin';
 
 main {
   display: flex;
@@ -10,11 +11,9 @@ main {
 
 .welcome {
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  @include display-center;
   flex-direction: column;
+  text-align: center;
   background-color: $background-default;
   width: 70%;
 }

@@ -1,32 +1,41 @@
 .education {
   overflow: auto;
-  height: 100%; }
+  height: 100%;
+}
 
 .education__degree {
   overflow: auto;
   flex-direction: column;
   display: flex;
   gap: 50px;
-  min-width: -webkit-fill-available; }
+  min-width: -moz-available;
+  /* WebKit-based browsers will ignore this. */
+  min-width: -webkit-fill-available;
+  /* Mozilla-based browsers will ignore this. */
+}
 
 .education__degree::-webkit-scrollbar {
-  display: none; }
+  display: none;
+}
 
 .degree__card {
   border-radius: 10px;
-  min-height: 25vh; }
+  min-height: 25vh;
+}
 
 .degree__title {
   box-shadow: inset 0 -1px 0 #21262d;
   margin: 0;
   background-color: #161b22;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+}
 
 .degree__subtitle {
   text-align: center;
   font-weight: 700;
-  padding: 0 10px; }
+  padding: 0 10px;
+}
 
 .degree__description {
   text-align: center;
@@ -34,29 +43,35 @@
   padding: 0 10px;
   display: flex;
   flex-direction: column;
-  gap: 10px; }
+  gap: 10px;
+}
 
 .degree__description a {
   text-decoration: none;
-  color: #238636; }
+  color: #238636;
+}
 
 .degree__description a:hover {
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .degree__description ul {
   list-style: none;
-  padding: 0; }
+  padding: 0;
+}
 
 .degree__icons {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  padding: 10px; }
+  padding: 10px;
+}
 
 .degree__icons img {
   display: none;
-  width: 80px; }
+  width: 80px;
+}
 
 /* Device Breakpoints */
 @media only screen and ((min-width: 1076px)) {
@@ -69,18 +84,24 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     min-width: initial;
-    max-width: initial; }
+    max-width: initial;
+  }
   .degree__card {
     min-width: 25vw;
     min-height: 60vh;
     height: 60vh;
     align-items: center;
     gap: 50px;
-    overflow: auto; }
+    overflow: auto;
+  }
   .degree__icons img {
-    display: block; } }
+    display: block;
+  }
+}
 
 /* Desktop Small */
 @media only screen and ((min-width: 1296px)) {
   .education__degree {
-    grid-template-columns: 1fr 1fr 1fr; } }
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

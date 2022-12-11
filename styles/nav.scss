@@ -1,10 +1,11 @@
 // Utilities
 @import 'utils/constants';
+@import 'utils/mixin';
 
 .nav-bar {
+  background-color: $default-black;
   display: flex;
   justify-content: space-between;
-  background-color: $default-black;
 }
 
 .nav-bar div {
@@ -12,25 +13,25 @@
 }
 
 .nav-bar__git-wrapper {
+  box-shadow: inset 0 -1px 0 $default-white;
   display: flex;
   justify-content: center;
-  box-shadow: inset 0 -1px 0 $default-white;
   padding: $space-10;
 }
 
 .nav-bar__git {
-  width: $space-40;
-  height: $space-40;
   align-self: center;
+  height: $space-40;
   pointer-events: none;
+  width: $space-40;
 }
 
 .nav-bar__buttons {
+  align-items: center;
   display: flex;
   list-style: none;
-  padding: 0;
-  align-items: center;
   margin: 0;
+  padding: 0;
 }
 
 #active-btn {
@@ -38,11 +39,8 @@
 }
 
 .nav-bar__buttons li {
-  width: -moz-available; /* WebKit-based browsers will ignore this. */
-  width: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include width-available(width);
+  @include display-center;
   padding: $space-20 $space-5;
   box-shadow: $shadow-1;
   -webkit-transition: $default-animation;
