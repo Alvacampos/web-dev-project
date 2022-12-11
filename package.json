@@ -1,7 +1,7 @@
 {
-  "name": "entrega1",
+  "name": "Project Cv",
   "version": "1.0.0",
-  "description": "first delivery for coderhouse web dev course",
+  "description": "Final Project Personal Cv",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

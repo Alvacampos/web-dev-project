@@ -7,3 +7,4 @@ Basic HTML + CSS project.
 # Installation
 
 Run npm i
+Too turn on scss watcher do `npm run scss-watch`
