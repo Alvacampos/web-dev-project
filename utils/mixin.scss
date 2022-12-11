@@ -1,0 +1,15 @@
+@mixin display-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin width-available($prop) {
+  #{$prop}: -moz-available; /* WebKit-based browsers will ignore this. */
+  #{$prop}: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+}
+
+@mixin height-available($prop) {
+  #{$prop}: -moz-available; /* WebKit-based browsers will ignore this. */
+  #{$prop}: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+}

@@ -1,0 +1,25 @@
+// Utilities
+@import 'utils/constants';
+@import 'utils/mixin';
+
+main {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  overflow: auto;
+}
+
+.welcome {
+  height: 100%;
+  @include display-center;
+  flex-direction: column;
+  text-align: center;
+  background-color: $background-default;
+  width: 70%;
+
+  & h1 {
+    line-height: 150%;
+    font-size: $space-30;
+    font-weight: $weight-700;
+  }
+}

@@ -1,0 +1,203 @@
+// Utilities
+@import 'utils/constants';
+@import 'utils/mixin';
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  height: 100%;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__work {
+    & h2 {
+      text-align: center;
+    }
+
+    &--icon {
+      width: $space-100;
+    }
+  }
+}
+
+.work {
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  &__column {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: $space-50;
+    min-width: 50%;
+    padding: $space-10 0;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+
+    &--left {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__card {
+    display: flex;
+    justify-content: center;
+    border-radius: $border-10;
+    max-width: 80%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__title {
+    margin: 0;
+    box-shadow: $shadow-1;
+    background-color: $background-variation;
+  }
+
+  &__content {
+    padding: $space-20;
+
+    & ul {
+      list-style-type: none;
+      padding: 0;
+    }
+  }
+
+  &__divider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 0;
+    width: 100%;
+    padding: $space-15 0;
+  }
+
+  &__project {
+    width: $space-50;
+    position: absolute;
+
+    &--left {
+      right: -25px;
+    }
+
+    &--right {
+      left: -25px;
+    }
+  }
+}
+
+.date__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.exp_line {
+  &--horizontal {
+    border-bottom: 1px solid $variation-green;
+    flex-grow: 1;
+  }
+
+  &--vertical {
+    border-left: 1px solid $variation-green;
+  }
+}
+
+.skills {
+  &__icons-card {
+    display: flex;
+    flex-direction: column;
+    padding: $space-30;
+    border: $card-border;
+    border-radius: $border-5;
+    background-color: $default-black;
+
+    & h3 {
+      text-align: center;
+    }
+  }
+
+  &__leadership {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: $space-30;
+  }
+
+  &__card-wrapper {
+    height: 100px;
+    @include display-center;
+  }
+}
+
+.icons-card {
+  &__wrapper {
+    display: flex;
+    overflow: scroll;
+    width: 100%;
+    gap: $space-30;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    &__icons::-webkit-scrollbar {
+      display: none;
+    }
+
+    & img {
+      width: $space-100;
+    }
+  }
+}
+
+.leadership {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  gap: $space-20;
+
+  &__card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: inherit;
+    gap: $space-30;
+    padding: $space-15;
+    border-radius: $border-6;
+
+    & div {
+      width: 100%;
+    }
+  }
+}
+
+#unsta-icon {
+  width: $space-70;
+}
+
+/* Device Breakpoints */
+/* Desktop Small */
+@media only screen and ($desktop-small) {
+  .leadership {
+    flex-direction: row;
+  }
+
+  .work__content ul {
+    list-style-type: disc;
+    padding: $space-20;
+  }
+}

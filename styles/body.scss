@@ -1,0 +1,61 @@
+// Utilities
+@import 'utils/constants';
+@import 'utils/mixin';
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  color: $text-color;
+  font-family: Lato, sans-serif;
+  background-color: $background-default;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  -webkit-font-smoothing: antialiased;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+header {
+  order: 2;
+  height: 100%;
+}
+
+main {
+  order: 1;
+  width: 100%;
+  @include height-available(height);
+}
+
+.card {
+  background-color: $default-black;
+  border: $card-border;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Device Breakpoints */
+/* Desktop Small */
+@media only screen and ($desktop-small) {
+  body {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: none;
+    gap: $space-20;
+  }
+
+  header {
+    order: 1;
+  }
+}
