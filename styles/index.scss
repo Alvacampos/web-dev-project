@@ -16,10 +16,10 @@ main {
   text-align: center;
   background-color: $background-default;
   width: 70%;
-}
 
-.welcome h1 {
-  line-height: 150%;
-  font-size: $space-30;
-  font-weight: $weight-700;
+  & h1 {
+    line-height: 150%;
+    font-size: $space-30;
+    font-weight: $weight-700;
+  }
 }

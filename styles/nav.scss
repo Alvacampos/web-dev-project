@@ -6,69 +6,69 @@
   background-color: $default-black;
   display: flex;
   justify-content: space-between;
-}
 
-.nav-bar div {
-  width: 100%;
-}
+  & div {
+    width: 100%;
+  }
 
-.nav-bar__git-wrapper {
-  box-shadow: inset 0 -1px 0 $default-white;
-  display: flex;
-  justify-content: center;
-  padding: $space-10;
-}
+  &__git-wrapper {
+    box-shadow: inset 0 -1px 0 $default-white;
+    display: flex;
+    justify-content: center;
+    padding: $space-10;
+  }
 
-.nav-bar__git {
-  align-self: center;
-  height: $space-40;
-  pointer-events: none;
-  width: $space-40;
-}
+  &__git {
+    align-self: center;
+    height: $space-40;
+    pointer-events: none;
+    width: $space-40;
+  }
 
-.nav-bar__buttons {
-  align-items: center;
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  &__buttons {
+    align-items: center;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    & li {
+      @include width-available(width);
+      @include display-center;
+      padding: $space-20 $space-5;
+      box-shadow: $shadow-1;
+      -webkit-transition: $default-animation;
+      -moz-transition: $default-animation;
+      -ms-transition: $default-animation;
+      -o-transition: $default-animation;
+      transition: $default-animation;
+    }
+
+    & li:hover {
+      cursor: pointer;
+      background-color: $default-grey;
+    }
+
+    & a {
+      text-decoration: none;
+      color: #ffffff;
+      font-size: $font-15;
+    }
+
+    & li a {
+      display: flex;
+      align-items: center;
+      gap: $space-15;
+    }
+  }
+
+  &__icon {
+    display: none;
+  }
 }
 
 #active-btn {
   background-color: $default-grey;
-}
-
-.nav-bar__buttons li {
-  @include width-available(width);
-  @include display-center;
-  padding: $space-20 $space-5;
-  box-shadow: $shadow-1;
-  -webkit-transition: $default-animation;
-  -moz-transition: $default-animation;
-  -ms-transition: $default-animation;
-  -o-transition: $default-animation;
-  transition: $default-animation;
-}
-
-.nav-bar__buttons li:hover {
-  cursor: pointer;
-  background-color: $default-grey;
-}
-
-.nav-bar__buttons a {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: $font-15;
-}
-
-.nav-bar__buttons li a {
-  display: flex;
-  align-items: center;
-  gap: $space-15;
-}
-
-.nav-bar__icon {
-  display: none;
 }
 
 #qr-svg {
@@ -103,47 +103,49 @@
 /* Device Breakpoints */
 /* Mobile Medium */
 @media only screen and (min-width: 496px) {
-  .nav-bar__buttons li a {
-    gap: $space-15;
-  }
+  .nav-bar {
+    &__buttons li a {
+      gap: $space-15;
+    }
 
-  .nav-bar__icon {
-    width: $space-20;
-    height: $space-20;
-    pointer-events: none;
-    display: inherit;
+    &__icon {
+      width: $space-20;
+      height: $space-20;
+      pointer-events: none;
+      display: inherit;
+    }
   }
 }
 
 /* Desktop Small */
 @media only screen and (min-width: 1076px) {
-  .nav-bar__git-wrapper {
-    padding: $space-20;
-  }
-
   .nav-bar {
     height: 100%;
     flex-direction: column;
-  }
 
-  .nav-bar__buttons li {
-    box-shadow: $shadow-1;
-    padding: $space-40 $space-30;
-    justify-content: initial;
-  }
+    &__git-wrapper {
+      padding: $space-20;
+    }
 
-  .nav-bar__buttons {
-    flex-direction: column;
-  }
+    &__buttons li {
+      box-shadow: $shadow-1;
+      padding: $space-40 $space-30;
+      justify-content: initial;
+    }
 
-  .nav-bar__buttons a {
-    font-size: $font-18;
-  }
+    &__buttons {
+      flex-direction: column;
 
-  .nav-bar__icon {
-    display: inherit;
-    width: $space-30;
-    height: $space-30;
+      & a {
+        font-size: $font-18;
+      }
+    }
+
+    &__icon {
+      display: inherit;
+      width: $space-30;
+      height: $space-30;
+    }
   }
 
   #qr-svg {

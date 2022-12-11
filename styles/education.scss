@@ -5,71 +5,73 @@
 .education {
   overflow: auto;
   height: 100%;
+
+  &__degree {
+    overflow: auto;
+    flex-direction: column;
+    display: flex;
+    gap: $space-50;
+    @include width-available(min-width);
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
 }
 
-.education__degree {
-  overflow: auto;
-  flex-direction: column;
-  display: flex;
-  gap: $space-50;
-  @include width-available(min-width);
-}
+.degree {
+  &__card {
+    border-radius: $border-10;
+    min-height: 25vh;
+  }
 
-.education__degree::-webkit-scrollbar {
-  display: none;
-}
+  &__title {
+    box-shadow: $shadow-1;
+    margin: 0;
+    background-color: $background-variation;
+    width: 100%;
+    text-align: center;
+  }
 
-.degree__card {
-  border-radius: $border-10;
-  min-height: 25vh;
-}
+  &__subtitle {
+    text-align: center;
+    font-weight: $weight-700;
+    padding: 0 $space-10;
+  }
 
-.degree__title {
-  box-shadow: $shadow-1;
-  margin: 0;
-  background-color: $background-variation;
-  width: 100%;
-  text-align: center;
-}
+  &__description {
+    text-align: center;
+    font-size: $font-16;
+    padding: 0 $space-10;
+    display: flex;
+    flex-direction: column;
+    gap: $space-10;
 
-.degree__subtitle {
-  text-align: center;
-  font-weight: $weight-700;
-  padding: 0 $space-10;
-}
+    & a {
+      text-decoration: none;
+      color: $success-green;
 
-.degree__description {
-  text-align: center;
-  font-size: $font-16;
-  padding: 0 $space-10;
-  display: flex;
-  flex-direction: column;
-  gap: $space-10;
-}
+      &:hover {
+        cursor: pointer;
+      }
+    }
 
-.degree__description a {
-  text-decoration: none;
-  color: $success-green;
-}
+    & ul {
+      list-style: none;
+      padding: 0;
+    }
+  }
 
-.degree__description a:hover {
-  cursor: pointer;
-}
+  &__icons {
+    @include display-center;
+    gap: $space-20;
+    padding: $space-10;
 
-.degree__description ul {
-  list-style: none;
-  padding: 0;
-}
-
-.degree__icons {
-  @include display-center;
-  gap: $space-20;
-  padding: $space-10;
-}
-
-.degree__icons img {
-  display: none;
-  width: $space-80;
+    & img {
+      display: none;
+      width: $space-80;
+    }
+  }
 }
 
 /* Device Breakpoints */

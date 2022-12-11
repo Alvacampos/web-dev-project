@@ -21,10 +21,10 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
   overflow: auto;
-}
 
-body::-webkit-scrollbar {
-  display: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 header {
