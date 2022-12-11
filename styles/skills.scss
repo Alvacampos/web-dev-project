@@ -35,7 +35,7 @@
     align-items: center;
     flex-direction: column;
     gap: $space-50;
-    min-width: 50%;
+    min-width: 49%;
     padding: $space-10 0;
   }
 
@@ -176,7 +176,6 @@
     justify-content: space-around;
     width: inherit;
     gap: $space-30;
-    padding: $space-15;
     border-radius: $border-6;
 
     & div {
