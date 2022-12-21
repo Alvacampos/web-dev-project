@@ -193,6 +193,7 @@
 @media only screen and ($desktop-small) {
   .leadership {
     flex-direction: row;
+    padding-bottom: $space-5;
   }
 
   .work__content ul {
