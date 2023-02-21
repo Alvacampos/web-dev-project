@@ -5,6 +5,7 @@ module.exports = {
   },
   extends: 'eslint:recommended',
   overrides: [],
+  ignorePatterns: ['dist/assets/*'],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',

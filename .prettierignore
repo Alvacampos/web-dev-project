@@ -1,5 +1,5 @@
 # Post processed CSS
-app/styles
+dist/assets/*
 
 # Caches
 .cache/

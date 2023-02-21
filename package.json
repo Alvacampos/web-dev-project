@@ -2,12 +2,12 @@
   "name": "Project Cv",
   "version": "1.0.0",
   "description": "Final Project Personal Cv",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "concurrently \"npx stylelint \"**/*.css\"\" \"npx eslint views/**\" \"npx prettier --check .\"",
+    "lint": "concurrently \"npx stylelint \"**/*.css\"\" \"npx eslint dist/views/**\" \"npx prettier --check .\"",
     "lint-fix": "npx prettier --write .",
-    "scss": "node-sass ./styles -o assets/styles",
+    "scss": "node-sass ./styles -o dist/assets/styles",
     "scss-watch": "node-sass --watch ./styles -o assets/styles"
   },
   "author": "Gonzalo Alvarez Campos",
@@ -19,12 +19,15 @@
     "prettier": "2.7.1",
     "stylelint": "^14.14.0",
     "stylelint-config-prettier": "^9.0.3",
-    "stylelint-config-standard": "^29.0.0"
+    "stylelint-config-standard": "^29.0.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
   },
   "dependencies": {
     "@trivago/prettier-plugin-sort-imports": "^3.4.0",
     "concurrently": "^7.5.0",
     "eslint-plugin-html": "^7.1.0",
+    "moment": "^2.29.4",
     "stylelint-selector-bem-pattern": "^2.1.1"
   }
 }
