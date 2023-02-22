@@ -94,8 +94,8 @@ const workItems = [
   {
     title: 'Moove-IT',
     startDate: '20220401',
-    endDate: '20220401',
     subtitle: 'Hired as Senior Full-stack developer.',
+    isCurrent: true,
     skill: [
       'HTML',
       'CSS',
@@ -116,23 +116,32 @@ const workItems = [
   },
 ];
 
-const handleDates = (startDate, endDate) =>
-  Math.round(
-    moment.duration(moment(endDate).diff(moment(startDate))).asYears()
-  ) > 0
-    ? `${Math.round(
-        moment.duration(moment(endDate).diff(moment(startDate))).asYears()
-      )} .Yrs`
-    : `${Math.abs(
-        Math.round(
-          moment.duration(moment(endDate).diff(moment(startDate))).asMonths()
-        )
-      )} .Mos`;
+const handleDates = (startDate, endDate, isCurrent) => {
+  if (isCurrent) {
+    endDate = moment();
+  }
 
-const calculateDates = (startDate, endDate) => {
+  const timeDiff = moment(endDate).diff(moment(startDate));
+
+  const isYears = Math.round(moment.duration(timeDiff).asYears()) >= 1;
+
+  if (isYears) {
+    return `${Math.round(moment.duration(timeDiff).asYears())} .Yrs`;
+  } else {
+    return `${Math.abs(Math.round(moment.duration(timeDiff).asMonths()))} .Mos`;
+  }
+};
+
+const calculateDates = (startDate, endDate, isCurrent = undefined) => {
+  if (isCurrent) {
+    return `Date: ${moment(startDate).format(
+      'MMM YYYY'
+    )} - Current (${handleDates(startDate, endDate, isCurrent)})`;
+  }
+
   return `Date: ${moment(startDate).format('MMM YYYY')} - ${moment(
     endDate
-  ).format('MMM YYYY')} (${handleDates(startDate, endDate)})`;
+  ).format('MMM YYYY')} (${handleDates(startDate, endDate, isCurrent)})`;
 };
 
 const generateList = (item) => {
@@ -170,7 +179,7 @@ const generateContent = (item) => {
   const contentWrapper = document.createElement('div');
   contentWrapper.classList.add('work__content');
   const date = document.createTextNode(
-    calculateDates(item.startDate, item.endDate)
+    calculateDates(item.startDate, item?.endDate, item?.isCurrent)
   );
   const dateWrapper = document.createElement('p');
   dateWrapper.appendChild(date);
@@ -183,7 +192,7 @@ const generateContent = (item) => {
     contentWrapper.appendChild(subtitleWrapper);
   }
 
-  if (typeof item.projects === 'object') {
+  if (Array.isArray(item.projects)) {
     const ul = document.createElement('ul');
     ul.appendChild(generateList(item));
     contentWrapper.appendChild(ul);
@@ -231,6 +240,7 @@ const createJobCard = (item, index) => {
 
   const workDivider = generateDivider();
 
+  // Helps distribute the rows in the 2 columns, in order to keep css aligned.
   if (index % 2 === 0) {
     const work = document.getElementById('column__left');
     workDivider.classList.add('work__divider--left');

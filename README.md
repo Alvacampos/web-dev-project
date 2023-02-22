@@ -2,7 +2,7 @@ Basic HTML, CSS and JS project.
 
 # Wireframe
 
-![alt text](./assets/wireframe/wireframe.jpg)
+![alt text](./dist/assets/wireframe/wireframe.jpg)
 
 # Installation
 
