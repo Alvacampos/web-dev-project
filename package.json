@@ -1,19 +1,26 @@
 {
   "name": "Project Cv",
   "version": "1.0.0",
+  "repository": {
+    "url": "git+https://github.com/Alvacampos/web-dev-project.git"
+  },
   "description": "Final Project Personal Cv",
   "private": true,
   "scripts": {
+    "build": "webpack --mode=development",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "concurrently \"npx stylelint \"**/*.css\"\" \"npx eslint dist/views/**\" \"npx prettier --check .\"",
     "lint-fix": "npx prettier --write .",
     "scss": "node-sass ./styles -o dist/assets/styles",
-    "scss-watch": "node-sass --watch ./styles -o assets/styles"
+    "scss-watch": "node-sass --watch ./styles -o assets/styles",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Gonzalo Alvarez Campos",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^8.26.0",
+    "gh-pages": "^5.0.0",
     "node-sass": "^8.0.0",
     "nodemon": "^2.0.20",
     "prettier": "2.7.1",

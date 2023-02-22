@@ -1,5 +1,5 @@
 # Post processed CSS
-dist/assets/*
+dist/assets/styles/**
 
 # Caches
 .cache/

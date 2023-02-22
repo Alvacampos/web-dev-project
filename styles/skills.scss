@@ -23,7 +23,7 @@
 
     #filter {
       height: 20px;
-      width: 50vw;
+      width: 75vw;
       border-radius: 6px;
       border: $card-border;
       background-color: $background-variation;
@@ -42,6 +42,11 @@
   &__wrapper {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+  }
+
+  &__input {
+    display: flex;
     justify-content: center;
   }
 
@@ -216,6 +221,10 @@
   .leadership {
     flex-direction: row;
     padding-bottom: $space-5;
+  }
+
+  .work__input {
+    display: block;
   }
 
   .work__content ul {
