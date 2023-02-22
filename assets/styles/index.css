@@ -1,0 +1,22 @@
+main {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  overflow: auto;
+}
+
+.welcome {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #010408;
+  width: 70%;
+}
+.welcome h1 {
+  line-height: 150%;
+  font-size: 30px;
+  font-weight: 700;
+}

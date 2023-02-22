@@ -1,0 +1,135 @@
+.nav-bar {
+  background-color: #0d1117;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-bar div {
+  width: 100%;
+}
+.nav-bar__git-wrapper {
+  box-shadow: inset 0 -1px 0 #ffffff;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.nav-bar__git {
+  align-self: center;
+  height: 40px;
+  pointer-events: none;
+  width: 40px;
+}
+.nav-bar__buttons {
+  align-items: center;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-bar__buttons li {
+  width: -moz-available;
+  /* WebKit-based browsers will ignore this. */
+  width: -webkit-fill-available;
+  /* Mozilla-based browsers will ignore this. */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 5px;
+  box-shadow: inset 0 -1px 0 #21262d;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -ms-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
+.nav-bar__buttons li:hover {
+  cursor: pointer;
+  background-color: #60686c99;
+}
+.nav-bar__buttons a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+}
+.nav-bar__buttons li a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.nav-bar__icon {
+  display: none;
+}
+
+#active-btn {
+  background-color: #60686c99;
+}
+
+#qr-svg {
+  display: none;
+  width: 200px;
+  height: 200px;
+}
+
+.blob {
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 #ffffff;
+  animation: pulse-white 2s infinite;
+}
+
+@keyframes pulse-white {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 #ffffffb3;
+  }
+  70% {
+    transform: scale(1.5);
+    box-shadow: 0 0 0 10px #ffffff00;
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 #ffffff00;
+  }
+}
+
+/* Device Breakpoints */
+/* Mobile Medium */
+@media only screen and ((min-width: 496px)) {
+  .nav-bar__buttons li a {
+    gap: 15px;
+  }
+  .nav-bar__icon {
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+    display: inherit;
+  }
+}
+
+/* Desktop Small */
+@media only screen and ((min-width: 1076px)) {
+  .nav-bar {
+    height: 100%;
+    flex-direction: column;
+  }
+  .nav-bar__git-wrapper {
+    padding: 20px;
+  }
+  .nav-bar__buttons li {
+    box-shadow: inset 0 -1px 0 #21262d;
+    padding: 40px 30px;
+    justify-content: initial;
+  }
+  .nav-bar__buttons {
+    flex-direction: column;
+  }
+  .nav-bar__buttons a {
+    font-size: 18px;
+  }
+  .nav-bar__icon {
+    display: inherit;
+    width: 30px;
+    height: 30px;
+  }
+  #qr-svg {
+    display: block;
+  }
+}
