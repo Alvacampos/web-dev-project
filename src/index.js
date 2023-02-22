@@ -89,7 +89,7 @@ const workItems = [
       'Interviewing',
     ],
     projects:
-      'Technical leader and manager for many projects and developers. In charge of technical interview, planning and developer path.',
+      'Technical leader and manager for many projects and developers. In charge of technical interview, planning and developer path and technical advise in react and other front end technologies.',
   },
   {
     title: 'Moove-IT',

@@ -1,5 +1,6 @@
 # Post processed CSS
 dist/assets/styles/**
+dist/main.js
 
 # Caches
 .cache/
