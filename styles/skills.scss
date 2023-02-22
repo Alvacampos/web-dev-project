@@ -20,6 +20,21 @@
     &--icon {
       width: $space-100;
     }
+
+    #filter {
+      height: 20px;
+      width: 75vw;
+      border-radius: 6px;
+      border: $card-border;
+      background-color: $background-variation;
+      color: #8b949e;
+
+      &:focus {
+        border-color: #58a6ff;
+        outline: none;
+        box-shadow: inset 0 0 0 1px transparent;
+      }
+    }
   }
 }
 
@@ -27,6 +42,11 @@
   &__wrapper {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+  }
+
+  &__input {
+    display: flex;
     justify-content: center;
   }
 
@@ -184,6 +204,10 @@
   }
 }
 
+#column__right {
+  justify-content: center;
+}
+
 #unsta-icon {
   width: $space-70;
 }
@@ -191,9 +215,16 @@
 /* Device Breakpoints */
 /* Desktop Small */
 @media only screen and ($desktop-small) {
+  .skills__work #filter {
+    width: 20vw;
+  }
   .leadership {
     flex-direction: row;
     padding-bottom: $space-5;
+  }
+
+  .work__input {
+    display: block;
   }
 
   .work__content ul {
