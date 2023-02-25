@@ -4,7 +4,7 @@ const workItems = [
   {
     title: 'Globant',
     startDate: '20180801',
-    endDate: '20201101',
+    endDate: '20201201',
     subtitle: 'Hired as Jr Web developer.',
     skill: ['HTML', 'CSS', 'Storybook', 'Highcharts', 'Vue', '.Net'],
     projects: [
@@ -93,7 +93,7 @@ const workItems = [
   },
   {
     title: 'Moove-IT',
-    startDate: '20220401',
+    startDate: '20220404',
     subtitle: 'Hired as Senior Full-stack developer.',
     isCurrent: true,
     skill: [
@@ -123,12 +123,16 @@ const handleDates = (startDate, endDate, isCurrent) => {
 
   const timeDiff = moment(endDate).diff(moment(startDate));
 
-  const isYears = Math.round(moment.duration(timeDiff).asYears()) >= 1;
+  const calculateYears = moment.duration(timeDiff).asYears();
 
-  if (isYears) {
-    return `${Math.round(moment.duration(timeDiff).asYears())} .Yrs`;
+  const calculateMonths = calculateYears.toFixed(2).toString().split('.')[1];
+
+  if (calculateYears >= 1) {
+    return `${Math.round(calculateYears)} .Yrs ${Math.round(
+      (calculateMonths / 100) * 12
+    )} .Mos`;
   } else {
-    return `${Math.abs(Math.round(moment.duration(timeDiff).asMonths()))} .Mos`;
+    return `${Math.round(moment.duration(timeDiff).asMonths())} .Mos`;
   }
 };
 

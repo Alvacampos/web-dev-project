@@ -13,5 +13,6 @@
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "liveServer.settings.port": 5501
+  "liveServer.settings.port": 5501,
+  "liveServer.settings.root": "/dist/"
 }
