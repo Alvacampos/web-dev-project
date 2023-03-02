@@ -22,9 +22,9 @@
     }
 
     #filter {
-      height: 20px;
+      height: $space-30;
       width: 75vw;
-      border-radius: 6px;
+      border-radius: $border-6;
       border: $card-border;
       background-color: $background-variation;
       color: #8b949e;

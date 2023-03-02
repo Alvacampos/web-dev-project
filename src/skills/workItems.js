@@ -1,4 +1,9 @@
-import { calculateDates, renderDateMsg } from '../../utils/utils.js';
+import {
+  calculateDates,
+  generateImg,
+  generateItem,
+  renderDateMsg,
+} from '../../utils/utils.js';
 import { WORK_ITEMS } from '../data/data.js';
 
 const generateList = (item) => {
@@ -17,17 +22,14 @@ const generateList = (item) => {
 };
 
 const generateDivider = () => {
-  const divider = document.createElement('div');
-  divider.classList.add('work__divider');
-  return divider;
+  return generateItem('div', 'work__divider');
 };
 
 const generateTitle = (item) => {
   const h2Wrapper = document.createElement('h2');
   const title = document.createTextNode(item.title);
   h2Wrapper.appendChild(title);
-  const divWrapper = document.createElement('div');
-  divWrapper.classList.add('work__title');
+  const divWrapper = generateItem('div', 'work__title');
   divWrapper.appendChild(h2Wrapper);
   return divWrapper;
 };
@@ -36,7 +38,7 @@ const generateContent = (item) => {
   const contentWrapper = document.createElement('div');
   contentWrapper.classList.add('work__content');
   const date = document.createTextNode(
-    renderDateMsg(item.startDate, item?.endDate, item?.isCurrent)
+    renderDateMsg(item?.startDate, item?.endDate, item?.isCurrent)
   );
   const dateWrapper = document.createElement('p');
   dateWrapper.appendChild(date);
@@ -70,6 +72,18 @@ const generateContent = (item) => {
   return workContent;
 };
 
+const appendCard = (divider, card, position) => {
+  const work = document.getElementById(`column__${position}`);
+  divider.classList.add(`work__divider--${position}`);
+  if (position === 'left') {
+    work.appendChild(card);
+    work.appendChild(divider);
+  } else {
+    work.appendChild(divider);
+    work.appendChild(card);
+  }
+};
+
 const createJobCard = (item, index) => {
   // Divider generator
   const divider = document.createElement('div');
@@ -79,16 +93,26 @@ const createJobCard = (item, index) => {
   const card = document.createElement('div');
   card.classList.add('work__item');
 
-  // Image generator
-  const img = document.createElement('img');
-  img.setAttribute('src', '../assets/icons/new-job.svg');
-  img.classList.add('work__project');
-
+  let img = null;
   if (index % 2 === 0) {
     card.classList.add('work__item--left');
-    img.classList.add('work__project--left');
+    img = generateImg(
+      {
+        src: '../assets/icons/new-job.svg',
+        alt: 'New Work Logo',
+        title: 'New Work',
+      },
+      ['work__project', 'work__project--left']
+    );
   } else {
-    img.classList.add('work__project--right');
+    img = generateImg(
+      {
+        src: '../assets/icons/new-job.svg',
+        alt: 'New Work Logo',
+        title: 'New Work',
+      },
+      ['work__project', 'work__project--right']
+    );
   }
 
   card.appendChild(img);
@@ -99,15 +123,9 @@ const createJobCard = (item, index) => {
 
   // Helps distribute the rows in the 2 columns, in order to keep css aligned.
   if (index % 2 === 0) {
-    const work = document.getElementById('column__left');
-    workDivider.classList.add('work__divider--left');
-    work.appendChild(card);
-    work.appendChild(workDivider);
+    appendCard(workDivider, card, 'left');
   } else {
-    const work = document.getElementById('column__right');
-    workDivider.classList.add('work__divider--right');
-    work.appendChild(workDivider);
-    work.appendChild(card);
+    appendCard(workDivider, card, 'right');
   }
 };
 
@@ -128,7 +146,6 @@ const filter = (input) => {
 };
 
 const input = document.getElementById('filter');
-
 WORK_ITEMS.forEach((item, index) => createJobCard(item, index));
 input.addEventListener('keyup', (event) => {
   filter(event.target.value);
@@ -136,6 +153,6 @@ input.addEventListener('keyup', (event) => {
 
 const totalExpTimeWrapper = document.getElementById('time');
 const totalExpTime = document.createTextNode(
-  calculateDates(WORK_ITEMS[0].startDate, null, true)
+  calculateDates(WORK_ITEMS[0]?.startDate, null, true)
 );
 totalExpTimeWrapper.appendChild(totalExpTime);

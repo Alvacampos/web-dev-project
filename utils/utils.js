@@ -28,7 +28,11 @@ const calculateDates = (startDate, endDate, isCurrent) => {
 };
 
 // Render date phrase
-const renderDateMsg = (startDate, endDate, isCurrent = undefined) => {
+const renderDateMsg = (
+  startDate = undefined,
+  endDate = undefined,
+  isCurrent = undefined
+) => {
   if (isCurrent) {
     return `Date: ${moment(startDate).format(
       'MMM YYYY'
@@ -40,4 +44,27 @@ const renderDateMsg = (startDate, endDate, isCurrent = undefined) => {
   ).format('MMM YYYY')} (${calculateDates(startDate, endDate, isCurrent)})`;
 };
 
-export { renderDateMsg, calculateDates, timeDiff, renderTimeSpam };
+// Generates custom img
+const generateImg = (item = {}, className = []) => {
+  const img = document.createElement('img');
+  img.src = item.src;
+  if (className) className.forEach((classItem) => img.classList.add(classItem));
+  if (item.alt) img.alt = item.alt;
+  if (item.title) img.title = item.title;
+  return img;
+};
+
+const generateItem = (itemType = undefined, className = undefined) => {
+  const item = document.createElement(itemType);
+  if (className) item.classList.add(className);
+  return item;
+};
+
+export {
+  renderDateMsg,
+  calculateDates,
+  timeDiff,
+  renderTimeSpam,
+  generateImg,
+  generateItem,
+};
