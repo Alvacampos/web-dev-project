@@ -116,6 +116,29 @@
       left: -25px;
     }
   }
+
+  &__current-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: $space-10 0;
+
+    &__card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-weight: bold;
+      max-height: 150px;
+      max-width: fit-content;
+    }
+
+    & .work__content {
+      display: flex;
+      align-self: center;
+      font-size: $font-32;
+    }
+  }
 }
 
 .date__wrapper {
@@ -230,5 +253,9 @@
   .work__content ul {
     list-style-type: disc;
     padding: $space-20;
+  }
+
+  .work__current-time {
+    margin: $space-10 0 $space-10 $space-30;
   }
 }
