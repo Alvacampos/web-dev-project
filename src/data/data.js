@@ -4,7 +4,16 @@ const WORK_ITEMS = [
     startDate: '20180801',
     endDate: '20201201',
     subtitle: 'Hired as Jr Web developer.',
-    skill: ['HTML', 'CSS', 'Storybook', 'Highcharts', 'Vue', '.Net'],
+    skill: [
+      'HTML',
+      'CSS',
+      'Storybook',
+      'Highcharts',
+      'Vue',
+      '.Net',
+      'Front End',
+      'Back End',
+    ],
     projects: [
       {
         title: 'Project: eVestment',
@@ -23,7 +32,7 @@ const WORK_ITEMS = [
     startDate: '20201201',
     endDate: '20210801',
     subtitle: 'Hired as Mid Level Full-stack developer.',
-    skill: ['HTML', 'CSS', 'Storybook', 'Highcharts', 'React'],
+    skill: ['HTML', 'CSS', 'Storybook', 'Highcharts', 'React', 'Front End'],
     projects: [
       {
         title: 'Project Conversational',
@@ -58,6 +67,7 @@ const WORK_ITEMS = [
       'Teaching',
       'Leadership',
       'Interviewing',
+      'Back End',
     ],
     projects: [
       {
@@ -103,6 +113,7 @@ const WORK_ITEMS = [
       'Nodejs',
       'Remix',
       'Sass',
+      'Front End',
     ],
     projects: [
       {
@@ -212,4 +223,6 @@ const SKILLS_IMG = [
   },
 ];
 
-export { WORK_ITEMS, SKILLS_IMG };
+const TOP_SKILLS = ['Front End', 'Back End'];
+
+export { WORK_ITEMS, SKILLS_IMG, TOP_SKILLS };

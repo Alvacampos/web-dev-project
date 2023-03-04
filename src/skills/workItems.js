@@ -4,7 +4,7 @@ import {
   generateItem,
   renderDateMsg,
 } from '../../utils/utils.js';
-import { WORK_ITEMS } from '../data/data.js';
+import { TOP_SKILLS, WORK_ITEMS } from '../data/data.js';
 
 const generateList = (item) => {
   const li = document.createElement('li');
@@ -129,6 +129,33 @@ const createJobCard = (item, index) => {
   }
 };
 
+const generateBtn = (skill) => {
+  const wrapper = document.getElementById('bts-wrapper');
+  const anchor = document.createElement('a');
+  anchor.href = '#';
+  anchor.id = skill.toLowerCase();
+  anchor.classList.add('skill-btn');
+
+  let flag = true;
+
+  for (let i = 0; i < 4; i++) {
+    const span = document.createElement('span');
+    anchor.appendChild(span);
+  }
+
+  const btnTitle = document.createTextNode(skill);
+  anchor.appendChild(btnTitle);
+  anchor.addEventListener('click', () => {
+    if (flag) {
+      filter(skill);
+    } else {
+      filter();
+    }
+    flag = !flag;
+  });
+  wrapper.appendChild(anchor);
+};
+
 const filter = (input) => {
   const leftColumn = document.getElementById('column__left');
   leftColumn.replaceChildren();
@@ -136,9 +163,10 @@ const filter = (input) => {
   rightColumn.replaceChildren();
   if (input) {
     let filteredItems = WORK_ITEMS.filter((item) =>
-      item.skill.some((skill) => skill.toLowerCase() === input.toLowerCase())
+      item.skill.some((skill) =>
+        skill.toLowerCase().includes(input.toLowerCase())
+      )
     );
-
     filteredItems.forEach((item, index) => createJobCard(item, index));
   } else {
     WORK_ITEMS.forEach((item, index) => createJobCard(item, index));
@@ -150,6 +178,8 @@ WORK_ITEMS.forEach((item, index) => createJobCard(item, index));
 input.addEventListener('keyup', (event) => {
   filter(event.target.value);
 });
+
+TOP_SKILLS.forEach((skill) => generateBtn(skill));
 
 const totalExpTimeWrapper = document.getElementById('time');
 const totalExpTime = document.createTextNode(

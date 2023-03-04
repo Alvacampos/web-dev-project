@@ -12,7 +12,7 @@
     "lint": "concurrently \"npx stylelint \"**/*.css\"\" \"npx eslint dist/views/**\" \"npx prettier --check .\"",
     "lint-fix": "npx prettier --write .",
     "scss": "node-sass ./styles -o dist/assets/styles",
-    "scss-watch": "node-sass --watch ./styles -o assets/styles",
+    "scss-watch": "node-sass --watch ./styles -o dist/assets/styles",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
