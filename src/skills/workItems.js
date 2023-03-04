@@ -129,6 +129,7 @@ const createJobCard = (item, index) => {
   }
 };
 
+// Render bts to filter skills
 const generateBtn = (skill) => {
   const wrapper = document.getElementById('bts-wrapper');
   const anchor = document.createElement('a');
@@ -158,6 +159,7 @@ const generateBtn = (skill) => {
   wrapper.appendChild(anchor);
 };
 
+// Render filter input for skills
 const filter = (input) => {
   const leftColumn = document.getElementById('column__left');
   leftColumn.replaceChildren();

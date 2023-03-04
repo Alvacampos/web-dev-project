@@ -101,7 +101,7 @@ const WORK_ITEMS = [
   },
   {
     title: 'Moove-IT',
-    startDate: '20220404',
+    startDate: '20220401',
     subtitle: 'Hired as Senior Full-stack developer.',
     isCurrent: true,
     skill: [

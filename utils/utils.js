@@ -2,7 +2,7 @@ import moment from 'moment';
 
 const timeDiff = (startDate, endDate, isCurrent) => {
   if (isCurrent) {
-    endDate = moment();
+    endDate = moment().format('YYYYMMDD');
   }
 
   return moment(endDate).diff(moment(startDate));
@@ -10,7 +10,7 @@ const timeDiff = (startDate, endDate, isCurrent) => {
 
 const renderTimeSpam = (years, months, time) => {
   if (years >= 1) {
-    return `${Math.round(years)} .Yrs ${Math.round((months / 100) * 12)} .Mos`;
+    return `${Math.trunc(years)} .Yrs ${Math.round((months / 100) * 12)} .Mos`;
   } else {
     return `${Math.round(moment.duration(time).asMonths())} .Mos`;
   }
