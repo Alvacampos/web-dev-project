@@ -148,8 +148,10 @@ const generateBtn = (skill) => {
   anchor.addEventListener('click', () => {
     if (flag) {
       filter(skill);
+      anchor.classList.add('skill-btn--active');
     } else {
       filter();
+      anchor.classList.remove('skill-btn--active');
     }
     flag = !flag;
   });
