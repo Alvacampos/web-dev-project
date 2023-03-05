@@ -79,6 +79,9 @@ const generateItem = (
   return item;
 };
 
+const routeSanitization = (route, initial, replacement) =>
+  route.replace(initial, replacement);
+
 // Generates the main NavBar
 const generateNavBar = (items, activeBtn) => {
   const navBar = document.getElementById('nav-btn');
@@ -88,10 +91,11 @@ const generateNavBar = (items, activeBtn) => {
     if (activeBtn === item?.location) li.id = 'active-btn';
     const anchor = document.createElement('a');
     anchor.href = item?.path;
-    if (activeBtn !== 'Home') anchor.href = item?.path.replace('views/', '');
+    if (activeBtn !== 'Home')
+      anchor.href = routeSanitization(item?.path, 'views/', '');
     const span = document.createElement('span');
     span.innerHTML = item?.name;
-    if (activeBtn !== 'Home') item.src = item?.src.replace('views/', '');
+    if (activeBtn === 'Home') item.src = routeSanitization(item?.src, '.', '');
     const img = generateImg(item, item.className);
     anchor.append(img);
     anchor.append(span);
