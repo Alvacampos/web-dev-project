@@ -1,5 +1,19 @@
 import moment from 'moment';
 
+//Dynamic Import
+const loadLanguages = async () => {
+  var userLang = navigator.language || navigator.userLanguage;
+
+  switch (userLang) {
+    case 'en':
+      return await import('../src/lang/EN.js');
+    case 'es':
+      return await import('../src/lang/ES.js');
+    default:
+      return await import('../src/lang/EN.js');
+  }
+};
+
 const timeDiff = (startDate, endDate, isCurrent) => {
   if (isCurrent) {
     endDate = moment().format('YYYYMMDD');
@@ -54,10 +68,42 @@ const generateImg = (item = {}, className = []) => {
   return img;
 };
 
-const generateItem = (itemType = undefined, className = undefined) => {
+const generateItem = (
+  itemType = undefined,
+  className = undefined,
+  text = undefined
+) => {
   const item = document.createElement(itemType);
   if (className) item.classList.add(className);
+  if (text) item.innerHTML = text;
   return item;
+};
+
+// Generates the main NavBar
+const generateNavBar = (items, activeBtn) => {
+  console.log('items', items);
+  const navBar = document.getElementById('nav-btn');
+  items.forEach((item) => {
+    const li = document.createElement('li');
+    li.tabIndex = item?.tabIndex;
+    if (activeBtn === item?.name) li.id = 'active-btn';
+    const anchor = document.createElement('a');
+    anchor.href = item?.path;
+    const span = document.createElement('span');
+    span.innerHTML = item?.name;
+    const img = generateImg(item, item.className);
+    anchor.append(img);
+    anchor.append(span);
+    li.append(anchor);
+    navBar.append(li);
+  });
+};
+
+// Checks if it should trigger a function or not based on body id
+const checkNameSpace = (space, callback) => {
+  if (document.getElementById(space)) {
+    callback();
+  }
 };
 
 export {
@@ -67,4 +113,7 @@ export {
   renderTimeSpam,
   generateImg,
   generateItem,
+  loadLanguages,
+  generateNavBar,
+  checkNameSpace,
 };

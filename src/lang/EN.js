@@ -225,4 +225,58 @@ const SKILLS_IMG = [
 
 const TOP_SKILLS = ['Front End', 'Back End'];
 
-export { WORK_ITEMS, SKILLS_IMG, TOP_SKILLS };
+const NAV_BAR = [
+  {
+    path: './index.html',
+    name: 'Home',
+    src: '../assets/icons/home.svg',
+    className: ['nav-bar__icon'],
+    alt: 'Home Logo',
+    title: 'Home',
+    tabindex: '-1',
+  },
+  {
+    path: './skills.html',
+    name: 'CV',
+    src: '../assets/icons/paper.svg',
+    className: ['nav-bar__icon'],
+    alt: 'CV Logo',
+    title: 'CV',
+    tabindex: '-1',
+  },
+  {
+    path: './projects.html',
+    name: 'Projects',
+    src: '../assets/icons/folder.svg',
+    className: ['nav-bar__icon'],
+    alt: 'Folder Logo',
+    title: 'Projects',
+    tabindex: '-1',
+  },
+  {
+    path: './education.html',
+    name: 'Education',
+    src: '../assets/icons/education.svg',
+    className: ['nav-bar__icon'],
+    alt: 'Education Logo',
+    title: 'Education',
+    tabindex: '-1',
+  },
+  {
+    path: './contact.html',
+    name: 'Contact',
+    src: '../assets/icons/profile.svg',
+    className: ['nav-bar__icon'],
+    alt: 'Contact Logo',
+    title: 'Contact',
+    tabindex: '-1',
+  },
+];
+
+const INTRO = [
+  'Bienvenido, mi nombre es Gonzalo Alvarez Campos',
+  'Soy Desarrollador de Software e hice esta página para que me conozcan un poco mejor',
+  'Por ahora es solo un proyecto en vanilla javascript.',
+];
+
+export { WORK_ITEMS, SKILLS_IMG, TOP_SKILLS, NAV_BAR, INTRO };

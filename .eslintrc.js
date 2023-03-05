@@ -5,11 +5,11 @@ module.exports = {
   },
   extends: 'eslint:recommended',
   overrides: [],
-  ignorePatterns: ['/dist/assets//styles*'],
+  ignorePatterns: ['/dist/assets/*'],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
   plugins: ['html'],
-  rules: {},
+  rules: { customSyntax: 'postcss-less' },
 };
