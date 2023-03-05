@@ -1,10 +1,10 @@
 import moment from 'moment';
 
-//Dynamic Import
+//Dynamic Import and lang set up
 const loadLanguages = async () => {
   var userLang = navigator.language || navigator.userLanguage;
 
-  switch (userLang) {
+  switch (userLang.split('-')[0]) {
     case 'en':
       return await import('../src/lang/EN.js');
     case 'es':
