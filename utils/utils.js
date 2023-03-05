@@ -81,14 +81,14 @@ const generateItem = (
 
 // Generates the main NavBar
 const generateNavBar = (items, activeBtn) => {
-  console.log('items', items);
   const navBar = document.getElementById('nav-btn');
   items.forEach((item) => {
     const li = document.createElement('li');
     li.tabIndex = item?.tabIndex;
-    if (activeBtn === item?.name) li.id = 'active-btn';
+    if (activeBtn === item?.location) li.id = 'active-btn';
     const anchor = document.createElement('a');
     anchor.href = item?.path;
+    if (activeBtn !== 'Home') anchor.href = item?.path.replace('views/', '');
     const span = document.createElement('span');
     span.innerHTML = item?.name;
     const img = generateImg(item, item.className);

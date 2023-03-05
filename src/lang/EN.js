@@ -227,56 +227,60 @@ const TOP_SKILLS = ['Front End', 'Back End'];
 
 const NAV_BAR = [
   {
-    path: './index.html',
+    path: '../index.html',
     name: 'Home',
     src: '../assets/icons/home.svg',
     className: ['nav-bar__icon'],
     alt: 'Home Logo',
     title: 'Home',
     tabindex: '-1',
+    location: 'Home',
   },
   {
-    path: './skills.html',
+    path: './views/skills.html',
     name: 'CV',
     src: '../assets/icons/paper.svg',
     className: ['nav-bar__icon'],
     alt: 'CV Logo',
     title: 'CV',
     tabindex: '-1',
+    location: 'CV',
   },
   {
-    path: './projects.html',
+    path: './views/projects.html',
     name: 'Projects',
     src: '../assets/icons/folder.svg',
     className: ['nav-bar__icon'],
     alt: 'Folder Logo',
     title: 'Projects',
     tabindex: '-1',
+    location: 'Projects',
   },
   {
-    path: './education.html',
+    path: './views/education.html',
     name: 'Education',
     src: '../assets/icons/education.svg',
     className: ['nav-bar__icon'],
     alt: 'Education Logo',
     title: 'Education',
     tabindex: '-1',
+    location: 'Education',
   },
   {
-    path: './contact.html',
+    path: './views/contact.html',
     name: 'Contact',
     src: '../assets/icons/profile.svg',
     className: ['nav-bar__icon'],
     alt: 'Contact Logo',
     title: 'Contact',
     tabindex: '-1',
+    location: 'Contact',
   },
 ];
 
 const INTRO = [
-  'Bienvenido, mi nombre es Gonzalo Alvarez Campos',
-  'Soy Desarrollador de Software e hice esta página para que me conozcan un poco mejor',
-  'Por ahora es solo un proyecto en vanilla javascript.',
+  'Welcome, my name is Gonzalo Alvarez Campos.',
+  "I'm a Software Developer and I made this page so you can get to know me a little better",
 ];
 
 export { WORK_ITEMS, SKILLS_IMG, TOP_SKILLS, NAV_BAR, INTRO };

@@ -225,4 +225,62 @@ const SKILLS_IMG = [
 
 const TOP_SKILLS = ['Front End', 'Back End'];
 
-export { WORK_ITEMS, SKILLS_IMG, TOP_SKILLS };
+const NAV_BAR = [
+  {
+    path: '../index.html',
+    name: 'Inicio',
+    src: '../assets/icons/home.svg',
+    className: ['nav-bar__icon'],
+    alt: 'Inicio Logo',
+    title: 'Inicio',
+    tabindex: '-1',
+    location: 'Home',
+  },
+  {
+    path: './views/skills.html',
+    name: 'CV',
+    src: '../assets/icons/paper.svg',
+    className: ['nav-bar__icon'],
+    alt: 'CV Logo',
+    title: 'CV',
+    tabindex: '-1',
+    location: 'CV',
+  },
+  {
+    path: './views/projects.html',
+    name: 'Proyectos',
+    src: '../assets/icons/folder.svg',
+    className: ['nav-bar__icon'],
+    alt: 'Proyectos Logo',
+    title: 'Proyectos',
+    tabindex: '-1',
+    location: 'Projects',
+  },
+  {
+    path: './views/education.html',
+    name: 'Educación',
+    src: '../assets/icons/education.svg',
+    className: ['nav-bar__icon'],
+    alt: 'Educación Logo',
+    title: 'Educación',
+    tabindex: '-1',
+    location: 'Education',
+  },
+  {
+    path: './views/contact.html',
+    name: 'Contacto',
+    src: '../assets/icons/profile.svg',
+    className: ['nav-bar__icon'],
+    alt: 'Contacto Logo',
+    title: 'Contacto',
+    tabindex: '-1',
+    location: 'Contact',
+  },
+];
+
+const INTRO = [
+  'Bienvenido, mi nombre es Gonzalo Alvarez Campos',
+  'Soy Desarrollador de Software e hice esta página para que me conozcan un poco mejor',
+];
+
+export { WORK_ITEMS, SKILLS_IMG, TOP_SKILLS, NAV_BAR, INTRO };

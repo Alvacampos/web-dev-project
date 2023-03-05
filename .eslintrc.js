@@ -11,5 +11,5 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['html'],
-  rules: { customSyntax: 'postcss-less' },
+  rules: {},
 };
