@@ -1379,14 +1379,25 @@ eval("/* module decorator */ module = __webpack_require__.nmd(module);\n//! mome
 
 /***/ }),
 
-/***/ "./src/data/data.js":
-/*!**************************!*\
-  !*** ./src/data/data.js ***!
-  \**************************/
+/***/ "./src/contact/contact.js":
+/*!********************************!*\
+  !*** ./src/contact/contact.js ***!
+  \********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"SKILLS_IMG\": () => (/* binding */ SKILLS_IMG),\n/* harmony export */   \"TOP_SKILLS\": () => (/* binding */ TOP_SKILLS),\n/* harmony export */   \"WORK_ITEMS\": () => (/* binding */ WORK_ITEMS)\n/* harmony export */ });\nconst WORK_ITEMS = [\r\n  {\r\n    title: 'Globant',\r\n    startDate: '20180801',\r\n    endDate: '20201201',\r\n    subtitle: 'Hired as Jr Web developer.',\r\n    skill: [\r\n      'HTML',\r\n      'CSS',\r\n      'Storybook',\r\n      'Highcharts',\r\n      'Vue',\r\n      '.Net',\r\n      'Front End',\r\n      'Back End',\r\n    ],\r\n    projects: [\r\n      {\r\n        title: 'Project: eVestment',\r\n        description:\r\n          'Web development focused in VueJs (use of state, store(vuex), router), worked with Highcharts and VueJs to make reusable components for the clients’ page. And minor exp with backend using .net core and nodejs.',\r\n      },\r\n      {\r\n        title: 'Project: Smile Direct Club',\r\n        description:\r\n          'Web development with frontend technologies such VueJs and NuxtJs focus on page performance using nuxt server-side capacity. Use of vue-axios, bootstrap-vue, ECMA 6+.',\r\n      },\r\n    ],\r\n  },\r\n  {\r\n    title: 'Cliengo',\r\n    startDate: '20201201',\r\n    endDate: '20210801',\r\n    subtitle: 'Hired as Mid Level Full-stack developer.',\r\n    skill: ['HTML', 'CSS', 'Storybook', 'Highcharts', 'React', 'Front End'],\r\n    projects: [\r\n      {\r\n        title: 'Project Conversational',\r\n        description:\r\n          'Conversational App. Web development using ReactJs, also working with mobile apps using React Native. Tech migrations from angular to react. Use of Axios, Bootstrap, ECMA 6+.',\r\n      },\r\n      {\r\n        title: 'Project Live/Lit',\r\n        description:\r\n          'CRM App, conversation handler, using React Js, Css, Router, Redux, Axios. Unit Testing with JestJs, Deployment with AWS/Heroku.',\r\n      },\r\n    ],\r\n  },\r\n  {\r\n    title: 'Professor (part-time)',\r\n    startDate: '20210601',\r\n    endDate: '20220301',\r\n    skill: ['Teaching', 'C', 'Programming'],\r\n    projects: 'Teaching programming to first year students.',\r\n  },\r\n  {\r\n    title: 'Endava',\r\n    startDate: '20210801',\r\n    endDate: '20220401',\r\n    subtitle: 'Hired as Mid Level Full-stack developer.',\r\n    skill: [\r\n      'HTML',\r\n      'CSS',\r\n      'JavaScript',\r\n      'SQL',\r\n      'Marklogic',\r\n      'Teaching',\r\n      'Leadership',\r\n      'Interviewing',\r\n      'Back End',\r\n    ],\r\n    projects: [\r\n      {\r\n        title: 'Project Marklogic',\r\n        description:\r\n          'Technical Leader and developer in a team working as consultant for Marklogic projects. Also working in a semantics data base project for Yale University. ',\r\n      },\r\n      {\r\n        title: 'Endava Argentina Intership',\r\n        description:\r\n          'Organizer and mentor for Endava Argentina Intership program 2022, in charge of lectures related to JS and general programming.',\r\n      },\r\n    ],\r\n  },\r\n  {\r\n    title: 'Sitenso',\r\n    startDate: '20220901',\r\n    endDate: '20221201',\r\n    subtitle: 'Hired as Technical Manager.',\r\n    skill: [\r\n      'HTML',\r\n      'CSS',\r\n      'Storybook',\r\n      'Leadership',\r\n      'React',\r\n      'NodeJs',\r\n      'Interviewing',\r\n    ],\r\n    projects:\r\n      'Technical leader and manager for many projects and developers. In charge of technical interview, planning and developer path and technical advise in react and other front end technologies.',\r\n  },\r\n  {\r\n    title: 'Moove-IT',\r\n    startDate: '20220401',\r\n    subtitle: 'Hired as Senior Full-stack developer.',\r\n    isCurrent: true,\r\n    skill: [\r\n      'HTML',\r\n      'CSS',\r\n      'Storybook',\r\n      'Highcharts',\r\n      'React',\r\n      'Nodejs',\r\n      'Remix',\r\n      'Sass',\r\n      'Front End',\r\n    ],\r\n    projects: [\r\n      {\r\n        title: 'Project Avant',\r\n        description:\r\n          'Software development for Avant application, working on a web app using Remix (ReactJs framework for SSR).',\r\n      },\r\n    ],\r\n  },\r\n];\r\n\r\nconst SKILLS_IMG = [\r\n  {\r\n    src: '../assets/icons/html.svg',\r\n    alt: 'HTML Logo',\r\n    title: 'HTML',\r\n  },\r\n  {\r\n    src: '../assets/icons/css.svg',\r\n    alt: 'CSS Logo',\r\n    title: 'CSS',\r\n  },\r\n  {\r\n    src: '../assets/icons/tailwind.svg',\r\n    alt: 'Tailwind Logo',\r\n    title: 'Tailwind',\r\n  },\r\n  {\r\n    src: '../assets/icons/js.svg',\r\n    alt: 'JavaScript Logo',\r\n    title: 'JavaScript',\r\n  },\r\n  {\r\n    src: '../assets/icons/react.svg',\r\n    alt: 'React Logo',\r\n    title: 'React',\r\n  },\r\n  {\r\n    src: '../assets/icons/redux.svg',\r\n    alt: 'Redux Logo',\r\n    title: 'Redux',\r\n  },\r\n  {\r\n    src: '../assets/icons/nodejs.svg',\r\n    alt: 'Nodejs Logo',\r\n    title: 'NodeJs',\r\n  },\r\n  {\r\n    src: '../assets/icons/axios.svg',\r\n    alt: 'Axios Logo',\r\n    title: 'Axios',\r\n  },\r\n  {\r\n    src: '../assets/icons/express.svg',\r\n    alt: 'Express Logo',\r\n    title: 'Express',\r\n  },\r\n  {\r\n    src: '../assets/icons/git-icon.svg',\r\n    alt: 'Git Logo',\r\n    title: 'Git',\r\n  },\r\n  {\r\n    src: '../assets/icons/mongodb.svg',\r\n    alt: 'Mongodb Logo',\r\n    title: 'Mongodb',\r\n  },\r\n  {\r\n    src: '../assets/icons/vue-js.svg',\r\n    alt: 'Vue Logo',\r\n    title: 'Vue',\r\n  },\r\n  {\r\n    src: '../assets/icons/cypress.svg',\r\n    alt: 'Cypress Logo',\r\n    title: 'Cypress',\r\n  },\r\n  {\r\n    src: '../assets/icons/highcharts.svg',\r\n    alt: 'Highcharts Logo',\r\n    title: 'Highcharts',\r\n  },\r\n  {\r\n    src: '../assets/icons/storybook.svg',\r\n    alt: 'Storybook Logo',\r\n    title: 'Storybook',\r\n  },\r\n  {\r\n    src: '../assets/icons/agile-software.svg',\r\n    alt: 'Agile Logo',\r\n    title: 'Agile Development',\r\n  },\r\n  {\r\n    src: '../assets/icons/sass.svg',\r\n    alt: 'Sass Logo',\r\n    title: 'Sass',\r\n  },\r\n  {\r\n    src: '../assets/icons/heroku.svg',\r\n    alt: 'Heroku Logo',\r\n    title: 'Heroku',\r\n  },\r\n  {\r\n    src: '../assets/icons/remix.svg',\r\n    alt: 'Remix.run Logo',\r\n    title: 'Remix.run',\r\n  },\r\n];\r\n\r\nconst TOP_SKILLS = ['Front End', 'Back End'];\r\n\r\n\r\n\n\n//# sourceURL=webpack://Project_Cv/./src/data/data.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utils_utils_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../utils/utils.js */ \"./utils/utils.js\");\n\n\nconst main = async () => {\n  const { NAV_BAR } = await (0,_utils_utils_js__WEBPACK_IMPORTED_MODULE_0__.loadLanguages)();\n  (0,_utils_utils_js__WEBPACK_IMPORTED_MODULE_0__.generateNavBar)(NAV_BAR, 'Contact');\n};\n\n(function () {\n  (0,_utils_utils_js__WEBPACK_IMPORTED_MODULE_0__.checkNameSpace)('contact', main);\n})();\n\n\n//# sourceURL=webpack://Project_Cv/./src/contact/contact.js?");
+
+/***/ }),
+
+/***/ "./src/education/education.js":
+/*!************************************!*\
+  !*** ./src/education/education.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utils_utils_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../utils/utils.js */ \"./utils/utils.js\");\n\n\nconst main = async () => {\n  const { NAV_BAR } = await (0,_utils_utils_js__WEBPACK_IMPORTED_MODULE_0__.loadLanguages)();\n  (0,_utils_utils_js__WEBPACK_IMPORTED_MODULE_0__.generateNavBar)(NAV_BAR, 'Education');\n};\n\n(function () {\n  (0,_utils_utils_js__WEBPACK_IMPORTED_MODULE_0__.checkNameSpace)('education', main);\n})();\n\n\n//# sourceURL=webpack://Project_Cv/./src/education/education.js?");
 
 /***/ }),
 
@@ -1397,7 +1408,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.js */ \"./src/index.js\");\n/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _skills_img_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./skills/img.js */ \"./src/skills/img.js\");\n/* harmony import */ var _skills_workItems_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./skills/workItems.js */ \"./src/skills/workItems.js\");\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://Project_Cv/./src/entry.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _contact_contact_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./contact/contact.js */ \"./src/contact/contact.js\");\n/* harmony import */ var _education_education_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./education/education.js */ \"./src/education/education.js\");\n/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.js */ \"./src/index.js\");\n/* harmony import */ var _projects_projects_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./projects/projects.js */ \"./src/projects/projects.js\");\n/* harmony import */ var _skills_img_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./skills/img.js */ \"./src/skills/img.js\");\n/* harmony import */ var _skills_workItems_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./skills/workItems.js */ \"./src/skills/workItems.js\");\n\n\n\n\n\n\n\n\n//# sourceURL=webpack://Project_Cv/./src/entry.js?");
 
 /***/ }),
 
@@ -1405,9 +1416,21 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ind
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("alert(\r\n  'To test functionality added with JS please go to the CV section, type \"React\" or \"Vue\" or other techs to sort the list. Thank you'\r\n);\r\n\n\n//# sourceURL=webpack://Project_Cv/./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utils_utils_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/utils.js */ \"./utils/utils.js\");\n\n\nconst main = async () => {\n  const { NAV_BAR, INTRO } = await (0,_utils_utils_js__WEBPACK_IMPORTED_MODULE_0__.loadLanguages)();\n  (0,_utils_utils_js__WEBPACK_IMPORTED_MODULE_0__.generateNavBar)(NAV_BAR, 'Home');\n  const h1 = (0,_utils_utils_js__WEBPACK_IMPORTED_MODULE_0__.generateItem)('h1', null, INTRO[0]);\n  const p1 = (0,_utils_utils_js__WEBPACK_IMPORTED_MODULE_0__.generateItem)('p', null, INTRO[1]);\n  const p2 = (0,_utils_utils_js__WEBPACK_IMPORTED_MODULE_0__.generateItem)('p', null, INTRO[2]);\n  const section = document.getElementById('section');\n  section.append(h1);\n  section.append(p1);\n  section.append(p2);\n};\n\n(function () {\n  (0,_utils_utils_js__WEBPACK_IMPORTED_MODULE_0__.checkNameSpace)('index', main);\n})();\n\n\n//# sourceURL=webpack://Project_Cv/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/projects/projects.js":
+/*!**********************************!*\
+  !*** ./src/projects/projects.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utils_utils_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../utils/utils.js */ \"./utils/utils.js\");\n\n\nconst main = async () => {\n  const { NAV_BAR } = await (0,_utils_utils_js__WEBPACK_IMPORTED_MODULE_0__.loadLanguages)();\n  (0,_utils_utils_js__WEBPACK_IMPORTED_MODULE_0__.generateNavBar)(NAV_BAR, 'Projects');\n};\n\n(function () {\n  (0,_utils_utils_js__WEBPACK_IMPORTED_MODULE_0__.checkNameSpace)('projects', main);\n})();\n\n\n//# sourceURL=webpack://Project_Cv/./src/projects/projects.js?");
 
 /***/ }),
 
@@ -1418,7 +1441,7 @@ eval("alert(\r\n  'To test functionality added with JS please go to the CV secti
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utils_utils_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../utils/utils.js */ \"./utils/utils.js\");\n/* harmony import */ var _data_data_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../data/data.js */ \"./src/data/data.js\");\n\r\n\r\n\r\nconst imgWrapper = document.getElementById('icons-wrapper');\r\n\r\n_data_data_js__WEBPACK_IMPORTED_MODULE_1__.SKILLS_IMG.forEach((img) => {\r\n  imgWrapper.appendChild((0,_utils_utils_js__WEBPACK_IMPORTED_MODULE_0__.generateImg)(img));\r\n});\r\n\n\n//# sourceURL=webpack://Project_Cv/./src/skills/img.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utils_utils_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../utils/utils.js */ \"./utils/utils.js\");\n\n\n(async function () {\n  const imgWrapper = document.getElementById('icons-wrapper');\n  const { SKILLS_IMG } = await (0,_utils_utils_js__WEBPACK_IMPORTED_MODULE_0__.loadLanguages)();\n  if (imgWrapper) {\n    SKILLS_IMG.forEach((img) => {\n      imgWrapper.append((0,_utils_utils_js__WEBPACK_IMPORTED_MODULE_0__.generateImg)(img));\n    });\n  }\n})();\n\n\n//# sourceURL=webpack://Project_Cv/./src/skills/img.js?");
 
 /***/ }),
 
@@ -1429,7 +1452,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _uti
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utils_utils_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../utils/utils.js */ \"./utils/utils.js\");\n/* harmony import */ var _data_data_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../data/data.js */ \"./src/data/data.js\");\n\r\n\r\n\r\nconst generateList = (item) => {\r\n  const li = document.createElement('li');\r\n  item.projects.forEach((element) => {\r\n    const liItem = document.createElement('h3');\r\n    const liContent = document.createTextNode(element.title);\r\n    const liItem2 = document.createElement('p');\r\n    const liContent2 = document.createTextNode(element.description);\r\n    liItem.appendChild(liContent);\r\n    liItem2.appendChild(liContent2);\r\n    li.appendChild(liItem);\r\n    li.appendChild(liItem2);\r\n  });\r\n  return li;\r\n};\r\n\r\nconst generateDivider = () => {\r\n  return (0,_utils_utils_js__WEBPACK_IMPORTED_MODULE_0__.generateItem)('div', 'work__divider');\r\n};\r\n\r\nconst generateTitle = (item) => {\r\n  const h2Wrapper = document.createElement('h2');\r\n  const title = document.createTextNode(item.title);\r\n  h2Wrapper.appendChild(title);\r\n  const divWrapper = (0,_utils_utils_js__WEBPACK_IMPORTED_MODULE_0__.generateItem)('div', 'work__title');\r\n  divWrapper.appendChild(h2Wrapper);\r\n  return divWrapper;\r\n};\r\n\r\nconst generateContent = (item) => {\r\n  const contentWrapper = document.createElement('div');\r\n  contentWrapper.classList.add('work__content');\r\n  const date = document.createTextNode(\r\n    (0,_utils_utils_js__WEBPACK_IMPORTED_MODULE_0__.renderDateMsg)(item?.startDate, item?.endDate, item?.isCurrent)\r\n  );\r\n  const dateWrapper = document.createElement('p');\r\n  dateWrapper.appendChild(date);\r\n\r\n  contentWrapper.appendChild(dateWrapper);\r\n  if (item.subtitle) {\r\n    const subtitle = document.createTextNode(item.subtitle);\r\n    const subtitleWrapper = document.createElement('p');\r\n    subtitleWrapper.appendChild(subtitle);\r\n    contentWrapper.appendChild(subtitleWrapper);\r\n  }\r\n\r\n  if (Array.isArray(item.projects)) {\r\n    const ul = document.createElement('ul');\r\n    ul.appendChild(generateList(item));\r\n    contentWrapper.appendChild(ul);\r\n  } else {\r\n    const descriptionWrapper = document.createElement('p');\r\n    const description = document.createTextNode(item.projects);\r\n    descriptionWrapper.appendChild(description);\r\n    contentWrapper.appendChild(descriptionWrapper);\r\n  }\r\n\r\n  const workContent = document.createElement('div');\r\n  workContent.classList.add('work__card');\r\n  workContent.classList.add('card');\r\n\r\n  workContent.appendChild(generateTitle(item));\r\n  workContent.appendChild(contentWrapper);\r\n\r\n  return workContent;\r\n};\r\n\r\nconst appendCard = (divider, card, position) => {\r\n  const work = document.getElementById(`column__${position}`);\r\n  divider.classList.add(`work__divider--${position}`);\r\n  if (position === 'left') {\r\n    work.appendChild(card);\r\n    work.appendChild(divider);\r\n  } else {\r\n    work.appendChild(divider);\r\n    work.appendChild(card);\r\n  }\r\n};\r\n\r\nconst createJobCard = (item, index) => {\r\n  // Divider generator\r\n  const divider = document.createElement('div');\r\n  divider.classList.add('exp_line--horizontal');\r\n\r\n  // Card\r\n  const card = document.createElement('div');\r\n  card.classList.add('work__item');\r\n\r\n  let img = null;\r\n  if (index % 2 === 0) {\r\n    card.classList.add('work__item--left');\r\n    img = (0,_utils_utils_js__WEBPACK_IMPORTED_MODULE_0__.generateImg)(\r\n      {\r\n        src: '../assets/icons/new-job.svg',\r\n        alt: 'New Work Logo',\r\n        title: 'New Work',\r\n      },\r\n      ['work__project', 'work__project--left']\r\n    );\r\n  } else {\r\n    img = (0,_utils_utils_js__WEBPACK_IMPORTED_MODULE_0__.generateImg)(\r\n      {\r\n        src: '../assets/icons/new-job.svg',\r\n        alt: 'New Work Logo',\r\n        title: 'New Work',\r\n      },\r\n      ['work__project', 'work__project--right']\r\n    );\r\n  }\r\n\r\n  card.appendChild(img);\r\n  card.appendChild(divider);\r\n  card.appendChild(generateContent(item));\r\n\r\n  const workDivider = generateDivider();\r\n\r\n  // Helps distribute the rows in the 2 columns, in order to keep css aligned.\r\n  if (index % 2 === 0) {\r\n    appendCard(workDivider, card, 'left');\r\n  } else {\r\n    appendCard(workDivider, card, 'right');\r\n  }\r\n};\r\n\r\n// Render bts to filter skills\r\nconst generateBtn = (skill) => {\r\n  const wrapper = document.getElementById('bts-wrapper');\r\n  const anchor = document.createElement('a');\r\n  anchor.href = '#';\r\n  anchor.id = skill.toLowerCase();\r\n  anchor.classList.add('skill-btn');\r\n\r\n  let flag = true;\r\n\r\n  for (let i = 0; i < 4; i++) {\r\n    const span = document.createElement('span');\r\n    anchor.appendChild(span);\r\n  }\r\n\r\n  const btnTitle = document.createTextNode(skill);\r\n  anchor.appendChild(btnTitle);\r\n  anchor.addEventListener('click', () => {\r\n    if (flag) {\r\n      filter(skill);\r\n      anchor.classList.add('skill-btn--active');\r\n    } else {\r\n      filter();\r\n      anchor.classList.remove('skill-btn--active');\r\n    }\r\n    flag = !flag;\r\n  });\r\n  wrapper.appendChild(anchor);\r\n};\r\n\r\n// Render filter input for skills\r\nconst filter = (input) => {\r\n  const leftColumn = document.getElementById('column__left');\r\n  leftColumn.replaceChildren();\r\n  const rightColumn = document.getElementById('column__right');\r\n  rightColumn.replaceChildren();\r\n  if (input) {\r\n    let filteredItems = _data_data_js__WEBPACK_IMPORTED_MODULE_1__.WORK_ITEMS.filter((item) =>\r\n      item.skill.some((skill) =>\r\n        skill.toLowerCase().includes(input.toLowerCase())\r\n      )\r\n    );\r\n    filteredItems.forEach((item, index) => createJobCard(item, index));\r\n  } else {\r\n    _data_data_js__WEBPACK_IMPORTED_MODULE_1__.WORK_ITEMS.forEach((item, index) => createJobCard(item, index));\r\n  }\r\n};\r\n\r\nconst input = document.getElementById('filter');\r\n_data_data_js__WEBPACK_IMPORTED_MODULE_1__.WORK_ITEMS.forEach((item, index) => createJobCard(item, index));\r\ninput.addEventListener('keyup', (event) => {\r\n  filter(event.target.value);\r\n});\r\n\r\n_data_data_js__WEBPACK_IMPORTED_MODULE_1__.TOP_SKILLS.forEach((skill) => generateBtn(skill));\r\n\r\nconst totalExpTimeWrapper = document.getElementById('time');\r\nconst totalExpTime = document.createTextNode(\r\n  (0,_utils_utils_js__WEBPACK_IMPORTED_MODULE_0__.calculateDates)(_data_data_js__WEBPACK_IMPORTED_MODULE_1__.WORK_ITEMS[0]?.startDate, null, true)\r\n);\r\ntotalExpTimeWrapper.appendChild(totalExpTime);\r\n\n\n//# sourceURL=webpack://Project_Cv/./src/skills/workItems.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utils_utils_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../utils/utils.js */ \"./utils/utils.js\");\n\n\nconst main = async () => {\n  const { TOP_SKILLS, WORK_ITEMS, NAV_BAR } = await (0,_utils_utils_js__WEBPACK_IMPORTED_MODULE_0__.loadLanguages)();\n\n  (0,_utils_utils_js__WEBPACK_IMPORTED_MODULE_0__.generateNavBar)(NAV_BAR, 'CV');\n\n  const generateList = (item) => {\n    const li = document.createElement('li');\n    item.projects.forEach((element) => {\n      const liItem = document.createElement('h3');\n      const liContent = document.createTextNode(element.title);\n      const liItem2 = document.createElement('p');\n      const liContent2 = document.createTextNode(element.description);\n      liItem.appendChild(liContent);\n      liItem2.appendChild(liContent2);\n      li.appendChild(liItem);\n      li.appendChild(liItem2);\n    });\n    return li;\n  };\n\n  const generateDivider = () => {\n    return (0,_utils_utils_js__WEBPACK_IMPORTED_MODULE_0__.generateItem)('div', 'work__divider');\n  };\n\n  const generateTitle = (item) => {\n    const h2Wrapper = document.createElement('h2');\n    const title = document.createTextNode(item.title);\n    h2Wrapper.appendChild(title);\n    const divWrapper = (0,_utils_utils_js__WEBPACK_IMPORTED_MODULE_0__.generateItem)('div', 'work__title');\n    divWrapper.appendChild(h2Wrapper);\n    return divWrapper;\n  };\n\n  const generateContent = (item) => {\n    const contentWrapper = document.createElement('div');\n    contentWrapper.classList.add('work__content');\n    const date = document.createTextNode(\n      (0,_utils_utils_js__WEBPACK_IMPORTED_MODULE_0__.renderDateMsg)(item?.startDate, item?.endDate, item?.isCurrent)\n    );\n    const dateWrapper = document.createElement('p');\n    dateWrapper.appendChild(date);\n\n    contentWrapper.appendChild(dateWrapper);\n    if (item.subtitle) {\n      const subtitle = document.createTextNode(item.subtitle);\n      const subtitleWrapper = document.createElement('p');\n      subtitleWrapper.appendChild(subtitle);\n      contentWrapper.appendChild(subtitleWrapper);\n    }\n\n    if (Array.isArray(item.projects)) {\n      const ul = document.createElement('ul');\n      ul.appendChild(generateList(item));\n      contentWrapper.appendChild(ul);\n    } else {\n      const descriptionWrapper = document.createElement('p');\n      const description = document.createTextNode(item.projects);\n      descriptionWrapper.appendChild(description);\n      contentWrapper.appendChild(descriptionWrapper);\n    }\n\n    const workContent = document.createElement('div');\n    workContent.classList.add('work__card');\n    workContent.classList.add('card');\n\n    workContent.appendChild(generateTitle(item));\n    workContent.appendChild(contentWrapper);\n\n    return workContent;\n  };\n\n  const appendCard = (divider, card, position) => {\n    const work = document.getElementById(`column__${position}`);\n    divider.classList.add(`work__divider--${position}`);\n    if (position === 'left') {\n      work.appendChild(card);\n      work.appendChild(divider);\n    } else {\n      work.appendChild(divider);\n      work.appendChild(card);\n    }\n  };\n\n  const createJobCard = (item, index) => {\n    // Divider generator\n    const divider = document.createElement('div');\n    divider.classList.add('exp_line--horizontal');\n\n    // Card\n    const card = document.createElement('div');\n    card.classList.add('work__item');\n\n    let img = null;\n    if (index % 2 === 0) {\n      card.classList.add('work__item--left');\n      img = (0,_utils_utils_js__WEBPACK_IMPORTED_MODULE_0__.generateImg)(\n        {\n          src: '../assets/icons/new-job.svg',\n          alt: 'New Work Logo',\n          title: 'New Work',\n        },\n        ['work__project', 'work__project--left']\n      );\n    } else {\n      img = (0,_utils_utils_js__WEBPACK_IMPORTED_MODULE_0__.generateImg)(\n        {\n          src: '../assets/icons/new-job.svg',\n          alt: 'New Work Logo',\n          title: 'New Work',\n        },\n        ['work__project', 'work__project--right']\n      );\n    }\n\n    card.appendChild(img);\n    card.appendChild(divider);\n    card.appendChild(generateContent(item));\n\n    const workDivider = generateDivider();\n\n    // Helps distribute the rows in the 2 columns, in order to keep css aligned.\n    if (index % 2 === 0) {\n      appendCard(workDivider, card, 'left');\n    } else {\n      appendCard(workDivider, card, 'right');\n    }\n  };\n\n  // Render bts to filter skills\n  const generateBtn = (skill) => {\n    const wrapper = document.getElementById('bts-wrapper');\n    const anchor = document.createElement('a');\n    anchor.href = '#';\n    anchor.id = skill.toLowerCase();\n    anchor.classList.add('skill-btn');\n\n    let flag = true;\n\n    for (let i = 0; i < 4; i++) {\n      const span = document.createElement('span');\n      anchor.appendChild(span);\n    }\n\n    const btnTitle = document.createTextNode(skill);\n    anchor.appendChild(btnTitle);\n    anchor.addEventListener('click', () => {\n      if (flag) {\n        filter(skill);\n        anchor.classList.add('skill-btn--active');\n      } else {\n        filter();\n        anchor.classList.remove('skill-btn--active');\n      }\n      flag = !flag;\n    });\n    wrapper.appendChild(anchor);\n  };\n\n  // Render filter input for skills\n  const filter = (input) => {\n    const leftColumn = document.getElementById('column__left');\n    leftColumn.replaceChildren();\n    const rightColumn = document.getElementById('column__right');\n    rightColumn.replaceChildren();\n    if (input) {\n      let filteredItems = WORK_ITEMS.filter((item) =>\n        item.skill.some((skill) =>\n          skill.toLowerCase().includes(input.toLowerCase())\n        )\n      );\n      filteredItems.forEach((item, index) => createJobCard(item, index));\n    } else {\n      WORK_ITEMS.forEach((item, index) => createJobCard(item, index));\n    }\n  };\n\n  const input = document.getElementById('filter');\n  WORK_ITEMS.forEach((item, index) => createJobCard(item, index));\n  input.addEventListener('keyup', (event) => {\n    filter(event.target.value);\n  });\n\n  TOP_SKILLS.forEach((skill) => generateBtn(skill));\n\n  const totalExpTimeWrapper = document.getElementById('time');\n  const totalExpTime = document.createTextNode(\n    (0,_utils_utils_js__WEBPACK_IMPORTED_MODULE_0__.calculateDates)(WORK_ITEMS[0]?.startDate, null, true)\n  );\n  totalExpTimeWrapper.appendChild(totalExpTime);\n};\n\n(function () {\n  (0,_utils_utils_js__WEBPACK_IMPORTED_MODULE_0__.checkNameSpace)('skills', main);\n})();\n\n\n//# sourceURL=webpack://Project_Cv/./src/skills/workItems.js?");
 
 /***/ }),
 
@@ -1440,7 +1463,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _uti
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"calculateDates\": () => (/* binding */ calculateDates),\n/* harmony export */   \"generateImg\": () => (/* binding */ generateImg),\n/* harmony export */   \"generateItem\": () => (/* binding */ generateItem),\n/* harmony export */   \"renderDateMsg\": () => (/* binding */ renderDateMsg),\n/* harmony export */   \"renderTimeSpam\": () => (/* binding */ renderTimeSpam),\n/* harmony export */   \"timeDiff\": () => (/* binding */ timeDiff)\n/* harmony export */ });\n/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! moment */ \"./node_modules/moment/moment.js\");\n/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_0__);\n\r\n\r\nconst timeDiff = (startDate, endDate, isCurrent) => {\r\n  if (isCurrent) {\r\n    endDate = moment__WEBPACK_IMPORTED_MODULE_0___default()().format('YYYYMMDD');\r\n  }\r\n\r\n  return moment__WEBPACK_IMPORTED_MODULE_0___default()(endDate).diff(moment__WEBPACK_IMPORTED_MODULE_0___default()(startDate));\r\n};\r\n\r\nconst renderTimeSpam = (years, months, time) => {\r\n  if (years >= 1) {\r\n    return `${Math.trunc(years)} .Yrs ${Math.round((months / 100) * 12)} .Mos`;\r\n  } else {\r\n    return `${Math.round(moment__WEBPACK_IMPORTED_MODULE_0___default().duration(time).asMonths())} .Mos`;\r\n  }\r\n};\r\n\r\n// Get start and end date to calculate how much time in years or months has passed, if isCurrent is true that calculates from start until today.\r\nconst calculateDates = (startDate, endDate, isCurrent) => {\r\n  const time = timeDiff(startDate, endDate, isCurrent);\r\n\r\n  const calculateYears = moment__WEBPACK_IMPORTED_MODULE_0___default().duration(time).asYears();\r\n\r\n  const calculateMonths = calculateYears.toFixed(2).toString().split('.')[1];\r\n\r\n  return renderTimeSpam(calculateYears, calculateMonths, time);\r\n};\r\n\r\n// Render date phrase\r\nconst renderDateMsg = (\r\n  startDate = undefined,\r\n  endDate = undefined,\r\n  isCurrent = undefined\r\n) => {\r\n  if (isCurrent) {\r\n    return `Date: ${moment__WEBPACK_IMPORTED_MODULE_0___default()(startDate).format(\r\n      'MMM YYYY'\r\n    )} - Current (${calculateDates(startDate, endDate, isCurrent)})`;\r\n  }\r\n\r\n  return `Date: ${moment__WEBPACK_IMPORTED_MODULE_0___default()(startDate).format('MMM YYYY')} - ${moment__WEBPACK_IMPORTED_MODULE_0___default()(\r\n    endDate\r\n  ).format('MMM YYYY')} (${calculateDates(startDate, endDate, isCurrent)})`;\r\n};\r\n\r\n// Generates custom img\r\nconst generateImg = (item = {}, className = []) => {\r\n  const img = document.createElement('img');\r\n  img.src = item.src;\r\n  if (className) className.forEach((classItem) => img.classList.add(classItem));\r\n  if (item.alt) img.alt = item.alt;\r\n  if (item.title) img.title = item.title;\r\n  return img;\r\n};\r\n\r\nconst generateItem = (itemType = undefined, className = undefined) => {\r\n  const item = document.createElement(itemType);\r\n  if (className) item.classList.add(className);\r\n  return item;\r\n};\r\n\r\n\r\n\n\n//# sourceURL=webpack://Project_Cv/./utils/utils.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"calculateDates\": () => (/* binding */ calculateDates),\n/* harmony export */   \"checkNameSpace\": () => (/* binding */ checkNameSpace),\n/* harmony export */   \"generateImg\": () => (/* binding */ generateImg),\n/* harmony export */   \"generateItem\": () => (/* binding */ generateItem),\n/* harmony export */   \"generateNavBar\": () => (/* binding */ generateNavBar),\n/* harmony export */   \"loadLanguages\": () => (/* binding */ loadLanguages),\n/* harmony export */   \"renderDateMsg\": () => (/* binding */ renderDateMsg),\n/* harmony export */   \"renderTimeSpam\": () => (/* binding */ renderTimeSpam),\n/* harmony export */   \"timeDiff\": () => (/* binding */ timeDiff)\n/* harmony export */ });\n/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! moment */ \"./node_modules/moment/moment.js\");\n/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//Dynamic Import\nconst loadLanguages = async () => {\n  var userLang = navigator.language || navigator.userLanguage;\n\n  switch (userLang) {\n    case 'en':\n      return await __webpack_require__.e(/*! import() */ \"src_lang_EN_js\").then(__webpack_require__.bind(__webpack_require__, /*! ../src/lang/EN.js */ \"./src/lang/EN.js\"));\n    case 'es':\n      return await __webpack_require__.e(/*! import() */ \"src_lang_ES_js\").then(__webpack_require__.bind(__webpack_require__, /*! ../src/lang/ES.js */ \"./src/lang/ES.js\"));\n    default:\n      return await __webpack_require__.e(/*! import() */ \"src_lang_EN_js\").then(__webpack_require__.bind(__webpack_require__, /*! ../src/lang/EN.js */ \"./src/lang/EN.js\"));\n  }\n};\n\nconst timeDiff = (startDate, endDate, isCurrent) => {\n  if (isCurrent) {\n    endDate = moment__WEBPACK_IMPORTED_MODULE_0___default()().format('YYYYMMDD');\n  }\n\n  return moment__WEBPACK_IMPORTED_MODULE_0___default()(endDate).diff(moment__WEBPACK_IMPORTED_MODULE_0___default()(startDate));\n};\n\nconst renderTimeSpam = (years, months, time) => {\n  if (years >= 1) {\n    return `${Math.trunc(years)} .Yrs ${Math.round((months / 100) * 12)} .Mos`;\n  } else {\n    return `${Math.round(moment__WEBPACK_IMPORTED_MODULE_0___default().duration(time).asMonths())} .Mos`;\n  }\n};\n\n// Get start and end date to calculate how much time in years or months has passed, if isCurrent is true that calculates from start until today.\nconst calculateDates = (startDate, endDate, isCurrent) => {\n  const time = timeDiff(startDate, endDate, isCurrent);\n\n  const calculateYears = moment__WEBPACK_IMPORTED_MODULE_0___default().duration(time).asYears();\n\n  const calculateMonths = calculateYears.toFixed(2).toString().split('.')[1];\n\n  return renderTimeSpam(calculateYears, calculateMonths, time);\n};\n\n// Render date phrase\nconst renderDateMsg = (\n  startDate = undefined,\n  endDate = undefined,\n  isCurrent = undefined\n) => {\n  if (isCurrent) {\n    return `Date: ${moment__WEBPACK_IMPORTED_MODULE_0___default()(startDate).format(\n      'MMM YYYY'\n    )} - Current (${calculateDates(startDate, endDate, isCurrent)})`;\n  }\n\n  return `Date: ${moment__WEBPACK_IMPORTED_MODULE_0___default()(startDate).format('MMM YYYY')} - ${moment__WEBPACK_IMPORTED_MODULE_0___default()(\n    endDate\n  ).format('MMM YYYY')} (${calculateDates(startDate, endDate, isCurrent)})`;\n};\n\n// Generates custom img\nconst generateImg = (item = {}, className = []) => {\n  const img = document.createElement('img');\n  img.src = item.src;\n  if (className) className.forEach((classItem) => img.classList.add(classItem));\n  if (item.alt) img.alt = item.alt;\n  if (item.title) img.title = item.title;\n  return img;\n};\n\nconst generateItem = (\n  itemType = undefined,\n  className = undefined,\n  text = undefined\n) => {\n  const item = document.createElement(itemType);\n  if (className) item.classList.add(className);\n  if (text) item.innerHTML = text;\n  return item;\n};\n\n// Generates the main NavBar\nconst generateNavBar = (items, activeBtn) => {\n  console.log('items', items);\n  const navBar = document.getElementById('nav-btn');\n  items.forEach((item) => {\n    const li = document.createElement('li');\n    li.tabIndex = item?.tabIndex;\n    if (activeBtn === item?.name) li.id = 'active-btn';\n    const anchor = document.createElement('a');\n    anchor.href = item?.path;\n    const span = document.createElement('span');\n    span.innerHTML = item?.name;\n    const img = generateImg(item, item.className);\n    anchor.append(img);\n    anchor.append(span);\n    li.append(anchor);\n    navBar.append(li);\n  });\n};\n\n// Checks if it should trigger a function or not based on body id\nconst checkNameSpace = (space, callback) => {\n  if (document.getElementById(space)) {\n    callback();\n  }\n};\n\n\n\n\n//# sourceURL=webpack://Project_Cv/./utils/utils.js?");
 
 /***/ })
 
@@ -1473,6 +1496,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -1498,9 +1524,88 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/ensure chunk */
+/******/ 	(() => {
+/******/ 		__webpack_require__.f = {};
+/******/ 		// This file contains only the entry chunk.
+/******/ 		// The chunk loading function for additional chunks
+/******/ 		__webpack_require__.e = (chunkId) => {
+/******/ 			return Promise.all(Object.keys(__webpack_require__.f).reduce((promises, key) => {
+/******/ 				__webpack_require__.f[key](chunkId, promises);
+/******/ 				return promises;
+/******/ 			}, []));
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/get javascript chunk filename */
+/******/ 	(() => {
+/******/ 		// This function allow to reference async chunks
+/******/ 		__webpack_require__.u = (chunkId) => {
+/******/ 			// return url for filenames based on template
+/******/ 			return "" + chunkId + ".js";
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/load script */
+/******/ 	(() => {
+/******/ 		var inProgress = {};
+/******/ 		var dataWebpackPrefix = "Project Cv:";
+/******/ 		// loadScript function to load a script via script tag
+/******/ 		__webpack_require__.l = (url, done, key, chunkId) => {
+/******/ 			if(inProgress[url]) { inProgress[url].push(done); return; }
+/******/ 			var script, needAttach;
+/******/ 			if(key !== undefined) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				for(var i = 0; i < scripts.length; i++) {
+/******/ 					var s = scripts[i];
+/******/ 					if(s.getAttribute("src") == url || s.getAttribute("data-webpack") == dataWebpackPrefix + key) { script = s; break; }
+/******/ 				}
+/******/ 			}
+/******/ 			if(!script) {
+/******/ 				needAttach = true;
+/******/ 				script = document.createElement('script');
+/******/ 		
+/******/ 				script.charset = 'utf-8';
+/******/ 				script.timeout = 120;
+/******/ 				if (__webpack_require__.nc) {
+/******/ 					script.setAttribute("nonce", __webpack_require__.nc);
+/******/ 				}
+/******/ 				script.setAttribute("data-webpack", dataWebpackPrefix + key);
+/******/ 				script.src = url;
+/******/ 			}
+/******/ 			inProgress[url] = [done];
+/******/ 			var onScriptComplete = (prev, event) => {
+/******/ 				// avoid mem leaks in IE.
+/******/ 				script.onerror = script.onload = null;
+/******/ 				clearTimeout(timeout);
+/******/ 				var doneFns = inProgress[url];
+/******/ 				delete inProgress[url];
+/******/ 				script.parentNode && script.parentNode.removeChild(script);
+/******/ 				doneFns && doneFns.forEach((fn) => (fn(event)));
+/******/ 				if(prev) return prev(event);
+/******/ 			};
+/******/ 			var timeout = setTimeout(onScriptComplete.bind(null, undefined, { type: 'timeout', target: script }), 120000);
+/******/ 			script.onerror = onScriptComplete.bind(null, script.onerror);
+/******/ 			script.onload = onScriptComplete.bind(null, script.onload);
+/******/ 			needAttach && document.head.appendChild(script);
+/******/ 		};
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
@@ -1521,6 +1626,116 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			if (!module.children) module.children = [];
 /******/ 			return module;
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		// no baseURI
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"main": 0
+/******/ 		};
+/******/ 		
+/******/ 		__webpack_require__.f.j = (chunkId, promises) => {
+/******/ 				// JSONP chunk loading for javascript
+/******/ 				var installedChunkData = __webpack_require__.o(installedChunks, chunkId) ? installedChunks[chunkId] : undefined;
+/******/ 				if(installedChunkData !== 0) { // 0 means "already installed".
+/******/ 		
+/******/ 					// a Promise means "currently loading".
+/******/ 					if(installedChunkData) {
+/******/ 						promises.push(installedChunkData[2]);
+/******/ 					} else {
+/******/ 						if(true) { // all chunks have JS
+/******/ 							// setup Promise in chunk cache
+/******/ 							var promise = new Promise((resolve, reject) => (installedChunkData = installedChunks[chunkId] = [resolve, reject]));
+/******/ 							promises.push(installedChunkData[2] = promise);
+/******/ 		
+/******/ 							// start chunk loading
+/******/ 							var url = __webpack_require__.p + __webpack_require__.u(chunkId);
+/******/ 							// create error before stack unwound to get useful stacktrace later
+/******/ 							var error = new Error();
+/******/ 							var loadingEnded = (event) => {
+/******/ 								if(__webpack_require__.o(installedChunks, chunkId)) {
+/******/ 									installedChunkData = installedChunks[chunkId];
+/******/ 									if(installedChunkData !== 0) installedChunks[chunkId] = undefined;
+/******/ 									if(installedChunkData) {
+/******/ 										var errorType = event && (event.type === 'load' ? 'missing' : event.type);
+/******/ 										var realSrc = event && event.target && event.target.src;
+/******/ 										error.message = 'Loading chunk ' + chunkId + ' failed.\n(' + errorType + ': ' + realSrc + ')';
+/******/ 										error.name = 'ChunkLoadError';
+/******/ 										error.type = errorType;
+/******/ 										error.request = realSrc;
+/******/ 										installedChunkData[1](error);
+/******/ 									}
+/******/ 								}
+/******/ 							};
+/******/ 							__webpack_require__.l(url, loadingEnded, "chunk-" + chunkId, chunkId);
+/******/ 						} else installedChunks[chunkId] = 0;
+/******/ 					}
+/******/ 				}
+/******/ 		};
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// install a JSONP callback for chunk loading
+/******/ 		var webpackJsonpCallback = (parentChunkLoadingFunction, data) => {
+/******/ 			var [chunkIds, moreModules, runtime] = data;
+/******/ 			// add "moreModules" to the modules object,
+/******/ 			// then flag all "chunkIds" as loaded and fire callback
+/******/ 			var moduleId, chunkId, i = 0;
+/******/ 			if(chunkIds.some((id) => (installedChunks[id] !== 0))) {
+/******/ 				for(moduleId in moreModules) {
+/******/ 					if(__webpack_require__.o(moreModules, moduleId)) {
+/******/ 						__webpack_require__.m[moduleId] = moreModules[moduleId];
+/******/ 					}
+/******/ 				}
+/******/ 				if(runtime) var result = runtime(__webpack_require__);
+/******/ 			}
+/******/ 			if(parentChunkLoadingFunction) parentChunkLoadingFunction(data);
+/******/ 			for(;i < chunkIds.length; i++) {
+/******/ 				chunkId = chunkIds[i];
+/******/ 				if(__webpack_require__.o(installedChunks, chunkId) && installedChunks[chunkId]) {
+/******/ 					installedChunks[chunkId][0]();
+/******/ 				}
+/******/ 				installedChunks[chunkId] = 0;
+/******/ 			}
+/******/ 		
+/******/ 		}
+/******/ 		
+/******/ 		var chunkLoadingGlobal = self["webpackChunkProject_Cv"] = self["webpackChunkProject_Cv"] || [];
+/******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
+/******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	})();
 /******/ 	
 /************************************************************************/
