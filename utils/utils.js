@@ -91,6 +91,7 @@ const generateNavBar = (items, activeBtn) => {
     if (activeBtn !== 'Home') anchor.href = item?.path.replace('views/', '');
     const span = document.createElement('span');
     span.innerHTML = item?.name;
+    if (activeBtn !== 'Home') item.src = item?.src.replace('views/', '');
     const img = generateImg(item, item.className);
     anchor.append(img);
     anchor.append(span);
