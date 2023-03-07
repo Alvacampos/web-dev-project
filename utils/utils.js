@@ -2,15 +2,20 @@ import moment from 'moment';
 
 //Dynamic Import and lang set up
 const loadLanguages = async () => {
-  var userLang = navigator.language || navigator.userLanguage;
+  try {
+    var userLang = navigator.language || navigator.userLanguage;
 
-  switch (userLang.split('-')[0]) {
-    case 'en':
-      return await import('../src/lang/EN.js');
-    case 'es':
-      return await import('../src/lang/ES.js');
-    default:
-      return await import('../src/lang/EN.js');
+    switch (userLang.split('-')[0]) {
+      case 'en':
+        return await import('../src/lang/EN.js');
+      case 'es':
+        return await import('../src/lang/ES.js');
+      default:
+        return await import('../src/lang/EN.js');
+    }
+  } catch (e) {
+    console.log('There was a problem loading language, default to english', e);
+    return await import('../src/lang/EN.js');
   }
 };
 

@@ -1,5 +1,6 @@
 # Post processed CSS
 dist/**
+utils/**
 
 # Caches
 .cache/

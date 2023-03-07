@@ -18,12 +18,12 @@ const WORK_ITEMS = [
       {
         title: 'Pryecto: eVestment',
         description:
-          'Web development focused in VueJs (use of state, store(vuex), router), worked with Highcharts and VueJs to make reusable components for the clients’ page. And minor exp with backend using .net core and nodejs.',
+          'Desarrollo web enfocado en VueJs (uso de state, store(vuex), router), trabajé con Highcharts y VueJs para hacer componentes reutilizables para la página del cliente. Y algo experiencia con backend usando .net core y nodejs.',
       },
       {
-        title: 'Pryecto: Smile Direct Club',
+        title: 'Proyecto: Smile Direct Club',
         description:
-          'Web development with frontend technologies such VueJs and NuxtJs focus on page performance using nuxt server-side capacity. Use of vue-axios, bootstrap-vue, ECMA 6+.',
+          'Desarrollo web con tecnologías frontend como VueJs y NuxtJs, enfocado en el rendimiento de la página utilizando la capacidad de server-side rendering con nuxt. Uso de vue-axios, bootstrap-vue, ECMA 6+.',
       },
     ],
   },
@@ -31,33 +31,33 @@ const WORK_ITEMS = [
     title: 'Cliengo',
     startDate: '20201201',
     endDate: '20210801',
-    subtitle: 'Hired as Mid Level Full-stack developer.',
+    subtitle: 'Contratado como Semi-senior Full-stack developer.',
     skill: ['HTML', 'CSS', 'Storybook', 'Highcharts', 'React', 'Front End'],
     projects: [
       {
-        title: 'Project Conversational',
+        title: 'Proyecto: Conversational',
         description:
-          'Conversational App. Web development using ReactJs, also working with mobile apps using React Native. Tech migrations from angular to react. Use of Axios, Bootstrap, ECMA 6+.',
+          'Aplicación conversacional. Desarrollo web usando ReactJs, trabajando también con aplicaciones móviles usando React Native. Migraciones tecnológicas de angular a react. Uso de Axios, Bootstrap, ECMA 6+.',
       },
       {
-        title: 'Project Live/Lit',
+        title: 'Proyecto: Live/Lit',
         description:
-          'CRM App, conversation handler, using React Js, Css, Router, Redux, Axios. Unit Testing with JestJs, Deployment with AWS/Heroku.',
+          'Aplicación CRM, manejador de conversaciones, usando React Js, Css, Router, Redux, Axios. Pruebas unitarias con JestJs, Deployment con AWS/Heroku.',
       },
     ],
   },
   {
-    title: 'Professor (part-time)',
+    title: 'Docente (part-time)',
     startDate: '20210601',
     endDate: '20220301',
     skill: ['Teaching', 'C', 'Programming'],
-    projects: 'Teaching programming to first year students.',
+    projects: 'Enseñé programación a alumnos de primer año.',
   },
   {
     title: 'Endava',
     startDate: '20210801',
     endDate: '20220401',
-    subtitle: 'Hired as Mid Level Full-stack developer.',
+    subtitle: 'Contratado como Semi-senior Full-stack developer.',
     skill: [
       'HTML',
       'CSS',
@@ -71,14 +71,14 @@ const WORK_ITEMS = [
     ],
     projects: [
       {
-        title: 'Project Marklogic',
+        title: 'Proyecto: Marklogic',
         description:
-          'Technical Leader and developer in a team working as consultant for Marklogic projects. Also working in a semantics data base project for Yale University. ',
+          'Líder técnico del equipo trabajando como consultor de proyectos de Marklogic. También trabajando en un proyecto de base de datos semántica para la Universidad de Yale.',
       },
       {
         title: 'Endava Argentina Intership',
         description:
-          'Organizer and mentor for Endava Argentina Intership program 2022, in charge of lectures related to JS and general programming.',
+          'Organizador y mentor del programa de pasantías Endava Argentina 2022, a cargo de conferencias relacionadas con JS y programación general.',
       },
     ],
   },
@@ -86,7 +86,7 @@ const WORK_ITEMS = [
     title: 'Sitenso',
     startDate: '20220901',
     endDate: '20221201',
-    subtitle: 'Hired as Technical Manager.',
+    subtitle: 'Contratado como Manager Tecnico',
     skill: [
       'HTML',
       'CSS',
@@ -97,12 +97,12 @@ const WORK_ITEMS = [
       'Interviewing',
     ],
     projects:
-      'Technical leader and manager for many projects and developers. In charge of technical interview, planning and developer path and technical advise in react and other front end technologies.',
+      'Líder técnico y manager de muchos proyectos y desarrolladores. A cargo de entrevistas técnicas, la planificación, crecimiento del desarrollador y el asesoramiento técnico en ReactJs y otras tecnologías de front-end.',
   },
   {
     title: 'Moove-IT',
     startDate: '20220401',
-    subtitle: 'Hired as Senior Full-stack developer.',
+    subtitle: 'Contratado como Senior Full-stack developer.',
     isCurrent: true,
     skill: [
       'HTML',
@@ -119,7 +119,7 @@ const WORK_ITEMS = [
       {
         title: 'Project Avant',
         description:
-          'Software development for Avant application, working on a web app using Remix (ReactJs framework for SSR).',
+          'Desarrollo de software para la aplicación Avant, trabajando en una aplicación web usando Remix (framework ReactJs para SSR).',
       },
     ],
   },

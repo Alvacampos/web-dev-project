@@ -35,12 +35,12 @@ const WORK_ITEMS = [
     skill: ['HTML', 'CSS', 'Storybook', 'Highcharts', 'React', 'Front End'],
     projects: [
       {
-        title: 'Project Conversational',
+        title: 'Project: Conversational',
         description:
           'Conversational App. Web development using ReactJs, also working with mobile apps using React Native. Tech migrations from angular to react. Use of Axios, Bootstrap, ECMA 6+.',
       },
       {
-        title: 'Project Live/Lit',
+        title: 'Project: Live/Lit',
         description:
           'CRM App, conversation handler, using React Js, Css, Router, Redux, Axios. Unit Testing with JestJs, Deployment with AWS/Heroku.',
       },
@@ -78,7 +78,7 @@ const WORK_ITEMS = [
       {
         title: 'Endava Argentina Intership',
         description:
-          'Organizer and mentor for Endava Argentina Intership program 2022, in charge of lectures related to JS and general programming.',
+          'Organizer and mentor for Endava Argentina Internship program 2022, in charge of lectures related to JS and general programming.',
       },
     ],
   },
