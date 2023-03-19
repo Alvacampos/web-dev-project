@@ -79,7 +79,13 @@ const generateItem = (
   text = undefined
 ) => {
   const item = document.createElement(itemType);
-  if (className) item.classList.add(className);
+  if (Array.isArray(className)) {
+    className.forEach((name) => {
+      item.classList.add(name)
+    })
+  } else if (className) {
+    item.classList.add(className)
+  }
   if (text) item.innerHTML = text;
   return item;
 };

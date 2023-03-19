@@ -1,0 +1,89 @@
+.bot {
+  position: absolute;
+  bottom: 30px;
+  right: 30px; }
+  .bot--close {
+    height: 75px;
+    width: 75px; }
+  .bot__btn {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    padding: 0;
+    border: 0; }
+    .bot__btn--open {
+      display: none; }
+    .bot__btn--close {
+      display: block; }
+  .bot img {
+    width: 100%;
+    height: 100%; }
+  .bot__chat {
+    display: none;
+    width: 350px;
+    height: 500px;
+    background-color: #0d1117;
+    border: solid 5px grey;
+    border-radius: 5px;
+    position: relative; }
+    .bot__chat--open {
+      display: block; }
+    .bot__chat--close {
+      display: none; }
+    .bot__chat-window {
+      padding: 35px 20px;
+      height: 100%;
+      overflow-y: scroll;
+      max-height: 460px; }
+      .bot__chat-window::-webkit-scrollbar {
+        display: none; }
+  .bot__input {
+    position: absolute;
+    bottom: 0;
+    width: -webkit-fill-available; }
+  .bot__close {
+    width: 25px;
+    position: absolute;
+    right: 0;
+    border: none;
+    padding: 0;
+    background-color: #0d1117; }
+  .bot close-img {
+    width: 20px;
+    height: 20px; }
+  .bot .blob {
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 #ffffff;
+    animation: pulse-white 2s infinite; }
+
+@keyframes pulse-white {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 #ffffffb3; }
+  70% {
+    transform: scale(1.2);
+    box-shadow: 0 0 0 10px #ffffff00; }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 #ffffff00; } }
+
+.chat__msg {
+  position: relative;
+  max-width: 100%;
+  color: #0d1117;
+  background-color: #fff;
+  padding: 1.125em 1.5em;
+  font-size: 1.25em;
+  border-radius: 1rem;
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2); }
+  .chat__msg::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 100%;
+    left: 1.5em;
+    border: 0.75rem solid transparent;
+    border-top: none;
+    border-bottom-color: #fff;
+    filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, 0.1)); }

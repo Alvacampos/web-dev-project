@@ -76,28 +76,28 @@
   height: $space-200;
 }
 
-.blob {
-  border-radius: 50%;
-  box-shadow: 0 0 0 0 $default-white;
-  animation: pulse-white 2s infinite;
-}
+// .blob {
+//   border-radius: 50%;
+//   box-shadow: 0 0 0 0 $default-white;
+//   animation: pulse-white 2s infinite;
+// }
 
-@keyframes pulse-white {
-  0% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 $alternative-white;
-  }
+// @keyframes pulse-white {
+//   0% {
+//     transform: scale(0.95);
+//     box-shadow: 0 0 0 0 $alternative-white;
+//   }
 
-  70% {
-    transform: scale(1.5);
-    box-shadow: 0 0 0 10px $alternative-black;
-  }
+//   70% {
+//     transform: scale(1.5);
+//     box-shadow: 0 0 0 10px $alternative-black;
+//   }
 
-  100% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 $alternative-black;
-  }
-}
+//   100% {
+//     transform: scale(0.95);
+//     box-shadow: 0 0 0 0 $alternative-black;
+//   }
+// }
 
 /* Device Breakpoints */
 /* Mobile Medium */

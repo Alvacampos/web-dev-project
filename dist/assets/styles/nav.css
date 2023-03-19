@@ -57,22 +57,6 @@
   width: 200px;
   height: 200px; }
 
-.blob {
-  border-radius: 50%;
-  box-shadow: 0 0 0 0 #ffffff;
-  animation: pulse-white 2s infinite; }
-
-@keyframes pulse-white {
-  0% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 #ffffffb3; }
-  70% {
-    transform: scale(1.5);
-    box-shadow: 0 0 0 10px #ffffff00; }
-  100% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 #ffffff00; } }
-
 /* Device Breakpoints */
 /* Mobile Medium */
 @media only screen and ((min-width: 496px)) {

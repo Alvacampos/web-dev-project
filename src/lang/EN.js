@@ -283,4 +283,31 @@ const INTRO = [
   "I'm a Software Developer and I made this page so you can get to know me a little better",
 ];
 
-export { WORK_ITEMS, SKILLS_IMG, TOP_SKILLS, NAV_BAR, INTRO };
+const BOT_HELLO = [
+  "Hi, my name is Jarvis and I'm an interactive chat bot.",
+  "For now I'm a work in progress so my responses might not be the best.",
+  'Can you tell your name so I can remember it next time you visit?',
+];
+
+const BOT_ICONS = [
+  {
+    src: '../assets/icons/chatbot.svg',
+    alt: 'Bot Logo',
+    title: 'Chat bot',
+  },
+  {
+    src: '../assets/icons/close-button.svg',
+    alt: 'Close',
+    title: 'Close',
+  },
+];
+
+export {
+  WORK_ITEMS,
+  SKILLS_IMG,
+  TOP_SKILLS,
+  NAV_BAR,
+  INTRO,
+  BOT_HELLO,
+  BOT_ICONS,
+};

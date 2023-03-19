@@ -1,3 +1,4 @@
+import './chatbot/chatbot.js';
 import './contact/contact.js';
 import './education/education.js';
 import './index.js';
