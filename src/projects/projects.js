@@ -5,8 +5,12 @@ import {
 } from '../../utils/utils.js';
 
 const main = async () => {
-  const { NAV_BAR } = await loadLanguages();
-  generateNavBar(NAV_BAR, 'Projects');
+  try {
+    const { NAV_BAR } = await loadLanguages();
+    generateNavBar(NAV_BAR, 'Projects');
+  } catch (e) {
+    console.log('Fatal error', e);
+  }
 };
 
 (function () {
