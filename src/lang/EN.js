@@ -291,12 +291,12 @@ const BOT_HELLO = [
 
 const BOT_ICONS = [
   {
-    src: '../assets/icons/chatbot.svg',
+    src: './assets/icons/chatbot.svg',
     alt: 'Bot Logo',
     title: 'Chat bot',
   },
   {
-    src: '../assets/icons/close-button.svg',
+    src: './assets/icons/close-button.svg',
     alt: 'Close',
     title: 'Close',
   },
