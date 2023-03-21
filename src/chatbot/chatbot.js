@@ -84,7 +84,6 @@ const main = async () => {
         );
       }
 
-      console.log(chatWrapper.childNodes.length);
       if (chatWrapper.childNodes.length > 1) {
         const text = await botMessages('Sorry I have no more responses', 500);
         chatWrapper.append(text);
