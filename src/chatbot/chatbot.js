@@ -1,7 +1,7 @@
 import { generateImg, generateItem, loadLanguages } from '../../utils/utils.js';
 
 const main = async () => {
-  const { BOT_ICONS, BOT_HELLO } = await loadLanguages();
+  const { BOT_ICONS, BOT_HELLO, BOT_HI } = await loadLanguages();
 
   const main = document.querySelector('main');
   const botWrapper = generateItem('div', 'bot');
@@ -28,14 +28,14 @@ const main = async () => {
   botWindow.append(chatWrapper);
 
   // Simulates human delayed hello response
-  const welcomeMsg = (textItem) => {
+  const botMessages = (textItem, time = 1000) => {
     return new Promise((resolve) => {
       setTimeout(() => {
-        const p = generateItem('p', 'chat__msg');
+        const p = generateItem('p', ['chat__msg', 'chat__msg-bot']);
         var text = document.createTextNode(textItem);
         p.appendChild(text);
         resolve(p);
-      }, 1000);
+      }, time);
     });
   };
 
@@ -54,21 +54,42 @@ const main = async () => {
     botBtn.classList.add('bot__btn--open');
     botWindow.classList.add('bot__chat--open');
 
-    for (const textItem of BOT_HELLO) {
-      if (chatWrapper.childNodes.length < 3) {
-        const text = await welcomeMsg(textItem);
+    // Discriminates if the user is a new user or not
+    if (chatWrapper.childNodes.length < 3 && !localStorage.getItem('user')) {
+      for (const textItem of BOT_HELLO) {
+        const text = await botMessages(textItem, 700);
         chatWrapper.append(text);
       }
+    } else {
+      const text = await botMessages(
+        `${BOT_HI} ${JSON.parse(localStorage.getItem('user')).name}!`,
+        500
+      );
+      chatWrapper.append(text);
     }
   });
 
   // Listen to input to be shown in the chat
-  botInput.addEventListener('keypress', (event) => {
+  botInput.addEventListener('keypress', async (event) => {
     if (event.key === 'Enter' && event.target.value !== '') {
       const p = generateItem('p', 'chat__msg');
       var text = document.createTextNode(event.target.value);
       p.appendChild(text);
       chatWrapper.append(p);
+
+      if (chatWrapper.childNodes.length === 4) {
+        localStorage.setItem(
+          'user',
+          JSON.stringify({ id: 1, name: event.target.value })
+        );
+      }
+
+      console.log(chatWrapper.childNodes.length);
+      if (chatWrapper.childNodes.length > 1) {
+        const text = await botMessages('Sorry I have no more responses', 500);
+        chatWrapper.append(text);
+      }
+
       event.target.value = '';
     }
   });

@@ -71,7 +71,7 @@
   position: relative;
   max-width: 100%;
   color: #0d1117;
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 1.125em 1.5em;
   font-size: 1.25em;
   border-radius: 1rem;
@@ -85,5 +85,14 @@
     left: 1.5em;
     border: 0.75rem solid transparent;
     border-top: none;
-    border-bottom-color: #fff;
+    bottom: -11px;
+    transform: rotate(180deg);
+    border-bottom-color: #ffffff;
     filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, 0.1)); }
+  .chat__msg-bot {
+    background-color: #216e39; }
+    .chat__msg-bot::before {
+      left: 12.5em;
+      border-bottom-color: #216e39;
+      bottom: -11px;
+      transform: rotate(180deg); }

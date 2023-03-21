@@ -113,8 +113,8 @@
     max-width: 100%;
 
     // looks
-    color: #0d1117;
-    background-color: #fff;
+    color: $default-black;
+    background-color: $default-white;
     padding: 1.125em 1.5em;
     font-size: 1.25em;
     border-radius: 1rem;
@@ -131,10 +131,22 @@
       left: 1.5em; // offset should move with padding of parent
       border: 0.75rem solid transparent;
       border-top: none;
+      bottom: -11px;
+      transform: rotate(180deg);
 
       // looks
-      border-bottom-color: #fff;
+      border-bottom-color: $default-white;
       filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, 0.1));
+    }
+
+    &-bot {
+      background-color: $variation-green;
+      &::before {
+        left: 12.5em;
+        border-bottom-color: $variation-green;
+        bottom: -11px;
+        transform: rotate(180deg);
+      }
     }
   }
 }

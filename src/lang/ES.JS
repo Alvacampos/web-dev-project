@@ -289,6 +289,8 @@ const BOT_HELLO = [
   'Me pueden decir tu nombre asi lo recuerdo para la proxima vez que nos visites?',
 ];
 
+const BOT_HI = 'Que bueno verte de nuevo,';
+
 const BOT_ICONS = [
   {
     src: './assets/icons/chatbot.svg',
@@ -310,4 +312,5 @@ export {
   INTRO,
   BOT_HELLO,
   BOT_ICONS,
+  BOT_HI,
 };
