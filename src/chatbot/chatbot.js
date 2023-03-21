@@ -66,6 +66,7 @@ const main = async () => {
         500
       );
       chatWrapper.append(text);
+      chatWrapper.scrollTop = chatWrapper.scrollHeight;
     }
   });
 
@@ -76,6 +77,7 @@ const main = async () => {
       var text = document.createTextNode(event.target.value);
       p.appendChild(text);
       chatWrapper.append(p);
+      chatWrapper.scrollTop = chatWrapper.scrollHeight;
 
       if (chatWrapper.childNodes.length === 4) {
         localStorage.setItem(
@@ -87,6 +89,7 @@ const main = async () => {
       if (chatWrapper.childNodes.length > 1) {
         const text = await botMessages('Sorry I have no more responses', 500);
         chatWrapper.append(text);
+        chatWrapper.scrollTop = chatWrapper.scrollHeight;
       }
 
       event.target.value = '';
