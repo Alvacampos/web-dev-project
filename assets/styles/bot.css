@@ -2,6 +2,8 @@
   position: absolute;
   bottom: 30px;
   right: 30px; }
+  .bot--skill {
+    bottom: 130px; }
   .bot--close {
     height: 75px;
     width: 75px; }
