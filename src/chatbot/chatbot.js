@@ -1,19 +1,34 @@
-import { generateImg, generateItem, loadLanguages } from '../../utils/utils.js';
+import {
+  generateImg,
+  generateItem,
+  loadLanguages,
+  routeSanitization,
+} from '../../utils/utils.js';
 
 const main = async () => {
   const { BOT_ICONS, BOT_HELLO, BOT_HI } = await loadLanguages();
+  const isSkillSection = document.getElementById('skills');
 
   const main = document.querySelector('main');
-  const botWrapper = generateItem('div', 'bot');
+  const botWrapper = generateItem(
+    'div',
+    !isSkillSection ? 'bot' : ['bot', 'bot--skill']
+  );
   const chatWrapper = generateItem('div', 'bot__chat-window');
 
   // Generates Chat button
   const botBtn = generateItem('button', ['bot__btn', 'blob']);
+  if (isSkillSection)
+    BOT_ICONS[0].src = routeSanitization(BOT_ICONS[0]?.src, '.', '..');
+
   const botBtnImg = generateImg(BOT_ICONS[0], ['bot-img']);
   botBtn.append(botBtnImg);
 
   // Generates close button
   const botCloseBtn = generateItem('button', 'bot__close');
+  if (isSkillSection)
+    BOT_ICONS[1].src = routeSanitization(BOT_ICONS[1]?.src, '.', '..');
+
   const closeImg = generateImg(BOT_ICONS[1], ['close-img']);
 
   // Generates chat windows
@@ -55,6 +70,7 @@ const main = async () => {
     botWindow.classList.add('bot__chat--open');
 
     // Discriminates if the user is a new user or not
+    // If it is a new user will ask for a name and save it in localStorage for future use, if it a regular user will look for the stored data
     if (chatWrapper.childNodes.length < 3 && !localStorage.getItem('user')) {
       for (const textItem of BOT_HELLO) {
         const text = await botMessages(textItem, 700);
@@ -66,8 +82,8 @@ const main = async () => {
         500
       );
       chatWrapper.append(text);
-      chatWrapper.scrollTop = chatWrapper.scrollHeight;
     }
+    chatWrapper.scrollTop = chatWrapper.scrollHeight;
   });
 
   // Listen to input to be shown in the chat
@@ -79,6 +95,7 @@ const main = async () => {
       chatWrapper.append(p);
       chatWrapper.scrollTop = chatWrapper.scrollHeight;
 
+      // Expects the user input of a name
       if (chatWrapper.childNodes.length === 4) {
         localStorage.setItem(
           'user',
@@ -86,6 +103,7 @@ const main = async () => {
         );
       }
 
+      // Sends standard response
       if (chatWrapper.childNodes.length > 1) {
         const text = await botMessages('Sorry I have no more responses', 500);
         chatWrapper.append(text);

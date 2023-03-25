@@ -3,8 +3,12 @@
 
 .bot {
   position: absolute;
-  bottom: 30px;
-  right: 30px;
+  bottom: $space-30;
+  right: $space-30;
+
+  &--skill {
+    bottom: 130px;
+  }
 
   &--close {
     height: 75px;
@@ -37,8 +41,8 @@
     width: 350px;
     height: 500px;
     background-color: $default-black;
-    border: solid 5px grey;
-    border-radius: 5px;
+    border: solid $border-5 grey;
+    border-radius: $border-5;
 
     position: relative;
 
@@ -51,7 +55,7 @@
     }
 
     &-window {
-      padding: 35px 20px;
+      padding: 35px $space-20;
       height: 100%;
       overflow-y: scroll;
       max-height: 460px;
@@ -78,8 +82,8 @@
   }
 
   & close-img {
-    width: 20px;
-    height: 20px;
+    width: $space-20;
+    height: $space-20;
   }
 
   .blob {
@@ -108,11 +112,8 @@
 
 .chat {
   &__msg {
-    // layout
     position: relative;
     max-width: 100%;
-
-    // looks
     color: $default-black;
     background-color: $default-white;
     padding: 1.125em 1.5em;
@@ -122,19 +123,16 @@
       0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
 
     &::before {
-      // layout
       content: '';
       position: absolute;
       width: 0;
       height: 0;
       bottom: 100%;
-      left: 1.5em; // offset should move with padding of parent
+      left: 1.5em;
       border: 0.75rem solid transparent;
       border-top: none;
       bottom: -11px;
       transform: rotate(180deg);
-
-      // looks
       border-bottom-color: $default-white;
       filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, 0.1));
     }

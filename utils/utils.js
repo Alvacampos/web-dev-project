@@ -90,6 +90,7 @@ const generateItem = (
   return item;
 };
 
+// Cleans import route
 const routeSanitization = (route, initial, replacement) =>
   route.replace(initial, replacement);
 
@@ -132,4 +133,5 @@ export {
   loadLanguages,
   generateNavBar,
   checkNameSpace,
+  routeSanitization
 };
