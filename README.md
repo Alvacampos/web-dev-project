@@ -30,4 +30,4 @@ Keep in mind that this vanilla project uses webpack for bundling and the `main.j
 
 --- JS course ---
 
-The file chatbot.js contains the usage of localStorage and json\*
+The file chatbot.js contains the usage of localStorage, json and fetch\*

@@ -69,12 +69,24 @@ const main = async () => {
     botBtn.classList.add('bot__btn--open');
     botWindow.classList.add('bot__chat--open');
 
+    // Fetches the bots name
+    let response = await fetch('https://jsonplaceholder.typicode.com/users/1');
+    let { name } = await response.json();
+
     // Discriminates if the user is a new user or not
     // If it is a new user will ask for a name and save it in localStorage for future use, if it a regular user will look for the stored data
     if (chatWrapper.childNodes.length < 3 && !localStorage.getItem('user')) {
-      for (const textItem of BOT_HELLO) {
-        const text = await botMessages(textItem, 700);
-        chatWrapper.append(text);
+      for (const textItem in BOT_HELLO) {
+        if (textItem == 0) {
+          const text = await botMessages(
+            `${BOT_HELLO[textItem]} ${name.split(' ')[0]}`,
+            700
+          );
+          chatWrapper.append(text);
+        } else {
+          const text = await botMessages(BOT_HELLO[textItem], 700);
+          chatWrapper.append(text);
+        }
       }
     } else {
       const text = await botMessages(

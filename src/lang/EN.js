@@ -284,7 +284,7 @@ const INTRO = [
 ];
 
 const BOT_HELLO = [
-  "Hi, my name is Jarvis and I'm an interactive chat bot.",
+  "Hi, I'm an interactive chat bot and my name is ",
   "For now I'm a work in progress so my responses might not be the best.",
   'Can you tell your name so I can remember it next time you visit?',
 ];

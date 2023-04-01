@@ -284,7 +284,7 @@ const INTRO = [
 ];
 
 const BOT_HELLO = [
-  'Hola, mi nombre es Jarvis y soy un bot interactivo.',
+  'Hola, soy un bot interactivo y mi nombre es ',
   'Por ahora soy un trabajo en proceso asi que mis respuestas puede que no sean las mejores.',
   'Me pueden decir tu nombre asi lo recuerdo para la proxima vez que nos visites?',
 ];
