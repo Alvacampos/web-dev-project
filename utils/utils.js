@@ -76,7 +76,8 @@ const generateImg = (item = {}, className = []) => {
 const generateItem = (
   itemType = undefined,
   className = undefined,
-  text = undefined
+  text = undefined,
+  id=undefined
 ) => {
   const item = document.createElement(itemType);
   if (Array.isArray(className)) {
@@ -87,6 +88,7 @@ const generateItem = (
     item.classList.add(className)
   }
   if (text) item.innerHTML = text;
+  if(id) item.id = id
   return item;
 };
 

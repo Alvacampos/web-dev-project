@@ -302,6 +302,11 @@ const BOT_ICONS = [
     alt: 'Close',
     title: 'Close',
   },
+  {
+    src: './assets/icons/send-icon.svg',
+    alt: 'Send Message',
+    title: 'Send Message',
+  },
 ];
 
 export {

@@ -64,6 +64,21 @@
         display: none;
       }
     }
+
+    & .arrow__button {
+      position: absolute;
+      right: 5px;
+      bottom: 5px;
+      z-index: 1;
+      border: 0;
+      padding: 0;
+      background-color: transparent;
+    }
+
+    & .send-arrow {
+      width: 20px;
+      height: 20px;
+    }
   }
 
   &__input {
@@ -75,7 +90,7 @@
   &__close {
     width: 25px;
     position: absolute;
-    right: 0;
+    right: 2px;
     border: none;
     padding: 0;
     background-color: $default-black;

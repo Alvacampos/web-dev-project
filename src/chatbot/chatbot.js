@@ -12,7 +12,9 @@ const main = async () => {
   const main = document.querySelector('main');
   const botWrapper = generateItem(
     'div',
-    !isSkillSection ? 'bot' : ['bot', 'bot--skill']
+    !isSkillSection ? 'bot' : ['bot', 'bot--skill'],
+    null,
+    'bot'
   );
   const chatWrapper = generateItem('div', 'bot__chat-window');
 
@@ -29,15 +31,24 @@ const main = async () => {
   if (isSkillSection)
     BOT_ICONS[1].src = routeSanitization(BOT_ICONS[1]?.src, '.', '..');
 
+  if (isSkillSection)
+    BOT_ICONS[2].src = routeSanitization(BOT_ICONS[2]?.src, '.', '..');
+
   const closeImg = generateImg(BOT_ICONS[1], ['close-img']);
+
+  const arrow = generateImg(BOT_ICONS[2], ['send-arrow']);
+
+  const arrowBtn = generateItem('button', 'arrow__button');
 
   // Generates chat windows
   const botWindow = generateItem('div', 'bot__chat');
 
   // Generates input chat
-  const botInput = generateItem('input', 'bot__input');
+  const botInput = generateItem('input', 'bot__input', null, 'bot-input');
 
   botCloseBtn.append(closeImg);
+  arrowBtn.append(arrow);
+  botWindow.append(arrowBtn);
   botWindow.append(botCloseBtn);
   botWindow.append(botInput);
   botWindow.append(chatWrapper);
@@ -98,11 +109,15 @@ const main = async () => {
     chatWrapper.scrollTop = chatWrapper.scrollHeight;
   });
 
-  // Listen to input to be shown in the chat
-  botInput.addEventListener('keypress', async (event) => {
-    if (event.key === 'Enter' && event.target.value !== '') {
+  const chatListener = async (event) => {
+    const inputElement = document.getElementById('bot-input');
+    const inputValue = inputElement.value || event.target.value;
+    if (
+      (event.key === 'Enter' || event.type === 'click') &&
+      inputValue !== ''
+    ) {
       const p = generateItem('p', 'chat__msg');
-      var text = document.createTextNode(event.target.value);
+      var text = document.createTextNode(inputValue);
       p.appendChild(text);
       chatWrapper.append(p);
       chatWrapper.scrollTop = chatWrapper.scrollHeight;
@@ -123,7 +138,18 @@ const main = async () => {
       }
 
       event.target.value = '';
+      inputElement.value = '';
     }
+  };
+
+  // Listen to input to be shown in the chat
+  arrowBtn.addEventListener('click', (event) => {
+    chatListener(event);
+  });
+
+  // Listen to input to be shown in the chat
+  botInput.addEventListener('keypress', (event) => {
+    chatListener(event);
   });
 
   botWrapper.append(botWindow);

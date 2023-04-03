@@ -39,6 +39,17 @@
       max-height: 460px; }
       .bot__chat-window::-webkit-scrollbar {
         display: none; }
+    .bot__chat .arrow__button {
+      position: absolute;
+      right: 5px;
+      bottom: 5px;
+      z-index: 1;
+      border: 0;
+      padding: 0;
+      background-color: transparent; }
+    .bot__chat .send-arrow {
+      width: 20px;
+      height: 20px; }
   .bot__input {
     position: absolute;
     bottom: 0;
@@ -46,7 +57,7 @@
   .bot__close {
     width: 25px;
     position: absolute;
-    right: 0;
+    right: 2px;
     border: none;
     padding: 0;
     background-color: #0d1117; }

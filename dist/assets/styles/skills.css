@@ -41,6 +41,8 @@
     display: flex;
     justify-content: center;
     align-items: center; }
+  .skills .bot__input {
+    height: 30px; }
 
 .work__wrapper {
   display: flex;
@@ -261,6 +263,10 @@
 /* Device Breakpoints */
 /* Desktop Small */
 @media only screen and ((min-width: 1076px)) {
+  .skills-btn {
+    padding: 10px 20px; }
+  .skills .bot {
+    bottom: 30px; }
   .skills__work #filter {
     width: 20vw; }
   .leadership {
@@ -273,8 +279,6 @@
   #bts-wrapper {
     display: flex;
     gap: 30px; }
-  .skill-btn {
-    padding: 10px 20px; }
   .work__content ul {
     list-style-type: disc;
     padding: 20px; }
