@@ -99,7 +99,10 @@ const main = async () => {
           chatWrapper.append(text);
         }
       }
-    } else {
+    } else if (
+      chatWrapper.childNodes.length === 0 &&
+      localStorage.getItem('user')
+    ) {
       const text = await botMessages(
         `${BOT_HI} ${JSON.parse(localStorage.getItem('user')).name}!`,
         500
@@ -132,7 +135,10 @@ const main = async () => {
 
       // Sends standard response
       if (chatWrapper.childNodes.length > 1) {
-        const text = await botMessages('Sorry I have no more responses', 500);
+        const text = await botMessages(
+          'Sorry I have no more responses. In the future, with react and nodejs this app will be remake and should support a much better bot, maybe the next chatGTP(?)',
+          500
+        );
         chatWrapper.append(text);
         chatWrapper.scrollTop = chatWrapper.scrollHeight;
       }
