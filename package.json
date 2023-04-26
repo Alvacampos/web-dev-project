@@ -1,42 +1,42 @@
 {
-  "name": "Project Cv",
-  "version": "1.0.0",
-  "repository": {
-    "url": "git+https://github.com/Alvacampos/web-dev-project.git"
-  },
-  "description": "Final Project Personal Cv",
+  "name": "web-dev-project",
+  "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "build": "webpack --mode=development",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "concurrently \"npx stylelint \"**/*.scss\"\" \"npx eslint dist/views/**\" \"npx prettier --check .\"",
-    "lint-fix": "npx prettier --write .",
-    "scss": "node-sass ./styles -o dist/assets/styles",
-    "scss-watch": "node-sass --watch ./styles -o dist/assets/styles",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
-  },
-  "author": "Gonzalo Alvarez Campos",
-  "license": "ISC",
-  "devDependencies": {
-    "eslint": "^8.26.0",
-    "gh-pages": "^5.0.0",
-    "node-sass": "^8.0.0",
-    "nodemon": "^2.0.20",
-    "postcss": "^8.4.21",
-    "prettier": "2.7.1",
-    "stylelint": "^14.14.0",
-    "stylelint-config-prettier": "^9.0.3",
-    "stylelint-config-standard": "^29.0.0",
-    "webpack": "^5.75.0",
-    "webpack-cli": "^5.0.1"
-  },
   "dependencies": {
-    "@trivago/prettier-plugin-sort-imports": "^3.4.0",
-    "concurrently": "^7.5.0",
-    "eslint-plugin-html": "^7.1.0",
-    "moment": "^2.29.4",
-    "stylelint-scss": "^4.4.0",
-    "stylelint-selector-bem-pattern": "^2.1.1"
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.10.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "sass": "^1.62.0"
   }
 }
