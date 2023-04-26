@@ -1,20 +1,17 @@
-import {
-  checkNameSpace,
-  generateItem,
-  generateNavBar,
-  loadLanguages,
-} from '../utils/utils.js';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
-const main = async () => {
-  const { NAV_BAR, INTRO } = await loadLanguages();
-  generateNavBar(NAV_BAR, 'Home');
-  const h1 = generateItem('h1', null, INTRO[0]);
-  const p1 = generateItem('p', null, INTRO[1]);
-  const section = document.getElementById('section');
-  section.append(h1);
-  section.append(p1);
-};
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 
-(function () {
-  checkNameSpace('index', main);
-})();
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();

@@ -1,35 +1,70 @@
-Basic HTML, CSS and JS project.
+# Getting Started with Create React App
 
-# Wireframe
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-![alt text](./dist/assets/wireframe/wireframe.jpg)
+## Available Scripts
 
-# Installation
+In the project directory, you can run:
 
-Run `npm i`
+### `npm start`
 
-To turn on scss watcher do `npm run scss-watch`
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Now with the addition of webpack things work a little different, for js compilation you should run `npm run build`
-and for publishing changes in github pages you should run `npm run deploy -- -m "the msg you want"`
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Source of information:
+### `npm test`
 
-- https://www.learnhowtoprogram.com/intermediate-javascript/team-week/hosting-a-webpack-project-with-gh-pages
-- https://webpack.js.org/guides/getting-started
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-# Project Structure
+### `npm run build`
 
-You have 3 main folders `dist/`, `src/` and `styles/`.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-- dist will be for all all deployment files plus all the html views.
-- src will be for all js files. There you will find a similar structure to the views in the app, there is a `/data/`folder that contains all hard coded data to be use in the app.
-- styles contains all the .scss files for styling.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Keep in mind that this vanilla project uses webpack for bundling and the `main.js` file in there is a generated file and SHOULD NOT BE TOUCH.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
---- JS course ---
-To the teacher:
-The file `chatbot/chatbot.js` contains the usage of localStorage, json and fetch.
-In the CV section you will find an input to search and dynamically search and render cards according to the input. You can find the code in the `skills/workItems.js`
-Same goes for the buttons in the skills section.
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
