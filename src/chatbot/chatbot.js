@@ -163,6 +163,6 @@ const main = async () => {
   main.append(botWrapper);
 };
 
-(function () {
-  main();
-})();
+// (function () {
+//   main();
+// })();
