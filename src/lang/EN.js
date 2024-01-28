@@ -286,31 +286,31 @@ const INTRO = [
   "I'm a Software Developer and I made this page so you can get to know me a little better",
 ];
 
-const BOT_HELLO = [
-  "Hi, I'm an interactive chat bot and my name is ",
-  "For now I'm a work in progress so my responses might not be the best.",
-  'Can you tell your name so I can remember it next time you visit?',
-];
+// const BOT_HELLO = [
+//   "Hi, I'm an interactive chat bot and my name is ",
+//   "For now I'm a work in progress so my responses might not be the best.",
+//   'Can you tell your name so I can remember it next time you visit?',
+// ];
 
-const BOT_HI = 'Welcome back,';
+// const BOT_HI = 'Welcome back,';
 
-const BOT_ICONS = [
-  {
-    src: './assets/icons/chatbot.svg',
-    alt: 'Bot Logo',
-    title: 'Chat bot',
-  },
-  {
-    src: './assets/icons/close-button.svg',
-    alt: 'Close',
-    title: 'Close',
-  },
-  {
-    src: './assets/icons/send-icon.svg',
-    alt: 'Send Message',
-    title: 'Send Message',
-  },
-];
+// const BOT_ICONS = [
+//   {
+//     src: './assets/icons/chatbot.svg',
+//     alt: 'Bot Logo',
+//     title: 'Chat bot',
+//   },
+//   {
+//     src: './assets/icons/close-button.svg',
+//     alt: 'Close',
+//     title: 'Close',
+//   },
+//   {
+//     src: './assets/icons/send-icon.svg',
+//     alt: 'Send Message',
+//     title: 'Send Message',
+//   },
+// ];
 
 export {
   WORK_ITEMS,
@@ -318,7 +318,7 @@ export {
   TOP_SKILLS,
   NAV_BAR,
   INTRO,
-  BOT_HELLO,
-  BOT_ICONS,
-  BOT_HI,
+  // BOT_HELLO,
+  // BOT_ICONS,
+  // BOT_HI,
 };
