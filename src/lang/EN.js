@@ -83,23 +83,6 @@ const WORK_ITEMS = [
     ],
   },
   {
-    title: 'Sitenso',
-    startDate: '20220901',
-    endDate: '20221201',
-    subtitle: 'Hired as Technical Manager.',
-    skill: [
-      'HTML',
-      'CSS',
-      'Storybook',
-      'Leadership',
-      'React',
-      'NodeJs',
-      'Interviewing',
-    ],
-    projects:
-      'Technical leader and manager for many projects and developers. In charge of technical interview, planning and developer path and technical advise in react and other front end technologies.',
-  },
-  {
     title: 'Qubika',
     startDate: '20220401',
     subtitle: 'Hired as Senior Frontend developer.',
