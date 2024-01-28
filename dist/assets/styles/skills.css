@@ -9,7 +9,11 @@
   .skills__work h2 {
     text-align: center; }
   .skills__work--icon {
-    width: 100px; }
+    width: 100px;
+    width: 100px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px; }
   .skills__work #filter {
     height: 30px;
     width: 75vw;

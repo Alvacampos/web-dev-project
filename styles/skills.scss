@@ -19,6 +19,10 @@
 
     &--icon {
       width: $space-100;
+      width: 100px;
+      background-color: white;
+      padding: 10px;
+      border-radius: 10px;
     }
 
     #filter {
@@ -294,6 +298,7 @@
       0% {
         left: -100%;
       }
+
       50%,
       100% {
         left: 100%;
@@ -314,6 +319,7 @@
       0% {
         top: -100%;
       }
+
       50%,
       100% {
         top: 100%;
@@ -334,6 +340,7 @@
       0% {
         right: -100%;
       }
+
       50%,
       100% {
         right: 100%;
@@ -354,6 +361,7 @@
       0% {
         bottom: -100%;
       }
+
       50%,
       100% {
         bottom: 100%;
