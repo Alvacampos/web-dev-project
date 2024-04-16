@@ -232,16 +232,6 @@ const NAV_BAR = [
     tabindex: '-1',
     location: 'CV',
   },
-  // {
-  //   path: './views/projects.html',
-  //   name: 'Projects',
-  //   src: '../assets/icons/folder.svg',
-  //   className: ['nav-bar__icon'],
-  //   alt: 'Folder Logo',
-  //   title: 'Projects',
-  //   tabindex: '-1',
-  //   location: 'Projects',
-  // },
   {
     path: './views/education.html',
     name: 'Education',
@@ -252,16 +242,6 @@ const NAV_BAR = [
     tabindex: '-1',
     location: 'Education',
   },
-  // {
-  //   path: './views/contact.html',
-  //   name: 'Contact',
-  //   src: '../assets/icons/profile.svg',
-  //   className: ['nav-bar__icon'],
-  //   alt: 'Contact Logo',
-  //   title: 'Contact',
-  //   tabindex: '-1',
-  //   location: 'Contact',
-  // },
 ];
 
 const INTRO = [
@@ -269,39 +249,4 @@ const INTRO = [
   "I'm a Software Developer and I made this page so you can get to know me a little better",
 ];
 
-// const BOT_HELLO = [
-//   "Hi, I'm an interactive chat bot and my name is ",
-//   "For now I'm a work in progress so my responses might not be the best.",
-//   'Can you tell your name so I can remember it next time you visit?',
-// ];
-
-// const BOT_HI = 'Welcome back,';
-
-// const BOT_ICONS = [
-//   {
-//     src: './assets/icons/chatbot.svg',
-//     alt: 'Bot Logo',
-//     title: 'Chat bot',
-//   },
-//   {
-//     src: './assets/icons/close-button.svg',
-//     alt: 'Close',
-//     title: 'Close',
-//   },
-//   {
-//     src: './assets/icons/send-icon.svg',
-//     alt: 'Send Message',
-//     title: 'Send Message',
-//   },
-// ];
-
-export {
-  WORK_ITEMS,
-  SKILLS_IMG,
-  TOP_SKILLS,
-  NAV_BAR,
-  INTRO,
-  // BOT_HELLO,
-  // BOT_ICONS,
-  // BOT_HI,
-};
+export { WORK_ITEMS, SKILLS_IMG, TOP_SKILLS, NAV_BAR, INTRO };

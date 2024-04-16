@@ -32,7 +32,15 @@ const WORK_ITEMS = [
     startDate: '20201201',
     endDate: '20210801',
     subtitle: 'Contratado como Semi-senior Full-stack developer.',
-    skill: ['HTML', 'CSS', 'Storybook', 'Highcharts', 'React', 'Front End', 'Cypress',],
+    skill: [
+      'HTML',
+      'CSS',
+      'Storybook',
+      'Highcharts',
+      'React',
+      'Front End',
+      'Cypress',
+    ],
     projects: [
       {
         title: 'Proyecto: Conversational',
@@ -231,16 +239,6 @@ const NAV_BAR = [
     tabindex: '-1',
     location: 'CV',
   },
-  // {
-  //   path: './views/projects.html',
-  //   name: 'Proyectos',
-  //   src: '../assets/icons/folder.svg',
-  //   className: ['nav-bar__icon'],
-  //   alt: 'Proyectos Logo',
-  //   title: 'Proyectos',
-  //   tabindex: '-1',
-  //   location: 'Projects',
-  // },
   {
     path: './views/education.html',
     name: 'Educación',
@@ -251,16 +249,6 @@ const NAV_BAR = [
     tabindex: '-1',
     location: 'Education',
   },
-  // {
-  //   path: './views/contact.html',
-  //   name: 'Contacto',
-  //   src: '../assets/icons/profile.svg',
-  //   className: ['nav-bar__icon'],
-  //   alt: 'Contacto Logo',
-  //   title: 'Contacto',
-  //   tabindex: '-1',
-  //   location: 'Contact',
-  // },
 ];
 
 const INTRO = [
@@ -268,39 +256,4 @@ const INTRO = [
   'Soy Desarrollador de Software e hice esta página para que me conozcan un poco mejor',
 ];
 
-const BOT_HELLO = [
-  'Hola, soy un bot interactivo y mi nombre es ',
-  'Por ahora soy un trabajo en proceso asi que mis respuestas puede que no sean las mejores.',
-  'Me pueden decir tu nombre asi lo recuerdo para la proxima vez que nos visites?',
-];
-
-const BOT_HI = 'Que bueno verte de nuevo,';
-
-const BOT_ICONS = [
-  {
-    src: './assets/icons/chatbot.svg',
-    alt: 'Bot Logo',
-    title: 'Chat bot',
-  },
-  {
-    src: './assets/icons/close-button.svg',
-    alt: 'Cerrar',
-    title: 'Cerrar',
-  },
-  {
-    src: './assets/icons/send-icon.svg',
-    alt: 'Send Message',
-    title: 'Send Message',
-  },
-];
-
-export {
-  WORK_ITEMS,
-  SKILLS_IMG,
-  TOP_SKILLS,
-  NAV_BAR,
-  INTRO,
-  BOT_HELLO,
-  BOT_ICONS,
-  BOT_HI,
-};
+export { WORK_ITEMS, SKILLS_IMG, TOP_SKILLS, NAV_BAR, INTRO };
