@@ -105,6 +105,7 @@ const WORK_ITEMS = [
       'React',
       'Remix',
       'Post-css',
+      'GraphQL',
       'Cypress',
       'Front End',
     ],

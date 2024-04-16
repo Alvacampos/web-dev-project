@@ -32,7 +32,15 @@ const WORK_ITEMS = [
     startDate: '20201201',
     endDate: '20210801',
     subtitle: 'Hired as Mid Level Full-stack developer.',
-    skill: ['HTML', 'CSS', 'Storybook', 'Highcharts', 'React', 'Front End'],
+    skill: [
+      'HTML',
+      'CSS',
+      'Storybook',
+      'Highcharts',
+      'React',
+      'Front End',
+      'Cypress',
+    ],
     projects: [
       {
         title: 'Project: Conversational',
@@ -71,7 +79,7 @@ const WORK_ITEMS = [
     ],
     projects: [
       {
-        title: 'Project Marklogic',
+        title: 'Project: Marklogic',
         description:
           'Technical Leader and developer in a team working as consultant for Marklogic projects. Also working in a semantics data base project for Yale University. ',
       },
