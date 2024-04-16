@@ -27,9 +27,3 @@ You have 3 main folders `dist/`, `src/` and `styles/`.
 - styles contains all the .scss files for styling.
 
 Keep in mind that this vanilla project uses webpack for bundling and the `main.js` file in there is a generated file and SHOULD NOT BE TOUCH.
-
---- JS course ---
-To the teacher:
-The file `chatbot/chatbot.js` contains the usage of localStorage, json and fetch.
-In the CV section you will find an input to search and dynamically search and render cards according to the input. You can find the code in the `skills/workItems.js`
-Same goes for the buttons in the skills section.
