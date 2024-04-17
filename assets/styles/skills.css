@@ -45,8 +45,6 @@
     display: flex;
     justify-content: center;
     align-items: center; }
-  .skills .bot__input {
-    height: 30px; }
 
 .work__wrapper {
   display: flex;
@@ -189,11 +187,6 @@
   transition: 0.5s;
   letter-spacing: 4px;
   overflow: hidden; }
-  .skill-btn:hover {
-    background: #03e9f4;
-    color: #050801;
-    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005); }
   .skill-btn--active {
     background: #03e9f4;
     color: #050801;
@@ -273,6 +266,11 @@
     bottom: 30px; }
   .skills__work #filter {
     width: 20vw; }
+  .skill-btn:hover {
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005); }
   .leadership {
     flex-direction: row;
     padding-bottom: 5px; }
