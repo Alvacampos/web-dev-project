@@ -219,6 +219,41 @@ const SKILLS_IMG = [
 
 const TOP_SKILLS = ['Front End', 'Back End'];
 
+// TODO: Add logic to dynamically render items
+
+const ENDAVA_EXTRA = [
+  {
+    title: 'Endava Argentina Internship',
+    text: 'Organizador y mentor del Programa de Pasantías Endava Argentina 2022. A cargo de charlas/clases sobre JS y programación general.',
+  },
+  {
+    title: 'Mentoria',
+    text: 'Mentor para 3 desarrolladores Jr en la empresa. Encargado de guiarlos en su camino profesional y ayudarlos con sus problemas técnicos.',
+  },
+];
+
+const UNSTA_EXTRA = [
+  {
+    title: 'Lider Tecnico',
+    text: 'Líder Técnico del proyecto para la carrera Tecnicatura en desarrollo de Software. Encargado del desarrollo del proyecto y del equipo.',
+  },
+  {
+    title: 'Profesor',
+    text: 'Ensené programación a alumnos de primer año de la carrera Tecnicatura en desarrollo de Software.',
+  },
+];
+
+const QUBIKA_EXTRA = [
+  {
+    title: 'Remix Charla Introductoria',
+    text: 'Organicé y di una charla sobre Remix.run, un marco de renderizado en el lado del servidor de React que acaba de ser lanzado y con el que estaba trabajando en mi proyecto.',
+  },
+  {
+    title: 'Induccion',
+    text: 'Inducción de nuevos empleados en proyecto, enseñando sobre los proyectos y las tecnologías utilizadas.',
+  },
+];
+
 const NAV_BAR = [
   {
     path: '../index.html',
@@ -257,4 +292,13 @@ const INTRO = [
   'Soy Desarrollador de Software e hice esta página para que me conozcan un poco mejor',
 ];
 
-export { WORK_ITEMS, SKILLS_IMG, TOP_SKILLS, NAV_BAR, INTRO };
+export {
+  WORK_ITEMS,
+  SKILLS_IMG,
+  TOP_SKILLS,
+  NAV_BAR,
+  INTRO,
+  ENDAVA_EXTRA,
+  UNSTA_EXTRA,
+  QUBIKA_EXTRA,
+};

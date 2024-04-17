@@ -219,6 +219,40 @@ const SKILLS_IMG = [
 
 const TOP_SKILLS = ['Front End', 'Back End'];
 
+// TODO: Add logic to dynamically render items
+const ENDAVA_EXTRA = [
+  {
+    title: 'Endava Argentina Internship',
+    text: 'Organizer and mentor for Endava Argentina Internship Program 2022. In charge of lectures related to JS and general programming.',
+  },
+  {
+    title: 'Mentorship',
+    text: 'Mentor for 3 Jr developers in the company. In charge of guiding them in their career path and helping them with their technical issues.',
+  },
+];
+
+const UNSTA_EXTRA = [
+  {
+    title: 'Technical Leader',
+    text: 'Technical Leader of the project for the career of Software Engineering. In charge of the development of the project and the team.',
+  },
+  {
+    title: 'Professor',
+    text: 'Teaching programming to first year students Engineering Career.',
+  },
+];
+
+const QUBIKA_EXTRA = [
+  {
+    title: 'Remix Introduction Talk',
+    text: 'Organize and gave a talk about Remix.run a react server side rendering framework that was just released and my project was working with.',
+  },
+  {
+    title: 'Team Induction',
+    text: 'Induction of new team members to the project.',
+  },
+];
+
 const NAV_BAR = [
   {
     path: '../index.html',
@@ -257,4 +291,13 @@ const INTRO = [
   "I'm a Software Developer and I made this page so you can get to know me a little better",
 ];
 
-export { WORK_ITEMS, SKILLS_IMG, TOP_SKILLS, NAV_BAR, INTRO };
+export {
+  WORK_ITEMS,
+  SKILLS_IMG,
+  TOP_SKILLS,
+  NAV_BAR,
+  INTRO,
+  ENDAVA_EXTRA,
+  UNSTA_EXTRA,
+  QUBIKA_EXTRA,
+};

@@ -66,12 +66,6 @@
     height: 100px;
     @include display-center;
   }
-
-  & .bot {
-    &__input {
-      height: 30px;
-    }
-  }
 }
 
 .work {
@@ -263,13 +257,6 @@
   letter-spacing: 4px;
   overflow: hidden;
 
-  &:hover {
-    background: #03e9f4;
-    color: #050801;
-    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
-  }
-
   &--active {
     background: #03e9f4;
     color: #050801;
@@ -384,6 +371,15 @@
 
     &__work #filter {
       width: 20vw;
+    }
+  }
+
+  .skill-btn {
+    &:hover {
+      background: #03e9f4;
+      color: #050801;
+      box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4;
+      -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
     }
   }
 

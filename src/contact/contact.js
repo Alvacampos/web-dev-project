@@ -11,9 +11,6 @@ const main = async () => {
   } catch (e) {
     console.log('Fatal error', e);
   }
-
-  const bot = document.getElementById('bot');
-  bot.remove();
 };
 
 (function () {
