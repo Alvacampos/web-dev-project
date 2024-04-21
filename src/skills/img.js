@@ -1,5 +1,6 @@
 import { generateImg, loadLanguages } from '../../utils/utils.js';
 
+//* Generates the icons for the skills & tools section
 (async function () {
   try {
     const { SKILLS_IMG } = await loadLanguages();

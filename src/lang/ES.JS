@@ -65,6 +65,7 @@ const WORK_ITEMS = [
     title: 'Docente (part-time)',
     startDate: '20210601',
     endDate: '20220301',
+    subtitle: 'Contratado como Profesor de Programacion I.',
     skill: ['Teaching', 'C', 'Programming'],
     projects: 'Enseñé programación a alumnos de primer año.',
   },
@@ -148,14 +149,39 @@ const SKILLS_IMG = [
     title: 'JavaScript',
   },
   {
+    src: '../assets/icons/ts.svg',
+    alt: 'TypeScript Logo',
+    title: 'TypeScript',
+  },
+  {
     src: '../assets/icons/react.svg',
     alt: 'React Logo',
     title: 'React',
   },
   {
+    src: '../assets/icons/remix.svg',
+    alt: 'Remix.run Logo',
+    title: 'Remix.run',
+  },
+  {
     src: '../assets/icons/redux.svg',
     alt: 'Redux Logo',
     title: 'Redux',
+  },
+  {
+    src: '../assets/icons/git-icon.svg',
+    alt: 'Git Logo',
+    title: 'Git',
+  },
+  {
+    src: '../assets/icons/cypress.svg',
+    alt: 'Cypress Logo',
+    title: 'Cypress',
+  },
+  {
+    src: '../assets/icons/storybook.svg',
+    alt: 'Storybook Logo',
+    title: 'Storybook',
   },
   {
     src: '../assets/icons/nodejs.svg',
@@ -173,11 +199,6 @@ const SKILLS_IMG = [
     title: 'Express',
   },
   {
-    src: '../assets/icons/git-icon.svg',
-    alt: 'Git Logo',
-    title: 'Git',
-  },
-  {
     src: '../assets/icons/mongodb.svg',
     alt: 'Mongodb Logo',
     title: 'Mongodb',
@@ -188,19 +209,9 @@ const SKILLS_IMG = [
     title: 'Vue',
   },
   {
-    src: '../assets/icons/cypress.svg',
-    alt: 'Cypress Logo',
-    title: 'Cypress',
-  },
-  {
     src: '../assets/icons/highcharts.svg',
     alt: 'Highcharts Logo',
     title: 'Highcharts',
-  },
-  {
-    src: '../assets/icons/storybook.svg',
-    alt: 'Storybook Logo',
-    title: 'Storybook',
   },
   {
     src: '../assets/icons/agile-software.svg',
@@ -216,11 +227,6 @@ const SKILLS_IMG = [
     src: '../assets/icons/heroku.svg',
     alt: 'Heroku Logo',
     title: 'Heroku',
-  },
-  {
-    src: '../assets/icons/remix.svg',
-    alt: 'Remix.run Logo',
-    title: 'Remix.run',
   },
 ];
 

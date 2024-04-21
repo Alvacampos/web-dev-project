@@ -123,10 +123,22 @@
     margin: 0;
     box-shadow: $shadow-1;
     background-color: $background-variation;
+
+    & h2 {
+      font-size: $font-18;
+      text-align: center;
+    }
   }
 
   &__content {
-    padding: $space-20;
+    font-size: $font-16;
+    padding: $space-10;
+    text-wrap: balance;
+
+    &>p:nth-child(2) {
+      display: none;
+    }
+
 
     & ul {
       list-style-type: none;
@@ -399,9 +411,23 @@
     gap: $space-30;
   }
 
-  .work__content ul {
-    list-style-type: disc;
+  .work__title {
+    & h2 {
+      font-size: $font-20;
+    }
+  }
+
+  .work__content {
+    font-size: $font-16;
     padding: $space-20;
+
+    &>p:nth-child(2) {
+      display: inline;
+    }
+
+    & ul {
+      padding: 0;
+    }
   }
 
   .work__current-time {
