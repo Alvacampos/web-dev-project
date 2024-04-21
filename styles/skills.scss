@@ -54,7 +54,7 @@
     }
   }
 
-  &__leadership {
+  &__activities {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -217,7 +217,7 @@
   }
 }
 
-.leadership {
+.activities {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -383,7 +383,7 @@
     }
   }
 
-  .leadership {
+  .activities {
     flex-direction: row;
     padding-bottom: $space-5;
   }

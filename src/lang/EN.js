@@ -1,3 +1,10 @@
+const SECTION_TITLES = [
+  'Work Experience',
+  'Total years of experience',
+  'Skills & Tools',
+  'Extra Activities',
+];
+
 const WORK_ITEMS = [
   {
     title: 'Globant',
@@ -231,6 +238,13 @@ const ENDAVA_EXTRA = [
   },
 ];
 
+const ENDAVA_EXTRA_IMG = {
+  src: '../assets/img/endava.png',
+  className: 'skills__work--icon',
+  id: 'endava',
+  alt: 'Endava Logo',
+};
+
 const UNSTA_EXTRA = [
   {
     title: 'Technical Leader',
@@ -242,6 +256,12 @@ const UNSTA_EXTRA = [
   },
 ];
 
+const UNSTA_EXTRA_IMG = {
+  src: '../assets/img/unsta.png',
+  className: 'skills__work--icon',
+  alt: 'UNSTA Logo',
+};
+
 const QUBIKA_EXTRA = [
   {
     title: 'Remix Introduction Talk',
@@ -252,6 +272,13 @@ const QUBIKA_EXTRA = [
     text: 'Induction of new team members to the project.',
   },
 ];
+
+const QUBIKA_EXTRA_IMG = {
+  src: '../assets/img/qubika.png',
+  className: 'skills__work--icon',
+  id: 'qubika',
+  alt: 'Qubika Logo',
+};
 
 const NAV_BAR = [
   {
@@ -292,12 +319,16 @@ const INTRO = [
 ];
 
 export {
+  SECTION_TITLES,
   WORK_ITEMS,
   SKILLS_IMG,
   TOP_SKILLS,
   NAV_BAR,
   INTRO,
   ENDAVA_EXTRA,
+  ENDAVA_EXTRA_IMG,
   UNSTA_EXTRA,
+  UNSTA_EXTRA_IMG,
   QUBIKA_EXTRA,
+  QUBIKA_EXTRA_IMG,
 };

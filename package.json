@@ -14,7 +14,8 @@
     "scss": "node-sass ./styles -o dist/assets/styles",
     "scss-watch": "node-sass --watch ./styles -o dist/assets/styles",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "dev": "webpack --watch"
   },
   "author": "Gonzalo Alvarez Campos",
   "license": "ISC",

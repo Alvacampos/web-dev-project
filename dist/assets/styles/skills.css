@@ -34,7 +34,7 @@
     background-color: #0d1117; }
     .skills__icons-card h3 {
       text-align: center; }
-  .skills__leadership {
+  .skills__activities {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -155,20 +155,20 @@
   .icons-card__wrapper img {
     width: 100px; }
 
-.leadership {
+.activities {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
   gap: 20px; }
-  .leadership__card {
+  .activities__card {
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: inherit;
     gap: 30px;
     border-radius: 6px; }
-    .leadership__card div {
+    .activities__card div {
       width: 100%; }
 
 #column--right {
@@ -271,7 +271,7 @@
     color: #050801;
     box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4;
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0005); }
-  .leadership {
+  .activities {
     flex-direction: row;
     padding-bottom: 5px; }
   .work__input {

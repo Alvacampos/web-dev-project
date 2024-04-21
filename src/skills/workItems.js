@@ -10,9 +10,35 @@ import {
 
 const main = async () => {
   try {
-    const { TOP_SKILLS, WORK_ITEMS, NAV_BAR } = await loadLanguages();
+    const {
+      TOP_SKILLS,
+      WORK_ITEMS,
+      NAV_BAR,
+      SECTION_TITLES,
+      ENDAVA_EXTRA,
+      ENDAVA_EXTRA_IMG,
+      UNSTA_EXTRA,
+      UNSTA_EXTRA_IMG,
+      QUBIKA_EXTRA,
+      QUBIKA_EXTRA_IMG,
+    } = await loadLanguages();
 
     generateNavBar(NAV_BAR, 'CV');
+
+    //!! Section titles ORDER MATTERS
+    const sectionTitles = [
+      'work__section-title',
+      'work__total-exp',
+      'icons-card__section-title',
+      'activities__section-title',
+    ];
+
+    //* Section title generator
+    sectionTitles.forEach((titles, index) => {
+      const sectionTitle = document.getElementById(titles);
+      const sectionContent = document.createTextNode(SECTION_TITLES[index]);
+      sectionTitle.appendChild(sectionContent);
+    });
 
     const generateList = (item) => {
       const li = document.createElement('li');
@@ -29,10 +55,12 @@ const main = async () => {
       return li;
     };
 
+    //* Generates the divider between the cards
     const generateDivider = () => {
       return generateItem('div', 'work__divider');
     };
 
+    //* Generates the title of the card
     const generateTitle = (item) => {
       const h2Wrapper = document.createElement('h2');
       const title = document.createTextNode(item.title);
@@ -102,27 +130,19 @@ const main = async () => {
       card.classList.add('work__item');
 
       let img = null;
+
+      const logo = {
+        src: '../assets/icons/new-job.svg',
+        alt: 'New Work Logo',
+        title: 'New Work',
+      };
+
       if (index % 2 === 0) {
         card.classList.add('work__item--left');
-        img = generateImg(
-          {
-            src: '../assets/icons/new-job.svg',
-            alt: 'New Work Logo',
-            title: 'New Work',
-          },
-          ['work__project', 'work__project--left']
-        );
+        img = generateImg(logo, ['work__project', 'work__project--left']);
       } else {
-        img = generateImg(
-          {
-            src: '../assets/icons/new-job.svg',
-            alt: 'New Work Logo',
-            title: 'New Work',
-          },
-          ['work__project', 'work__project--right']
-        );
+        img = generateImg(logo, ['work__project', 'work__project--right']);
       }
-
       card.appendChild(img);
       card.appendChild(divider);
       card.appendChild(generateContent(item));
@@ -137,7 +157,7 @@ const main = async () => {
       }
     };
 
-    // Render bts to filter skills
+    //* Render bts to filter skills
     const generateBtn = (skill) => {
       const wrapper = document.getElementById('bts-wrapper');
       const anchor = document.createElement('a');
@@ -167,7 +187,7 @@ const main = async () => {
       wrapper.appendChild(anchor);
     };
 
-    // Render filter input for skills
+    //* Render filter input for skills
     const filter = (input) => {
       const leftColumn = document.getElementById('column__left');
       leftColumn.replaceChildren();
@@ -198,6 +218,39 @@ const main = async () => {
       calculateDates(WORK_ITEMS[0]?.startDate, null, true)
     );
     totalExpTimeWrapper.appendChild(totalExpTime);
+
+    //* Activities section
+    (function () {
+      const activitiesCards = document.getElementsByClassName(
+        'activities__card card'
+      );
+
+      const items = [ENDAVA_EXTRA, UNSTA_EXTRA, QUBIKA_EXTRA];
+      const itemsImg = [ENDAVA_EXTRA_IMG, UNSTA_EXTRA_IMG, QUBIKA_EXTRA_IMG];
+
+      for (let i = 0; i < activitiesCards.length; i++) {
+        const wrapperImg = generateItem('div', 'skills__card-wrapper');
+        const img = generateImg(itemsImg[i], ['skills__work--icon']);
+        wrapperImg.appendChild(img);
+
+        const wrapperItem = generateItem('div');
+        const ul = generateItem('ul');
+
+        items[i].forEach((item) => {
+          const li = generateItem('li');
+          const title = generateItem('h3', undefined, item.title);
+          const p = generateItem('p', undefined, item.text);
+          li.appendChild(title);
+          li.appendChild(p);
+          ul.appendChild(li);
+        });
+
+        wrapperItem.appendChild(ul);
+
+        activitiesCards[i].appendChild(wrapperImg);
+        activitiesCards[i].appendChild(wrapperItem);
+      }
+    })();
   } catch (e) {
     console.log('Fatal error', e);
   }
