@@ -226,8 +226,6 @@ const SKILLS_IMG = [
 
 const TOP_SKILLS = ['Front End', 'Back End'];
 
-// TODO: Add logic to dynamically render items
-
 const ENDAVA_EXTRA = [
   {
     title: 'Endava Argentina Internship',
