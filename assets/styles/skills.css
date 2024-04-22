@@ -45,6 +45,14 @@
     display: flex;
     justify-content: center;
     align-items: center; }
+  .skills__chart {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    border: 1px solid #30363d;
+    border-radius: 5px;
+    background-color: #0d1117; }
 
 .work__wrapper {
   display: flex;
