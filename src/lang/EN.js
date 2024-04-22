@@ -2,6 +2,7 @@ const SECTION_TITLES = [
   'Work Experience',
   'Total years of experience',
   'Skills & Tools',
+  'Years of experience',
   'Extra Activities',
 ];
 
@@ -318,6 +319,49 @@ const NAV_BAR = [
   },
 ];
 
+const SKILL_CHART_DATA = [
+  {
+    name: 'JavaScript',
+    startDate: '20180801',
+  },
+  {
+    name: 'TypeScript',
+    startDate: '20220401',
+  },
+  {
+    name: 'ReactJs',
+    startDate: '20201201',
+  },
+  {
+    name: 'Cypress',
+    startDate: '20201201',
+  },
+  {
+    name: 'GraphQL',
+    startDate: '20220401',
+  },
+  {
+    name: 'Storybook',
+    startDate: '20180801',
+  },
+  {
+    name: 'Remix',
+    startDate: '20220401',
+  },
+  {
+    name: 'Css',
+    startDate: '20180801',
+  },
+  {
+    name: 'PostCss',
+    startDate: '20220401',
+  },
+  {
+    name: 'HTML',
+    startDate: '20180801',
+  },
+];
+
 const INTRO = [
   'Welcome, my name is Gonzalo Alvarez Campos.',
   "I'm a Software Developer and I made this page so you can get to know me a little better",
@@ -336,4 +380,5 @@ export {
   UNSTA_EXTRA_IMG,
   QUBIKA_EXTRA,
   QUBIKA_EXTRA_IMG,
+  SKILL_CHART_DATA,
 };

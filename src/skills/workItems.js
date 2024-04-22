@@ -7,6 +7,7 @@ import {
   loadLanguages,
   renderDateMsg,
 } from '../../utils/utils.js';
+import '../chart/chart.js';
 import generateActivitiesSection from './activities.js';
 
 const main = async () => {
@@ -31,6 +32,7 @@ const main = async () => {
       'work__section-title',
       'work__total-exp',
       'icons-card__section-title',
+      'chart__section-title',
       'activities__section-title',
     ];
 

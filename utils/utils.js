@@ -36,10 +36,11 @@ const renderTimeSpam = (years, months, time) => {
 };
 
 // Get start and end date to calculate how much time in years or months has passed, if isCurrent is true that calculates from start until today.
-const calculateDates = (startDate, endDate, isCurrent) => {
+const calculateDates = (startDate, endDate, isCurrent, returnRawData = undefined) => {
   const time = timeDiff(startDate, endDate, isCurrent);
 
   const calculateYears = moment.duration(time).asYears();
+  if (returnRawData) return calculateYears;
 
   const calculateMonths = calculateYears.toFixed(2).toString().split('.')[1];
 

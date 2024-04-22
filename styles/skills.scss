@@ -66,6 +66,16 @@
     height: 100px;
     @include display-center;
   }
+
+  &__chart {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: $space-30;
+    border: $card-border;
+    border-radius: $border-5;
+    background-color: $default-black;
+  }
 }
 
 .work {

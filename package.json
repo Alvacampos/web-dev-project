@@ -36,6 +36,7 @@
     "@trivago/prettier-plugin-sort-imports": "^3.4.0",
     "concurrently": "^7.5.0",
     "eslint-plugin-html": "^7.1.0",
+    "highcharts": "^11.4.1",
     "moment": "^2.29.4",
     "stylelint-scss": "^4.4.0",
     "stylelint-selector-bem-pattern": "^2.1.1"
