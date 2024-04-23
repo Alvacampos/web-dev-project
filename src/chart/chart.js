@@ -3,6 +3,26 @@ import Highcharts from 'highcharts';
 import { calculateDates, loadLanguages } from '../../utils/utils.js';
 
 (async function renderChart() {
+  const COLOR_CODE = [
+    '#d73a49', // Red
+    '#e36209', // Orange
+    '#dbab09', // Yellow
+    '#a37114', // Brown
+    '#6f42c1', // Indigo
+    '#1f6feb', // Blue
+    '#388d3c', // Dark Green
+    '#2ea44f', // Green
+    '#07948d', // Teal
+    '#2b2b2b', // Dark Gray
+    '#9be9a8', // Light Green
+    '#c9d1d9', // Gray
+    '#b392f0', // Purple
+    '#d1578f', // Pink
+    '#f0f6fc', // White
+  ];
+
+  const TEXT_COLOR = '#f0f6fc';
+
   try {
     const { SKILL_CHART_DATA } = await loadLanguages();
 
@@ -29,7 +49,7 @@ import { calculateDates, loadLanguages } from '../../utils/utils.js';
           style: {
             fontSize: '13px',
             fontFamily: 'Verdana, sans-serif',
-            color: '#f0f6fc',
+            color: TEXT_COLOR,
           },
         },
       },
@@ -38,13 +58,13 @@ import { calculateDates, loadLanguages } from '../../utils/utils.js';
         title: {
           text: 'Years',
           style: {
-            color: '#f0f6fc',
+            color: TEXT_COLOR,
           },
         },
 
         labels: {
           style: {
-            color: '#f0f6fc',
+            color: TEXT_COLOR,
           },
         },
       },
@@ -55,24 +75,18 @@ import { calculateDates, loadLanguages } from '../../utils/utils.js';
         pointFormat: '<b>{point.y:.3f}</b>',
         backgroundColor: '#333333',
         style: {
-          color: '#f0f6fc',
+          color: TEXT_COLOR,
+        },
+      },
+      plotOptions: {
+        series: {
+          borderColor: '#303030',
         },
       },
       series: [
         {
           name: 'Years of Experience',
-          colors: [
-            '#216e39',
-            '#58a6ff',
-            '#1f6feb',
-            '#8b949e',
-            '#30363d',
-            '#21262d',
-            '#2ea44f',
-            '#d73a49',
-            '#6f42c1',
-            '#d0d8e5',
-          ],
+          colors: COLOR_CODE,
           colorByPoint: true,
           groupPadding: 0,
           dataSorting: {

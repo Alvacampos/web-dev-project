@@ -145,6 +145,10 @@
     padding: $space-10;
     text-wrap: balance;
 
+    & p {
+      text-wrap: pretty;
+    }
+
     &>p:nth-child(2) {
       display: none;
     }
@@ -260,6 +264,12 @@
 
     & div {
       width: 100%;
+    }
+  }
+
+  & div:nth-child(2) {
+    & li {
+      padding-right: $space-5;
     }
   }
 }

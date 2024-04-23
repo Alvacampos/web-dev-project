@@ -21,6 +21,7 @@ const WORK_ITEMS = [
       '.Net',
       'Front End',
       'Back End',
+      'Agile',
     ],
     projects: [
       {
@@ -48,6 +49,7 @@ const WORK_ITEMS = [
       'React',
       'Front End',
       'Cypress',
+      'Agile',
     ],
     projects: [
       {
@@ -85,6 +87,7 @@ const WORK_ITEMS = [
       'Leadership',
       'Interviewing',
       'Back End',
+      'Agile',
     ],
     projects: [
       {
@@ -118,6 +121,7 @@ const WORK_ITEMS = [
       'Cypress',
       'Playwright',
       'Front End',
+      'Agile',
     ],
     projects: [
       {
@@ -174,6 +178,11 @@ const SKILLS_IMG = [
     src: '../assets/icons/git-icon.svg',
     alt: 'Git Logo',
     title: 'Git',
+  },
+  {
+    src: '../assets/icons/graphql.svg',
+    alt: 'GraphQL Logo',
+    title: 'GraphQL',
   },
   {
     src: '../assets/icons/cypress.svg',
@@ -371,8 +380,20 @@ const SKILL_CHART_DATA = [
     startDate: '20240101',
   },
   {
-    name: 'Node',
+    name: 'NodeJs',
     startDate: '20230101',
+  },
+  {
+    name: 'ExpressJs',
+    startDate: '20230101',
+  },
+  {
+    name: 'Git',
+    startDate: '20180801',
+  },
+  {
+    name: 'Agile',
+    startDate: '20180801',
   },
 ];
 
