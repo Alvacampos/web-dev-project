@@ -107,6 +107,8 @@
   font-size: 16px;
   padding: 10px;
   text-wrap: balance; }
+  .work__content p {
+    text-wrap: pretty; }
   .work__content > p:nth-child(2) {
     display: none; }
   .work__content ul {
@@ -187,6 +189,8 @@
     border-radius: 6px; }
     .activities__card div {
       width: 100%; }
+  .activities div:nth-child(2) li {
+    padding-right: 5px; }
 
 #column--right {
   justify-content: center; }
