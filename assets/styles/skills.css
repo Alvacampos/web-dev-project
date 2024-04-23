@@ -49,7 +49,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 30px;
+    padding: 10px;
     border: 1px solid #30363d;
     border-radius: 5px;
     background-color: #0d1117; }
@@ -163,6 +163,9 @@
   overflow: scroll;
   width: 100%;
   gap: 30px; }
+  .icons-card__wrapper img {
+    width: 100px;
+    height: 100px; }
   .icons-card__wrapper::-webkit-scrollbar {
     display: none; }
   .icons-card__wrapper__icons::-webkit-scrollbar {
@@ -280,6 +283,8 @@
     bottom: 30px; }
   .skills__work #filter {
     width: 20vw; }
+  .skills__chart {
+    padding: 20px; }
   .skill-btn:hover {
     background: #03e9f4;
     color: #050801;
