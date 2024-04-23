@@ -116,6 +116,7 @@ const WORK_ITEMS = [
       'Post-css',
       'GraphQL',
       'Cypress',
+      'Playwright',
       'Front End',
     ],
     projects: [
@@ -178,6 +179,11 @@ const SKILLS_IMG = [
     src: '../assets/icons/cypress.svg',
     alt: 'Cypress Logo',
     title: 'Cypress',
+  },
+  {
+    src: '../assets/icons/playwright.svg',
+    alt: 'Playwright Logo',
+    title: 'Playwright',
   },
   {
     src: '../assets/icons/storybook.svg',
@@ -359,6 +365,14 @@ const SKILL_CHART_DATA = [
   {
     name: 'HTML',
     startDate: '20180801',
+  },
+  {
+    name: 'Playwright',
+    startDate: '20240101',
+  },
+  {
+    name: 'Node',
+    startDate: '20230101',
   },
 ];
 

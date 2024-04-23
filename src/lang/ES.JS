@@ -116,6 +116,7 @@ const WORK_ITEMS = [
       'Post-css',
       'GraphQL',
       'Cypress',
+      'Playwright',
       'Front End',
     ],
     projects: [
@@ -178,6 +179,11 @@ const SKILLS_IMG = [
     src: '../assets/icons/cypress.svg',
     alt: 'Cypress Logo',
     title: 'Cypress',
+  },
+  {
+    src: '../assets/icons/playwright.svg',
+    alt: 'Playwright Logo',
+    title: 'Playwright',
   },
   {
     src: '../assets/icons/storybook.svg',
@@ -319,48 +325,56 @@ const NAV_BAR = [
   },
 ];
 
-const SKILL_CHART_DATA = {
-  js: {
+const SKILL_CHART_DATA = [
+  {
     name: 'JavaScript',
-    data: '20180801',
+    startDate: '20180801',
   },
-  ts: {
+  {
     name: 'TypeScript',
-    data: '20220401',
+    startDate: '20220401',
   },
-  react: {
+  {
     name: 'ReactJs',
-    data: '20201201',
+    startDate: '20201201',
   },
-  cypress: {
+  {
     name: 'Cypress',
-    data: '20201201',
+    startDate: '20201201',
   },
-  graphql: {
+  {
     name: 'GraphQL',
-    data: '20220401',
+    startDate: '20220401',
   },
-  storybook: {
+  {
     name: 'Storybook',
-    data: '20180801',
+    startDate: '20180801',
   },
-  remix: {
+  {
     name: 'Remix',
-    data: '20220401',
+    startDate: '20220401',
   },
-  css: {
+  {
     name: 'Css',
-    data: '20180801',
+    startDate: '20180801',
   },
-  postcss: {
+  {
     name: 'PostCss',
-    data: '20220401',
+    startDate: '20220401',
   },
-  html: {
+  {
     name: 'HTML',
-    data: '20180801',
+    startDate: '20180801',
   },
-};
+  {
+    name: 'Playwright',
+    startDate: '20240101',
+  },
+  {
+    name: 'Node',
+    startDate: '20230101',
+  },
+];
 
 const INTRO = [
   'Bienvenido, mi nombre es Gonzalo Alvarez Campos',

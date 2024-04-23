@@ -16,6 +16,9 @@ import { calculateDates, loadLanguages } from '../../utils/utils.js';
         type: 'bar',
         backgroundColor: '#0d1117',
       },
+      credits: {
+        enabled: false,
+      },
       title: {
         text: '',
       },
@@ -26,7 +29,7 @@ import { calculateDates, loadLanguages } from '../../utils/utils.js';
           style: {
             fontSize: '13px',
             fontFamily: 'Verdana, sans-serif',
-            color: '#f0f6fc', // Font color for xAxis labels
+            color: '#f0f6fc',
           },
         },
       },
@@ -35,13 +38,13 @@ import { calculateDates, loadLanguages } from '../../utils/utils.js';
         title: {
           text: 'Years',
           style: {
-            color: '#f0f6fc', // Font color for yAxis title
+            color: '#f0f6fc',
           },
         },
 
         labels: {
           style: {
-            color: '#f0f6fc', // Font color for yAxis labels
+            color: '#f0f6fc',
           },
         },
       },
@@ -50,16 +53,16 @@ import { calculateDates, loadLanguages } from '../../utils/utils.js';
       },
       tooltip: {
         pointFormat: '<b>{point.y:.3f}</b>',
-        backgroundColor: '#333333', // Background color for tooltip
+        backgroundColor: '#333333',
         style: {
-          color: '#f0f6fc', // Font color for tooltip text
+          color: '#f0f6fc',
         },
       },
       series: [
         {
           name: 'Years of Experience',
           colors: [
-            '#c9d1d9',
+            '#216e39',
             '#58a6ff',
             '#1f6feb',
             '#8b949e',
@@ -79,8 +82,6 @@ import { calculateDates, loadLanguages } from '../../utils/utils.js';
         },
       ],
     });
-
-    console.log('SKILL_CHART_DATA', chartData);
   } catch (e) {
     console.log('Fatal error', e);
   }
