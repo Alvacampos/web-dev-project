@@ -27,12 +27,12 @@ const WORK_ITEMS = [
       {
         title: 'Project: eVestment',
         description:
-          'Web development focused in VueJs (use of state, store(vuex), router), worked with Highcharts and VueJs to make reusable components for the clients’ page. And minor exp with backend using .net core and nodejs.',
+          'Worked on analytics web development using Vue.js, Vuex, Vue Router, and Highcharts. Also gained exposure to .NET Core and Node.js for backend tasks.',
       },
       {
         title: 'Project: Smile Direct Club',
         description:
-          'Web development with frontend technologies such VueJs and NuxtJs focus on page performance using nuxt server-side capacity. Use of vue-axios, bootstrap-vue, ECMA 6+.',
+          'Developed web applications for Smile Direct Club using Vue.js, Nuxt.js, and JavaScript, prioritizing performance optimization through Nuxt server-side rendering. Utilized Vue-axios, Bootstrap-Vue, and ECMA 6+.',
       },
     ],
   },
@@ -60,7 +60,7 @@ const WORK_ITEMS = [
       {
         title: 'Project: Live/Lit',
         description:
-          'CRM App, conversation handler, using React Js, Css, Router, Redux, Axios. Unit Testing with JestJs, Deployment with AWS/Heroku.',
+          'Developed a CRM application and conversation handler using JavaScript, React, CSS, Router, Redux, and Axios. Implemented unit testing with Jest.js and deployed the application using AWS/Heroku. ',
       },
     ],
   },
@@ -76,7 +76,7 @@ const WORK_ITEMS = [
     title: 'Endava',
     startDate: '20210801',
     endDate: '20220401',
-    subtitle: 'Hired as Mid Level Full-stack developer.',
+    subtitle: 'Hired as Senior Full-stack developer.',
     skill: [
       'HTML',
       'CSS',
@@ -93,12 +93,12 @@ const WORK_ITEMS = [
       {
         title: 'Project: Marklogic',
         description:
-          'Technical Leader and developer in a team working as consultant for Marklogic projects. Also working in a semantics data base project for Yale University. ',
+          'Lead developer and technical consultant for MarkLogic projects, specializing in semantics database implementation for Yale University. Utilized JavaScript and JSON-LD technologies to develop robust solutions.',
       },
       {
         title: 'Endava Argentina Intership',
         description:
-          'Organizer and mentor for Endava Argentina Internship program 2022, in charge of lectures related to JS and general programming.',
+          'Organized and mentored the Endava Argentina Internship program. Responsible for delivering lectures on JavaScript and general programming topics.',
       },
     ],
   },
@@ -127,7 +127,12 @@ const WORK_ITEMS = [
       {
         title: 'Project Avant',
         description:
-          'Software development for Avant application, working on a web app using Remix (ReactJs framework for SSR) and supporting their legacy app.',
+          'Full-stack project for Avant, a US loan company. Utilizes React with Remix.run and PostCSS for responsiveness. Implements Cypress and Playwright for testing. Currently transitioning from JavaScript to TypeScript.',
+      },
+      {
+        title: 'Project Customer Dashboard',
+        description:
+          'Assisting with maintenance and updates for the legacy dashboard, utilizing TypeScript, React class components, and GraphQL technology stack.',
       },
     ],
   },

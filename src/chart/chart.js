@@ -2,7 +2,7 @@ import Highcharts from 'highcharts';
 
 import { calculateDates, loadLanguages } from '../../utils/utils.js';
 
-(async function renderChart() {
+export default async function renderChart() {
   const COLOR_CODE = [
     '#d73a49', // Red
     '#e36209', // Orange
@@ -28,7 +28,7 @@ import { calculateDates, loadLanguages } from '../../utils/utils.js';
 
     const chartData = SKILL_CHART_DATA.map((data) => [
       data.name,
-      calculateDates(data.startDate, null, true, true),
+      Math.ceil(calculateDates(data.startDate, null, true, true) * 10) / 10,
     ]);
 
     Highcharts.chart('container-chart', {
@@ -72,7 +72,7 @@ import { calculateDates, loadLanguages } from '../../utils/utils.js';
         enabled: false,
       },
       tooltip: {
-        pointFormat: '<b>{point.y:.3f}</b>',
+        pointFormat: '<b>{point.y:.1f}</b>',
         backgroundColor: '#333333',
         style: {
           color: TEXT_COLOR,
@@ -99,4 +99,4 @@ import { calculateDates, loadLanguages } from '../../utils/utils.js';
   } catch (e) {
     console.log('Fatal error', e);
   }
-})();
+}

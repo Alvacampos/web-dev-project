@@ -11,7 +11,7 @@ const WORK_ITEMS = [
     title: 'Globant',
     startDate: '20180801',
     endDate: '20201201',
-    subtitle: 'Contratado como Jr Web developer.',
+    subtitle: 'Contratado como Desarrollador Web Jr.',
     skill: [
       'HTML',
       'CSS',
@@ -19,20 +19,20 @@ const WORK_ITEMS = [
       'Highcharts',
       'Vue',
       '.Net',
+      'Agile',
       'Front End',
       'Back End',
-      'Agile',
     ],
     projects: [
       {
-        title: 'Pryecto: eVestment',
+        title: 'Proyecto: eVestment',
         description:
-          'Desarrollo web enfocado en VueJs (uso de state, store(vuex), router), trabajé con Highcharts y VueJs para hacer componentes reutilizables para la página del cliente. Y algo experiencia con backend usando .net core y nodejs.',
+          'Trabajé en el desarrollo web de análisis utilizando Vue.js, Vuex, Vue Router y Highcharts. También obtuve exposición a .NET Core y Node.js para tareas en el backend.',
       },
       {
         title: 'Proyecto: Smile Direct Club',
         description:
-          'Desarrollo web con tecnologías frontend como VueJs y NuxtJs, enfocado en el rendimiento de la página utilizando la capacidad de server-side rendering con nuxt. Uso de vue-axios, bootstrap-vue, ECMA 6+.',
+          'Desarrollé aplicaciones web para Smile Direct Club utilizando Vue.js, Nuxt.js y JavaScript, priorizando la optimización del rendimiento a través del renderizado del lado del servidor de Nuxt. Utilicé Vue-axios, Bootstrap-Vue y ECMA 6+.',
       },
     ],
   },
@@ -40,7 +40,7 @@ const WORK_ITEMS = [
     title: 'Cliengo',
     startDate: '20201201',
     endDate: '20210801',
-    subtitle: 'Contratado como Semi-senior Full-stack developer.',
+    subtitle: 'Contratado como Desarrollador Full-stack de Nivel Medio.',
     skill: [
       'HTML',
       'CSS',
@@ -55,37 +55,37 @@ const WORK_ITEMS = [
       {
         title: 'Proyecto: Conversational',
         description:
-          'Aplicación conversacional. Desarrollo web usando ReactJs, trabajando también con aplicaciones móviles usando React Native. Migraciones tecnológicas de angular a react. Uso de Axios, Bootstrap, ECMA 6+.',
+          'Aplicación Conversacional. Desarrollo web utilizando ReactJs, también trabajando con aplicaciones móviles utilizando React Native. Migraciones tecnológicas de Angular a React. Uso de Axios, Bootstrap, ECMA 6+.',
       },
       {
         title: 'Proyecto: Live/Lit',
         description:
-          'Aplicación CRM, manejador de conversaciones, usando React Js, Css, Router, Redux, Axios. Pruebas unitarias con JestJs, Deployment con AWS/Heroku.',
+          'Desarrollé una aplicación CRM y un gestor de conversaciones utilizando JavaScript, React, CSS, Router, Redux y Axios. Implementé pruebas unitarias con Jest.js y desplegué la aplicación utilizando AWS/Heroku.',
       },
     ],
   },
   {
-    title: 'Docente (part-time)',
+    title: 'Profesor (a tiempo parcial)',
     startDate: '20210601',
     endDate: '20220301',
-    subtitle: 'Contratado como Profesor de Programacion I.',
-    skill: ['Teaching', 'C', 'Programming'],
-    projects: 'Enseñé programación a alumnos de primer año.',
+    skill: ['Enseñanza', 'C', 'Programación'],
+    subtitle: 'Contratado como Profesor de Programación I.',
+    projects: 'Enseñanza de programación a estudiantes de primer año.',
   },
   {
     title: 'Endava',
     startDate: '20210801',
     endDate: '20220401',
-    subtitle: 'Contratado como Semi-senior Full-stack developer.',
+    subtitle: 'Contratado como Desarrollador Full-stack de Nivel Medio.',
     skill: [
       'HTML',
       'CSS',
       'JavaScript',
       'SQL',
       'Marklogic',
-      'Teaching',
-      'Leadership',
-      'Interviewing',
+      'Enseñanza',
+      'Liderazgo',
+      'Entrevistas',
       'Back End',
       'Agile',
     ],
@@ -93,19 +93,19 @@ const WORK_ITEMS = [
       {
         title: 'Proyecto: Marklogic',
         description:
-          'Líder técnico del equipo trabajando como consultor de proyectos de Marklogic. También trabajando en un proyecto de base de datos semántica para la Universidad de Yale.',
+          'Desarrollador líder y consultor técnico para proyectos de MarkLogic, especializado en la implementación de bases de datos semánticas para la Universidad de Yale. Utilizó tecnologías JavaScript y JSON-LD para desarrollar soluciones robustas.',
       },
       {
-        title: 'Endava Argentina Intership',
+        title: 'Internado en Endava Argentina',
         description:
-          'Organizador y mentor del programa de pasantías Endava Argentina 2022, a cargo de conferencias relacionadas con JS y programación general.',
+          'Organicé y fui mentor del programa de internado de Endava Argentina. Responsable de dictar conferencias sobre JavaScript y temas generales de programación.',
       },
     ],
   },
   {
     title: 'Qubika',
     startDate: '20220401',
-    subtitle: 'Contratado como Senior Frontend developer.',
+    subtitle: 'Contratado como Desarrollador Frontend Senior.',
     isCurrent: true,
     skill: [
       'HTML',
@@ -125,9 +125,14 @@ const WORK_ITEMS = [
     ],
     projects: [
       {
-        title: 'Project Avant',
+        title: 'Proyecto Avant',
         description:
-          'Desarrollo de software para la aplicación Avant, trabajando en una aplicación web usando Remix (framework ReactJs para SSR).',
+          'Proyecto full-stack para Avant, una compañía de préstamos de EE. UU. Utiliza React con Remix.run y PostCSS para la capacidad de respuesta. Implementa Cypress y Playwright para pruebas. Actualmente en transición de JavaScript a TypeScript.',
+      },
+      {
+        title: 'Proyecto Customer Dashboard',
+        description:
+          'Asistencia con el mantenimiento y actualizaciones del dashboard heredado, utilizando TypeScript, componentes de clase React y pila tecnológica de GraphQL.',
       },
     ],
   },

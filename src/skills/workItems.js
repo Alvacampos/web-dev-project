@@ -7,7 +7,7 @@ import {
   loadLanguages,
   renderDateMsg,
 } from '../../utils/utils.js';
-import '../chart/chart.js';
+import renderChart from '../chart/chart.js';
 import generateActivitiesSection from './activities.js';
 
 const main = async () => {
@@ -231,6 +231,8 @@ const main = async () => {
       QUBIKA_EXTRA,
       QUBIKA_EXTRA_IMG
     );
+
+    renderChart();
   } catch (e) {
     console.log('Fatal error', e);
   }
